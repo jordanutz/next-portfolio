@@ -1,0 +1,11 @@
+.anchor {
+   margin: 0 8px;
+   font-size: 1.5rem;
+   color: var(--font-primary);
+   text-decoration: none;
+}
+
+.anchor:hover {
+   color: var(--primary);
+   transition: 0.2s;
+}

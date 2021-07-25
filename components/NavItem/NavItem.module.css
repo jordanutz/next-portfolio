@@ -1,0 +1,24 @@
+.navItem {
+   list-style-type: none;
+   display: flex;
+   justify-content: center;
+}
+
+.navItem > button {
+   color: var(--font-primary);
+   font-size: 0.8rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   transition: 0.2s;
+   height: 90px;
+   padding: 0;
+   width: 100%;
+   border-radius: 0;
+   border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.navItem--active > button,
+.navItem > button:hover {
+   background: var(--primary);
+   color: var(--bg-primary);
+}

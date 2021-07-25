@@ -1,0 +1,50 @@
+.aside {
+   background-color: #ccc;
+   background-size: cover;
+   background-position: 75%;
+   background-attachment: scroll;
+   min-height: 100vh;
+   width: 300px;
+   position: fixed;
+   left: 0;
+   top: 0;
+   display: flex;
+   align-items: center;
+}
+
+.aside::before {
+   display: inline-block;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: 0.85;
+}
+
+.aside__card {
+   width: 300px;
+   position: fixed;
+   top: 50%;
+   transform: translate(50%, -50%);
+   text-align: center;
+   z-index: 2;
+}
+
+.aside__quicklinks {
+   margin-top: 8px;
+   border-top: 1px solid rgb(234, 233, 233);
+   display: flex;
+   justify-content: space-between;
+}
+
+.aside__anchor {
+   display: block;
+   font-size: 0.8rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   transition: 0.2s;
+   padding-top: 16px;
+}

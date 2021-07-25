@@ -1,0 +1,44 @@
+.pageheader {
+   font-family: "museo-sans-display";
+   margin-bottom: 0;
+   letter-spacing: -0.5px;
+   color: var(--font-primary);
+   font-weight: 900;
+}
+
+.pageheader--1 {
+   color: var(--primary);
+}
+
+.pageheader--2,
+.pageheader--3,
+.pageheader--4,
+.pageheader--5,
+.pageheader--6 {
+   font-weight: 700;
+   color: var(--font-primary);
+}
+
+.pageheader--1 {
+   font-size: 3rem;
+}
+
+.pageheader--2 {
+   font-size: 2.5rem;
+}
+
+.pageheader--3 {
+   font-size: 2rem;
+}
+
+.pageheader--4 {
+   font-size: 1.75rem;
+}
+
+.pageheader--5 {
+   font-size: 1.5rem;
+}
+
+.pageheader--6 {
+   font-size: 1.25rem;
+}
