@@ -1,3 +1,8 @@
 .socialBar {
-   margin-top: 8px;
+   margin: 8px 0;
+}
+
+.socialBar svg {
+   margin: 8px;
+   font-size: 1.35rem;
 }

@@ -1,5 +1,5 @@
 .aside {
-   background-color: #ccc;
+   background-color: #e8e8e8;
    background-size: cover;
    background-position: 75%;
    background-attachment: scroll;
@@ -41,10 +41,9 @@
 }
 
 .aside__anchor {
-   display: block;
-   font-size: 0.8rem;
-   font-weight: 800;
-   text-transform: uppercase;
-   transition: 0.2s;
    padding-top: 16px;
+}
+
+.aside h6 {
+   color: var(--primary);
 }

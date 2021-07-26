@@ -5,6 +5,7 @@ import {
    RiLinkedinFill,
    RiCodepenFill,
    RiGithubFill,
+   RiSpotifyFill,
 } from "react-icons/ri";
 
 export const SocialBar = () => (
@@ -20,6 +21,9 @@ export const SocialBar = () => (
       </Anchor>
       <Anchor href="https://www.instagram.com/thejordanutz">
          <RiInstagramLine />
+      </Anchor>
+      <Anchor href="https://open.spotify.com/user/jordanuky">
+         <RiSpotifyFill />
       </Anchor>
    </section>
 );

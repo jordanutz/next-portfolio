@@ -1,0 +1,40 @@
+.about__interests {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+.about__interest {
+   margin-bottom: 4px;
+   padding-left: 12px;
+}
+
+.about__interest::marker {
+   color: var(--primary);
+   content: "\25A0";
+   font-size: 22px;
+}
+
+.about__card {
+   padding: 24px;
+   border-left: 5px solid var(--primary);
+}
+
+.about__card h2 {
+   margin-bottom: 16px;
+}
+
+.about__card {
+   position: relative;
+}
+
+.about__label {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: var(--primary);
+   color: var(--bg-primary);
+   font-family: "museo-sans-display";
+   font-weight: 900;
+   padding: 16px;
+   border-top-right-radius: 4px;
+}

@@ -1,6 +1,7 @@
 import { Navigation } from "../Navigation";
 import { Card } from "../Card";
 import { SocialBar } from "../SocialBar";
+import { PageHeader } from "../PageHeader";
 import { Anchor } from "../Anchor";
 import styles from "./Aside.module.css";
 
@@ -12,6 +13,9 @@ export const Aside = () => (
          header="Jordan Utz"
          image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
       >
+         <section className={styles.aside__subheader}>
+            <PageHeader level={6}>Front End Software Engineer</PageHeader>
+         </section>
          <SocialBar />
          <section className={styles.aside__quicklinks}>
             <Anchor
@@ -24,7 +28,7 @@ export const Aside = () => (
                className={styles.aside__anchor}
                href="mailto:jordanutz@outlook.com"
             >
-               Contact Me
+               Say Hello!
             </Anchor>
          </section>
       </Card>
