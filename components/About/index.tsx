@@ -1,22 +1,31 @@
 import { Container } from "../Container";
 import { Card } from "../Card";
 import { Anchor } from "../Anchor";
+import { MdVideogameAsset } from "react-icons/md";
 import styles from "./About.module.css";
 
 export const About = () => (
    <Container className={styles.about}>
-      <Card header="About" className={styles.about__card}>
-         <section className={styles.about__label}>02.</section>
+      <Card
+         className={styles.about__card}
+         label={<MdVideogameAsset />}
+         title="About"
+      >
          <section className={styles.about__details}>
             <p>
-               I powered up my development journey by attending
-               <Anchor href="https://devmountain.com/"> DevMountain</Anchor>, an
-               immersive three-month bootcamp that offers a full stack
-               curriculum with an emphasis on React. This adventure has
-               ultimately led me to join the digital team at{" "}
+               Hey there! My name is Jordan and I powered up my development
+               journey by completing a full-stack web development course at
+               <Anchor href="https://devmountain.com/"> DevMountain</Anchor>.
+               This adventure has given me the rewarding opportunity to build
+               web applications for a marketing firm and architect JavaScript
+               powered user interfaces for an e-commerce platform.
+            </p>{" "}
+            <p>
+               These days, I have the privilege of contributing solutions as a
+               developer on the AMP Hydra team at{" "}
                <Anchor href="https://kroger.com/"> Kroger</Anchor>, where I
-               spend my day architecting performant component assets written in
-               React and leveling up my JavaScript skills.
+               spend my day building performant component assets in React while
+               leveling up my JavaScript skills.
             </p>
             <p>Here are just a few interests of mine outside of programming:</p>
          </section>
@@ -25,10 +34,10 @@ export const About = () => (
                <li className={styles.about__interest}>Roller Coasters</li>
                <li className={styles.about__interest}>Japanese Culture</li>
                <li className={styles.about__interest}>Arcades</li>
-               <li className={styles.about__interest}>Vaporwave</li>
+               <li className={styles.about__interest}>Photography</li>
             </ul>
             <ul>
-               <li className={styles.about__interest}>Creative Writing</li>
+               <li className={styles.about__interest}>Horror Movies</li>
                <li className={styles.about__interest}>Traveling</li>
                <li className={styles.about__interest}>Swimming</li>
                <li className={styles.about__interest}>Biking</li>

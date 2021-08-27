@@ -1,7 +1,58 @@
 .card {
    background: #fdfbfb;
    border-radius: 4px;
-   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   position: relative;
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+
+main .card::before {
+   content: "\A";
+   border-style: solid;
+   border-width: 10px 15px 10px 0;
+   border-color: transparent #f1f1f1 transparent transparent;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -15px;
+   z-index: 0;
+   filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+main .card::after {
+   background-color: #aad7ff;
+   color: #999;
+   border-radius: 50%;
+   height: 25px;
+   width: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.4s ease;
+   z-index: 1;
+   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+   transform: scale(1);
+   animation: pulse 2s infinite;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+main .card--active {
+   position: relative;
+   width: 100%;
+}
+
+main .card__container {
+   padding: 8px 16px 16px 0;
+   display: grid;
+   grid-template-columns: 75px 4fr;
+}
+
+.card--active .card__container {
+   padding: 0;
 }
 
 .card__image {
@@ -13,6 +64,86 @@
    border-top-left-radius: 4px;
 }
 
-.card__container {
-   padding: 8px 16px 16px;
+.card__label {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: #f1f1f1;
+   color: var(--primary);
+   font-family: "museo-sans-display";
+   font-weight: 900;
+   padding: 16px;
+   border-top-right-radius: 4px;
+   border-bottom: solid;
+   border-left: solid;
+   border-color: #e4e4e4;
+   border-width: 1px;
+   font-size: 24px;
+   display: flex;
+}
+
+main .card__header {
+   text-orientation: mixed;
+   writing-mode: vertical-rl;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f5f5f5;
+   padding: 32px 0;
+   border-right: 1px solid #e4e4e4;
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+   position: relative;
+}
+
+.card__header {
+   padding-top: 16px;
+}
+
+.card__header h3 {
+   color: var(--primary);
+}
+
+main .card__content {
+   padding: 32px;
+}
+
+.card__title {
+   font-size: 1.75rem;
+   font-weight: 800;
+   color: #6c757d;
+   font-family: museo-sans-display;
+   position: absolute;
+   top: 24px;
+   display: flex;
+   align-items: center;
+   right: 12%;
+   left: 106px;
+}
+
+main .card__title::after {
+   content: "";
+   display: block;
+   position: relative;
+   height: 1px;
+   background-color: #e4e4e4;
+   margin: 0 20px;
+   width: 100%;
+}
+
+.card__content {
+   display: block;
+   padding: 0 16px 16px;
+}
+
+.card--active h1,
+.card--active h2 {
+   color: var(--primary);
+   line-height: 1;
+}
+.card--active h3,
+.card--active h4,
+.card--active h5,
+.card--active h6 {
+   margin-bottom: 8px;
 }

@@ -19,6 +19,7 @@ export const Navigation: FC = () => {
                About
             </NavItem>
             <NavItem
+               active={true}
                icon={<MdLaptopMac />}
                onClick={() => console.log("#Skills")}
             >
@@ -32,7 +33,6 @@ export const Navigation: FC = () => {
             </NavItem>
             <NavItem
                icon={<HiCode />}
-               active={true}
                onClick={() => console.log("#Portfolio")}
             >
                Portfolio

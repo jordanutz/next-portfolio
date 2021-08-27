@@ -5,7 +5,7 @@
 }
 
 .navItem > button {
-   color: var(--font-primary);
+   color: #626a71;
    font-size: 0.8rem;
    font-weight: 800;
    text-transform: uppercase;
@@ -19,6 +19,6 @@
 
 .navItem--active > button,
 .navItem > button:hover {
-   background: var(--primary);
-   color: var(--bg-primary);
+   background: #b7dcfeca;
+   color: var(--primary);
 }

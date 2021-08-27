@@ -1,9 +1,9 @@
 :root {
    --primary: #006dcc;
    --secondary: #5cb3ff;
-   --accent: #00417a;
+   --accent: #4cc9f0;
    --bg-primary: #f6f6f6;
-   --font-primary: #151620e0;
+   --font-primary: #6c757d;
 }
 
 html {
@@ -19,14 +19,11 @@ body {
 }
 
 main {
-   display: block;
-   padding-left: 450px;
-   margin: 0 24px;
    background-color: var(--bg-primary);
    min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   padding-left: 450px;
+   display: grid;
+   grid-template-columns: 100px 8fr;
 }
 
 hr {
@@ -46,7 +43,7 @@ a {
 
 h1,
 h2 {
-   line-height: normal;
+   line-height: 1;
 }
 
 h1,

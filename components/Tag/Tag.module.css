@@ -1,17 +1,20 @@
 .tag {
    width: fit-content;
-   color: var(--bg-primary);
+   background: #b7dcfeca;
    display: flex;
    align-items: center;
-   padding: 8px 16px;
+   padding: 4px 8px;
    font-weight: 800;
-   text-transform: uppercase;
    font-size: 0.8rem;
    border-radius: 4px;
-   background: var(--accent);
+   color: var(--primary);
    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .tag > span {
    margin-left: 8px;
+}
+
+.tag svg {
+   font-size: 1.15rem;
 }

@@ -12,6 +12,7 @@ export const Aside = () => (
          className={styles.aside__card}
          header="Jordan Utz"
          image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
+         main={true}
       >
          <section className={styles.aside__subheader}>
             <PageHeader level={6}>Front End Software Engineer</PageHeader>

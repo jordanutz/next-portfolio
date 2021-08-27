@@ -6,5 +6,8 @@ interface ContainerProps {
 }
 
 export const Container: FC<ContainerProps> = ({ children }) => (
-   <section className={styles.container}>{children}</section>
+   <section className={styles.container}>
+      <section className={styles.container__step}></section>
+      {children}
+   </section>
 );

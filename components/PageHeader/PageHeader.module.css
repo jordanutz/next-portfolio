@@ -2,21 +2,21 @@
    font-family: "museo-sans-display";
    margin-bottom: 0;
    letter-spacing: -0.5px;
-   color: var(--font-primary);
+   color: var(--primary);
    font-weight: 900;
 }
 
-.pageheader--1 {
+.pageheader--1,
+.pageheader--2 {
    color: var(--primary);
 }
 
-.pageheader--2,
 .pageheader--3,
 .pageheader--4,
 .pageheader--5,
 .pageheader--6 {
    font-weight: 700;
-   color: var(--font-primary);
+   color: #6c757d;
 }
 
 .pageheader--1 {
