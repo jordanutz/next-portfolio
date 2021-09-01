@@ -1,27 +1,12 @@
 .about__interests {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-}
-
-.about__interest {
-   padding-left: 12px;
-}
-
-.about__interest::marker {
-   color: var(--primary);
-   content: "\25A0";
-   font-size: 22px;
-}
-
-.about__title {
-   font-size: 1.75rem;
-   font-weight: 800;
-   color: #6c757d;
-   font-family: museo-sans-display;
-   position: absolute;
-   top: 24px;
+   position: relative;
+   z-index: 3;
 }
 
 .about__details {
-   margin-top: 42px;
+   padding-bottom: 8px;
+   position: relative;
+   z-index: 3;
 }

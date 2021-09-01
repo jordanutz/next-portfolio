@@ -12,3 +12,11 @@
    color: var(--primary);
    transition: 0.2s;
 }
+
+main .anchor {
+   color: #8cd4ff;
+}
+
+main .anchor:hover {
+   color: #aee1ff;
+}

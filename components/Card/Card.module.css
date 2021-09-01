@@ -12,7 +12,7 @@ main .card::before {
    content: "\A";
    border-style: solid;
    border-width: 10px 15px 10px 0;
-   border-color: transparent #f1f1f1 transparent transparent;
+   border-color: transparent rgb(12 107 204 / 83%) transparent transparent !important;
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
@@ -67,19 +67,27 @@ main .card__container {
 .card__label {
    position: absolute;
    top: 0;
-   right: 0;
-   background: #f1f1f1;
-   color: var(--primary);
+   left: 0;
+   color: #8cd4ff;
    font-family: "museo-sans-display";
    font-weight: 900;
-   padding: 16px;
-   border-top-right-radius: 4px;
-   border-bottom: solid;
-   border-left: solid;
-   border-color: #e4e4e4;
    border-width: 1px;
-   font-size: 24px;
+   font-size: 36px;
+   display: -moz-box;
    display: flex;
+   -moz-box-pack: center;
+   justify-content: center;
+   -moz-box-align: center;
+   align-items: center;
+   z-index: 9;
+   width: 75px;
+   bottom: 0;
+   background-color: #f5f5f5;
+   border-right: 1px solid #e4e4e4;
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+   background-color: #f5f5f51f !important;
+   border-right: 1px solid #e4e4e442;
 }
 
 main .card__header {
@@ -88,20 +96,12 @@ main .card__header {
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: #f5f5f5;
    padding: 32px 0;
-   border-right: 1px solid #e4e4e4;
-   border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
    position: relative;
 }
 
 .card__header {
    padding-top: 16px;
-}
-
-.card__header h3 {
-   color: var(--primary);
 }
 
 main .card__content {
@@ -111,14 +111,12 @@ main .card__content {
 .card__title {
    font-size: 1.75rem;
    font-weight: 800;
-   color: #6c757d;
+   color: #f1f1f1;
    font-family: museo-sans-display;
-   position: absolute;
-   top: 24px;
    display: flex;
    align-items: center;
-   right: 12%;
-   left: 106px;
+   position: relative;
+   z-index: 3;
 }
 
 main .card__title::after {
@@ -126,8 +124,8 @@ main .card__title::after {
    display: block;
    position: relative;
    height: 1px;
-   background-color: #e4e4e4;
-   margin: 0 20px;
+   background-color: #8cd4ff63;
+   margin-left: 16px;
    width: 100%;
 }
 
@@ -146,4 +144,38 @@ main .card__title::after {
 .card--active h5,
 .card--active h6 {
    margin-bottom: 8px;
+}
+
+main .card__overlay::before {
+   background: linear-gradient(
+      28deg,
+      rgb(12 107 204) 20%,
+      rgb(82 195 249 / 75%) 100%
+   );
+   display: inline-block;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: 1;
+   border-radius: 4px;
+}
+
+main .card__overlay {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+main .card {
+   background-image: url("https://i.ibb.co/1zPLVDs/city-beach-4.jpg") !important;
+   background-size: cover !important;
+   position: relative;
+   color: #f1f1f1;
+   display: flex;
+   align-items: center;
+   min-height: 400px;
 }

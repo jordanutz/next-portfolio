@@ -13,7 +13,7 @@ export const Skills = () => (
          label={<MdLaptopMac />}
          title="Skills"
       >
-         <p style={{ marginBottom: "24px", marginTop: "40px" }}>
+         <p className={styles.skills__paragraph}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu
             dui nec metus euismod hendrerit. Duis eros nisi, rutrum non ante
             nec, varius ultricies lectus. Nullam blandit scelerisque turpis sed

@@ -5,8 +5,6 @@ import styles from "./Portfolio.module.css";
 import { data } from "./data";
 import { HiCode } from "react-icons/hi";
 
-console.log(styles);
-
 export const Portfolio = () => {
    return (
       <Container className={styles.portfolio}>
@@ -18,11 +16,18 @@ export const Portfolio = () => {
             <section className={styles.portfolio__grid}>
                {data.map((project) => {
                   return (
-                     <img
-                        className={styles.portfolio__image}
-                        src={project.image}
-                        alt={project.title}
-                     />
+                     <section className={styles.portfolio__image}>
+                        {/* <section className={styles.portfolio__overlay}>
+                           <section className={styles.portfolio__title}>
+                              <h5>{project.title}</h5>
+                           </section>
+                        </section> */}
+                        <img
+                           className={styles.portfolio__image}
+                           src={project.image}
+                           alt={project.title}
+                        />
+                     </section>
                   );
                })}
             </section>

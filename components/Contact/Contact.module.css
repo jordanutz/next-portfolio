@@ -1,0 +1,29 @@
+.contact__card p {
+   position: relative;
+   z-index: 3;
+   color: #f1f1f1;
+   max-width: 375px;
+}
+
+.contact__card button {
+   margin-top: 0.5rem;
+   position: relative;
+   z-index: 3;
+   background-color: transparent;
+   border: 1px solid #8cd4ff;
+   border-radius: 4px;
+   color: #8cd4ff;
+}
+
+.contact__card span,
+.contact__card button {
+   font-weight: 600;
+}
+
+.contact__card a:hover {
+   color: #72b9f8;
+}
+
+.contact__card a {
+   color: #8cd4ff;
+}

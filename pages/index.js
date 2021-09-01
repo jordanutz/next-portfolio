@@ -1,13 +1,21 @@
 // our-domain.com/
+import React, { useRef } from "react";
 import Head from "next/head";
+
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
 import { Steps } from "../components/Steps";
 import { Skills } from "../components/Skills";
 import { Experience } from "../components/Experience";
 import { Portfolio } from "../components/Portfolio";
+import { Contact } from "../components/Contact";
 
 export default function Index() {
+   const about = useRef();
+   const skills = useRef();
+   const portfolio = useRef();
+   const contact = useRef();
+
    return (
       <div>
          <Head>
@@ -16,12 +24,13 @@ export default function Index() {
          <Aside />
          <main>
             <Steps />
-            <div>
+            <section>
                <About />
                <Skills />
                <Experience />
                <Portfolio />
-            </div>
+               <Contact />
+            </section>
          </main>
       </div>
    );

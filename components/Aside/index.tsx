@@ -10,7 +10,6 @@ export const Aside = () => (
       <Navigation />
       <Card
          className={styles.aside__card}
-         header="Jordan Utz"
          image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
          main={true}
       >

@@ -2,4 +2,20 @@
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-gap: 8px;
+   position: relative;
+   z-index: 3;
+}
+
+.skills__paragraph {
+   padding-bottom: 16px;
+}
+
+.skills__card h3 {
+   color: #f1f1f1;
+}
+
+.skills__card p {
+   position: relative;
+   z-index: 3;
+   color: #f1f1f1;
 }

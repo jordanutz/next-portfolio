@@ -13,7 +13,7 @@ export const data = [
    },
    {
       id: 2,
-      name: "Calculator",
+      title: "Calculator",
       year: "2021",
       image:
          "https://i.ibb.co/rQrPr7Y/E68-A33-BE-7917-4-FA2-9-C3-D-D1-EDF4-F1-BB73-1-105-c.jpg",
@@ -24,7 +24,7 @@ export const data = [
    },
    {
       id: 3,
-      name: "WeatherFi",
+      title: "WeatherFi",
       year: "2021",
       image:
          "https://i.ibb.co/MMjVkJ8/Screen-Shot-2021-08-17-at-8-14-19-PM.jpg",

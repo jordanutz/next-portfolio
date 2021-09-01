@@ -37,6 +37,8 @@ export const Card: FC<CardProps> = ({
    );
    const cardTitle = title && <h3 className={styles.card__title}>{title}</h3>;
 
+   const bodyClass = !main ? styles.card__body : "";
+
    return (
       <section className={cardClass}>
          {cardLabel}
@@ -45,7 +47,9 @@ export const Card: FC<CardProps> = ({
             <section className={styles.card__header}>{cardHeader}</section>
             <section className={styles.card__content}>
                {cardTitle}
-               {children}
+               <section className={`${styles.card__overlay} ${bodyClass}`}>
+                  {children}
+               </section>
             </section>
          </section>
       </section>
