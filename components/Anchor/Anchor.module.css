@@ -14,9 +14,9 @@
 }
 
 main .anchor {
-   color: #8cd4ff;
+   color: var(--primary);
 }
 
 main .anchor:hover {
-   color: #aee1ff;
+   color: #006dccd3;
 }

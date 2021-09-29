@@ -5,7 +5,7 @@
 }
 
 .navItem > button {
-   color: #626a71;
+   color: var(--font-primary);
    font-size: 0.8rem;
    font-weight: 800;
    text-transform: uppercase;

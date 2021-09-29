@@ -16,7 +16,7 @@
 .pageheader--5,
 .pageheader--6 {
    font-weight: 700;
-   color: #6c757d;
+   color: var(--font-primary);
 }
 
 .pageheader--1 {

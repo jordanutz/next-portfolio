@@ -1,29 +1,68 @@
+.contact__card {
+   background-image: url(https://i.ibb.co/1zPLVDs/city-beach-4.jpg);
+   background-size: cover;
+   background-position: center;
+}
+
+.contact__card > section::before {
+   background: linear-gradient(170deg, #a426ada6 20%, #168ce0);
+   display: inline-block;
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: 0.9;
+}
+
+.contact__card > section {
+   min-height: 350px;
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+
+.contact__overlay {
+   background: #ffffffd8;
+   display: inline;
+   padding: 24px;
+   z-index: 2;
+   width: fit-content;
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   border: 2px solid hsl(0deg 0% 25% / 82%);
+}
+
 .contact__card p {
    position: relative;
    z-index: 3;
-   color: #f1f1f1;
    max-width: 375px;
+   padding: 1rem 0;
+}
+
+.contact__card h4 > span {
+   border-bottom: 2px solid hsl(0deg 0% 25% / 95%);
 }
 
 .contact__card button {
-   margin-top: 0.5rem;
    position: relative;
    z-index: 3;
    background-color: transparent;
-   border: 1px solid #8cd4ff;
+   border: 1px solid var(--primary);
    border-radius: 4px;
-   color: #8cd4ff;
+   color: var(--primary);
+   display: flex;
+   color: var(--primary);
+   align-items: center;
+}
+
+.contact__card button svg {
+   margin-right: 8px;
 }
 
 .contact__card span,
 .contact__card button {
    font-weight: 600;
-}
-
-.contact__card a:hover {
-   color: #72b9f8;
-}
-
-.contact__card a {
-   color: #8cd4ff;
 }

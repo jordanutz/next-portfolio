@@ -18,20 +18,7 @@ export const Card: FC<CardProps> = ({
    main = false,
    title,
 }) => {
-   const modifiers = {
-      active: "card--active",
-   };
-
-   const cardClass = `${styles.card} ${
-      !main ? styles[modifiers.active] : ""
-   } ${className}`;
-
-   const cardHeader = main && (
-      <PageHeader level={main ? 2 : 3}>Jordan Utz</PageHeader>
-   );
-   const cardLabel = label && (
-      <section className={styles.card__label}>{label}</section>
-   );
+   const cardClass = `${styles.card} ${!main ? "" : ""} ${className}`;
    const cardImage = image && (
       <img src={image} className={styles.card__image} />
    );
@@ -41,10 +28,8 @@ export const Card: FC<CardProps> = ({
 
    return (
       <section className={cardClass}>
-         {cardLabel}
          {cardImage}
          <section className={styles.card__container}>
-            <section className={styles.card__header}>{cardHeader}</section>
             <section className={styles.card__content}>
                {cardTitle}
                <section className={`${styles.card__overlay} ${bodyClass}`}>

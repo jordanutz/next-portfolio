@@ -3,7 +3,7 @@
    --secondary: #5cb3ff;
    --accent: #4cc9f0;
    --bg-primary: #f6f6f6;
-   --font-primary: #6c757d;
+   --font-primary: #31363e;
 }
 
 html {
@@ -19,7 +19,7 @@ body {
 }
 
 main {
-   background-color: var(--bg-primary);
+   background-color: #deeaf9;
    min-height: 100vh;
    padding-left: 450px;
    display: grid;
@@ -180,7 +180,7 @@ main li {
 }
 
 main li::before {
-   color: #8cd4ff;
+   color: hsl(0, 0%, 25%);
    content: "\25A0";
    font-size: 22px;
    position: absolute;
@@ -335,4 +335,12 @@ template {
 
 [hidden] {
    display: none;
+}
+
+#tsparticles {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
 }

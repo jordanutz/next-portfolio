@@ -4,7 +4,11 @@ export const experienceData = [
       company: "Kroger",
       role: "Front End Software Engineer",
       date: "6/21 - Current",
-      responsibilities: ["Lorem Ipsum", "Lorem Ipsum", "Lorem Ipsum"],
+      responsibilities: [
+         "Developed and supported multi-banner CMS powered React assets supplemented with unit tests written with Enzyme.",
+         "Participated in the discovery and implementation of new CMS powered assets and components.",
+         "Supported feature enhancements of existing code, projects, and the resolution of technical debt.",
+      ],
    },
    {
       id: 2,

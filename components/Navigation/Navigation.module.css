@@ -1,25 +1,17 @@
 .navigation {
    width: 95px;
    background: #fdfbfb;
-   border-radius: 4px;
    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
    margin: auto auto auto 32px;
    z-index: 2;
    opacity: 9;
+   border: 2px solid hsl(0, 0%, 25%);
 }
 
 .navigation > .navigation__list {
    padding: 0;
    margin: 0;
-}
-
-.navigation > .navigation__list > li:first-child > button,
-.navigation > .navigation__list > li:first-child:hover > button {
-   border-top-left-radius: 4px;
-   border-top-right-radius: 4px;
-   border-bottom-left-radius: 0;
-   border-bottom-right-radius: 0;
 }
 
 .navigation > .navigation__list > li:last-child > button {
@@ -30,8 +22,6 @@
 .navigation > .navigation__list > li:last-child:hover > button {
    border-top-left-radius: 0;
    border-top-right-radius: 0;
-   border-bottom-left-radius: 4px;
-   border-bottom-right-radius: 4px;
 }
 
 .navigation > .navigation__list > li > button {

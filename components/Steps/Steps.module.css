@@ -3,11 +3,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   background: #deeaf9;
 }
 
 .steps:before {
    content: "";
-   background-color: #e0e0e0;
+   background-color: hsl(0, 0%, 25%);
    position: absolute;
    left: 50%;
    width: 3px;

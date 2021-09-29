@@ -1,7 +1,7 @@
 .aside {
-   background-color: #e8e8e8;
+   background-color: #006dcc;
    background-size: cover;
-   background-position: 75%;
+   background-position: 100%;
    background-attachment: scroll;
    min-height: 100vh;
    width: 300px;
@@ -25,25 +25,29 @@
 }
 
 .aside__card {
-   width: 300px;
+   width: 294px;
    position: fixed;
    top: 50%;
    transform: translate(50%, -50%);
    text-align: center;
    z-index: 2;
+   border: 2px solid hsl(0, 0%, 25%);
+}
+
+.aside__subheader {
+   padding-top: 8px;
 }
 
 .aside__quicklinks {
-   margin-top: 8px;
-   border-top: 1px solid rgb(234, 233, 233);
    display: flex;
    justify-content: space-between;
+   padding: 0 16px 16px;
 }
 
-.aside__anchor {
-   padding-top: 16px;
-}
-
-.aside h6 {
-   color: 023e8a;
+#tsparticles {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
 }

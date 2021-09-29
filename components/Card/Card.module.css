@@ -1,24 +1,8 @@
 .card {
    background: #fdfbfb;
-   border-radius: 4px;
    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
    position: relative;
-   border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
-}
-
-main .card::before {
-   content: "\A";
-   border-style: solid;
-   border-width: 10px 15px 10px 0;
-   border-color: transparent rgb(12 107 204 / 83%) transparent transparent !important;
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   left: -15px;
-   z-index: 0;
-   filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.2));
 }
 
 main .card::after {
@@ -40,19 +24,12 @@ main .card::after {
    left: 0;
 }
 
-main .card--active {
-   position: relative;
-   width: 100%;
-}
-
 main .card__container {
-   padding: 8px 16px 16px 0;
-   display: grid;
-   grid-template-columns: 75px 4fr;
-}
-
-.card--active .card__container {
    padding: 0;
+   width: 100%;
+   min-width: 100%;
+   border: 2px solid hsl(0, 0%, 25%);
+   box-shadow: 0.4rem 0.4rem 0 0 hsl(0deg 0% 25%);
 }
 
 .card__image {
@@ -60,14 +37,9 @@ main .card__container {
    height: 325px;
    object-fit: cover;
    object-position: top;
-   border-top-left-radius: 4px;
-   border-top-left-radius: 4px;
 }
 
 .card__label {
-   position: absolute;
-   top: 0;
-   left: 0;
    color: #8cd4ff;
    font-family: "museo-sans-display";
    font-weight: 900;
@@ -81,13 +53,29 @@ main .card__container {
    align-items: center;
    z-index: 9;
    width: 75px;
-   bottom: 0;
+   height: 100%;
    background-color: #f5f5f5;
    border-right: 1px solid #e4e4e4;
-   border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
    background-color: #f5f5f51f !important;
    border-right: 1px solid #e4e4e442;
+   position: relative;
+}
+
+.card__label svg {
+   z-index: 1;
+}
+
+main .card::before {
+   content: "\A";
+   border-style: solid;
+   border-width: 10px 15px 10px 0;
+   border-color: transparent hsl(0, 0%, 25%) transparent transparent !important;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   left: -15px;
+   z-index: 0;
+   filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.2));
 }
 
 main .card__header {
@@ -96,62 +84,54 @@ main .card__header {
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 32px 0;
+   padding: 0;
    position: relative;
-}
-
-.card__header {
-   padding-top: 16px;
 }
 
 main .card__content {
-   padding: 32px;
+   padding: 48px 32px 32px;
 }
 
 .card__title {
+   position: absolute;
+   top: -25px;
+   left: 27px;
+   z-index: 9;
+   background-color: hsl(0, 0%, 97%);
+   border: 2px solid hsl(0, 0%, 25%);
+   text-align: center;
+   box-shadow: 0.3rem 0.3rem 0 0 hsl(0deg 0% 25%);
+   padding: 0.25rem 1.25rem;
+   display: inline;
    font-size: 1.75rem;
    font-weight: 800;
-   color: #f1f1f1;
+   color: var(--font-primary);
    font-family: museo-sans-display;
+   display: -moz-box;
    display: flex;
+   -moz-box-align: center;
    align-items: center;
-   position: relative;
    z-index: 3;
-}
-
-main .card__title::after {
-   content: "";
-   display: block;
-   position: relative;
-   height: 1px;
-   background-color: #8cd4ff63;
-   margin-left: 16px;
-   width: 100%;
 }
 
 .card__content {
    display: block;
-   padding: 0 16px 16px;
 }
 
 .card--active h1,
 .card--active h2 {
-   color: var(--primary);
+   color: rgb(29, 29, 44);
    line-height: 1;
 }
-.card--active h3,
-.card--active h4,
-.card--active h5,
-.card--active h6 {
-   margin-bottom: 8px;
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+   color: var(--font-primary);
 }
 
-main .card__overlay::before {
-   background: linear-gradient(
-      28deg,
-      rgb(12 107 204) 20%,
-      rgb(82 195 249 / 75%) 100%
-   );
+main .card__label::before {
+   background: rgb(12 107 204 / 83%);
    display: inline-block;
    content: "";
    position: absolute;
@@ -161,7 +141,6 @@ main .card__overlay::before {
    bottom: 0;
    z-index: 1;
    opacity: 1;
-   border-radius: 4px;
 }
 
 main .card__overlay {
@@ -171,11 +150,9 @@ main .card__overlay {
 }
 
 main .card {
-   background-image: url("https://i.ibb.co/1zPLVDs/city-beach-4.jpg") !important;
-   background-size: cover !important;
-   position: relative;
-   color: #f1f1f1;
+   background-color: #fdfbfb;
+   color: var(--fonr-primary);
    display: flex;
    align-items: center;
-   min-height: 400px;
+   min-width: 100%;
 }
