@@ -29,7 +29,6 @@ export default function Index() {
                <Skills />
                <Experience />
                <Portfolio />
-               <Contact />
             </section>
          </main>
       </div>

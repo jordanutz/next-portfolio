@@ -32,9 +32,7 @@ export const Card: FC<CardProps> = ({
          <section className={styles.card__container}>
             <section className={styles.card__content}>
                {cardTitle}
-               <section className={`${styles.card__overlay} ${bodyClass}`}>
-                  {children}
-               </section>
+               <section>{children}</section>
             </section>
          </section>
       </section>

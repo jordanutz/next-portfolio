@@ -15,34 +15,24 @@ export const Navigation: FC = () => {
             <NavItem
                icon={<MdVideogameAsset />}
                onClick={() => console.log("#About")}
-            >
-               About
-            </NavItem>
+            ></NavItem>
             <NavItem
                active={true}
                icon={<MdLaptopMac />}
                onClick={() => console.log("#Skills")}
-            >
-               Skills
-            </NavItem>
+            ></NavItem>
             <NavItem
                icon={<IoIosRocket />}
                onClick={() => console.log("#Work")}
-            >
-               Exp.
-            </NavItem>
+            ></NavItem>
             <NavItem
                icon={<HiCode />}
                onClick={() => console.log("#Portfolio")}
-            >
-               Portfolio
-            </NavItem>
+            ></NavItem>
             <NavItem
                icon={<SiMailDotRu />}
                onClick={() => console.log("#Contact")}
-            >
-               Contact
-            </NavItem>
+            ></NavItem>
          </ul>
       </nav>
    );

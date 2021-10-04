@@ -1,27 +1,22 @@
 .navigation {
-   width: 95px;
+   width: 76px;
    background: #fdfbfb;
-   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
+      0 2px 4px -1px rgb(0 0 0 / 6%);
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
    margin: auto auto auto 32px;
    z-index: 2;
    opacity: 9;
-   border: 2px solid hsl(0, 0%, 25%);
+   border-radius: 0.5rem;
 }
 
 .navigation > .navigation__list {
-   padding: 0;
+   padding: 0.5rem 0;
    margin: 0;
 }
 
 .navigation > .navigation__list > li:last-child > button {
    border-bottom: none;
-}
-
-.navigation > .navigation__list > li:last-child > button,
-.navigation > .navigation__list > li:last-child:hover > button {
-   border-top-left-radius: 0;
-   border-top-right-radius: 0;
 }
 
 .navigation > .navigation__list > li > button {
@@ -32,6 +27,5 @@
 }
 
 .navigation > .navigation__list > li > button > svg {
-   font-size: 1.25rem;
-   margin-bottom: 8px;
+   font-size: 1.5rem;
 }
