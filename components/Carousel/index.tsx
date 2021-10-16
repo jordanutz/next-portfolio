@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React from "react";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import styles from "./Carousel.module.css";
 
@@ -8,9 +8,36 @@ export const Carousel = ({ indicators, active, setActive }) => {
       active: "carousel__image--active",
    };
 
+   const handleCarouselControls = (control) => {
+      const indicatorsTotal = indicators.length - 1;
+
+      if (control == "increment") {
+         if (active < indicatorsTotal) {
+            setActive(active + 1);
+            return;
+         }
+
+         setActive(0);
+         return;
+      }
+
+      if (control === "decrement") {
+         if (active === 0) {
+            setActive(indicatorsTotal);
+            return;
+         }
+
+         setActive(active - 1);
+         return;
+      }
+   };
+
    return (
       <section className={styles.carousel}>
-         <button className={styles.carousel__arrow}>
+         <button
+            className={styles.carousel__arrow}
+            onClick={() => handleCarouselControls("decrement")}
+         >
             <BsArrowLeftShort className={styles.carousel__icon} />
          </button>
          <section className={styles.carousel__widget}>
@@ -25,7 +52,10 @@ export const Carousel = ({ indicators, active, setActive }) => {
                />
             ))}
          </section>
-         <button className={styles.carousel__arrow}>
+         <button
+            className={styles.carousel__arrow}
+            onClick={() => handleCarouselControls("increment")}
+         >
             <BsArrowRightShort className={styles.carousel__icon} />
          </button>
       </section>

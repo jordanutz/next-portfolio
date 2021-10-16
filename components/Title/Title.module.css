@@ -1,0 +1,98 @@
+.title {
+   position: relative;
+   z-index: 2;
+   display: grid;
+   grid-template-columns: 350px auto;
+   justify-content: initial;
+   align-items: initial;
+}
+
+.title .title__overlay,
+.title .title__content {
+   position: relative;
+   z-index: 3;
+}
+
+.title__overlay img {
+   width: 300px;
+   height: 450px;
+   object-fit: cover;
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   position: absolute;
+   border-radius: 0.5rem;
+   right: 0;
+   top: 50%;
+   transform: translate(50%, -50%);
+}
+
+.title .title__overlay > nav {
+   margin: auto auto auto 64px;
+   transform: scale(1);
+}
+
+.title h2 {
+   font-weight: 800;
+   color: rgba(255, 255, 255, 0.875);
+   margin-bottom: 24px;
+   font-family: museo-sans, sans-serif;
+   font-size: 1.5rem;
+   margin: 8px 0 16px 0;
+}
+
+.title .title__overlay {
+   background-color: #84d2ff80;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title .title__content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 550px;
+   margin: 0 225px;
+}
+
+.title .title__content h1 {
+   font-family: "Mockhand";
+   color: #fff;
+   font-size: 7rem;
+   border-radius: 0.5rem;
+   text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
+      -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
+   margin: 8px 0;
+}
+
+.title .title__content p {
+   margin-bottom: 0;
+   color: #fff;
+}
+
+.title .title__content button {
+   padding: 16px;
+   background-color: rgba(255, 255, 255, 0.144);
+   border: 1px solid #fff;
+   font-size: 0.75rem;
+   color: #fff;
+   margin: 16px 0;
+   text-transform: uppercase;
+}
+
+.title .title__content a {
+   color: #fff;
+   width: 100%;
+}
+
+.title__social {
+   bottom: 0;
+   position: absolute;
+   right: 1.5rem;
+   z-index: 3;
+}
+
+.title .title__social a {
+   color: #b0e1ff;
+}

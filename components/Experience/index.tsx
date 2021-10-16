@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { Container } from "../Container";
-import { PageHeader } from "../PageHeader";
 import { Carousel } from "../Carousel";
 import { Card } from "../Card";
 import { Tag } from "../Tag";
-import { IoIosRocket } from "react-icons/Io";
 import { experienceData } from "./data";
 import { AiTwotoneCalendar } from "react-icons/ai";
 
@@ -14,18 +12,15 @@ import styles from "./Experience.module.css";
 import elink from "./assets/elink.jpg";
 import webstaurant from "./assets/webstaurant.jpg";
 import kroger from "./assets/kroger.jpg";
+import devmountain from "./assets/devmountain.jpg";
 
 export const Experience = () => {
-   const indicators = [kroger, webstaurant, elink];
+   const indicators = [kroger, webstaurant, elink, devmountain];
    const [active, setActive] = useState(0);
 
    return (
       <Container>
-         <Card
-            className={styles.experience__card}
-            label={<IoIosRocket />}
-            title="Experience"
-         >
+         <Card className={styles.experience__card} title="Experience">
             <section className={styles.experience__grid}>
                {experienceData.map(
                   (experience, index) =>

@@ -6,11 +6,7 @@ import styles from "./About.module.css";
 
 export const About = () => (
    <Container className={styles.about}>
-      <Card
-         className={styles.about__card}
-         label={<MdVideogameAsset />}
-         title="About"
-      >
+      <Card className={styles.about__card} title="About">
          <section className={styles.about__overlay}>
             <section className={styles.about__details}>
                <p>

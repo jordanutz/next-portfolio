@@ -32,4 +32,15 @@ export const experienceData = [
          "Clientele included many local and regional based companies spanning the Bluegrass State.",
       ],
    },
+   {
+      id: 4,
+      company: "DevMountain",
+      role: "Full Stack Web Development",
+      date: "1/19 - 4/19",
+      responsibilities: [
+         "Designed and developed responsive, cross-browser compatible websites.",
+         "Coordinated directly with clients from the initial project planning session to the final deployment of their product, facilitating communication and implementing feedback promptly so that timelines were being met.",
+         "Clientele included many local and regional based companies spanning the Bluegrass State.",
+      ],
+   },
 ];

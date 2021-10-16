@@ -1,45 +1,61 @@
-.contact__card {
-   background-image: url(https://i.ibb.co/1zPLVDs/city-beach-4.jpg);
-   background-size: cover;
-   background-position: center;
+.contact {
+   z-index: 1;
+   position: relative;
 }
 
-.contact__card > section::before {
-   background: linear-gradient(170deg, #a426ada6 20%, #168ce0);
-   display: inline-block;
-   content: "";
+.contact__icon {
+   background: var(--primary);
    position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   z-index: 1;
-   opacity: 0.9;
+   right: 50%;
+   transform: translateX(50%);
+   top: -25px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 3px solid #fff;
+   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.contact__icon svg {
+   color: #fff;
+   font-size: 1.5rem;
+}
+
+.contact__header {
+   margin-bottom: 64px;
+   text-align: center;
+   font-family: "Mockhand";
+   color: #fff;
+   font-size: 6rem;
+   border-radius: 0.5rem;
+   text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
+      -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
+}
+
+.contact .contact__card {
+   background-color: #fdfbfbd8;
+   max-width: 525px;
 }
 
 .contact__card > section {
-   min-height: 350px;
    position: relative;
    display: flex;
    align-items: center;
-}
-
-.contact__overlay {
-   background: #ffffffd8;
-   display: inline;
-   padding: 24px;
-   z-index: 2;
-   width: fit-content;
-   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
-   border: 2px solid hsl(0deg 0% 25% / 82%);
+   padding-top: 14px;
 }
 
 .contact__card p {
    position: relative;
    z-index: 3;
-   max-width: 375px;
    padding: 1rem 0;
+}
+
+.contact__card h4 {
+   font-size: 1.15rem;
 }
 
 .contact__card h4 > span {
@@ -47,22 +63,7 @@
 }
 
 .contact__card button {
-   position: relative;
-   z-index: 3;
-   background-color: transparent;
-   border: 1px solid var(--primary);
-   border-radius: 4px;
-   color: var(--primary);
-   display: flex;
-   color: var(--primary);
-   align-items: center;
-}
-
-.contact__card button svg {
-   margin-right: 8px;
-}
-
-.contact__card span,
-.contact__card button {
-   font-weight: 600;
+   margin: 0 auto;
+   padding-right: 24px;
+   padding-left: 24px;
 }

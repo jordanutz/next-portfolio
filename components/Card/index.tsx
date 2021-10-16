@@ -1,30 +1,32 @@
+/* eslint-disable @next/next/no-img-element */
 import { PageHeader } from "../PageHeader";
 import { FC } from "react";
-import styles from "./Card.module.css";
+import { CardProps } from "../../models/card";
 
-interface CardProps {
-   className?: string;
-   image?: string;
-   label?: any;
-   main?: boolean;
-   title?: string;
-}
+import styles from "./Card.module.css";
 
 export const Card: FC<CardProps> = ({
    className = "",
    children,
    image,
-   label,
-   main = false,
+   showArrow = true,
    title,
 }) => {
-   const cardClass = `${styles.card} ${!main ? "" : ""} ${className}`;
-   const cardImage = image && (
-      <img src={image} className={styles.card__image} />
-   );
-   const cardTitle = title && <h3 className={styles.card__title}>{title}</h3>;
+   const modifiers = {
+      arrow: "card--arrow",
+   };
 
-   const bodyClass = !main ? styles.card__body : "";
+   const cardArrow = showArrow ? styles[modifiers.arrow] : "";
+   const cardClass = `${styles.card} ${className} ${cardArrow}`;
+   const cardImage = image && (
+      <img src={image} className={styles.card__image} alt="" />
+   );
+
+   const cardTitle = title && (
+      <PageHeader className={styles.card__title} level={3}>
+         {title}
+      </PageHeader>
+   );
 
    return (
       <section className={cardClass}>
@@ -32,7 +34,7 @@ export const Card: FC<CardProps> = ({
          <section className={styles.card__container}>
             <section className={styles.card__content}>
                {cardTitle}
-               <section>{children}</section>
+               {children}
             </section>
          </section>
       </section>

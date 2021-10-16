@@ -1,16 +1,88 @@
 .button {
-   color: #fff;
-   border: none;
-   padding: 8px 16px;
    cursor: pointer;
+   position: relative;
+   z-index: 3;
+   background-color: transparent;
+   border-radius: 4px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   padding: 12px 16px;
 }
 
-.button--primary {
-   background-color: var(--primary);
+.button.button--primary {
+   border: 1px solid var(--primary);
+   color: var(--primary);
 }
 
-.button--secondary {
-   background-color: var(--secondary);
+.button.button--secondary {
+   background: #fdfbfbd1;
+   border: 1px solid rgba(255, 255, 255, 0.683);
+   color: var(--font-primary);
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.button.button--primary,
+.button.button--secondary,
+.button.button--primary::after,
+.button.button--secondary::after {
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   -o-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.button.button--secondary::before,
+.button.button--primary::before,
+.button.button--secondary::after,
+.button.button--primary::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+}
+
+.button.button--primary::before,
+.button.button--primary::after {
+   background: var(--primary);
+}
+
+.button.button--secondary::before,
+.button.button--secondary::after {
+   background: var(--secondary);
+}
+
+.button.button--primary::after,
+.button.button--secondary::after {
+   height: 100%;
+   left: 0;
+   top: 0;
+   width: 0;
+   border-radius: 4px;
+}
+
+.button.button--primary:hover,
+.button.button--secondary:hover {
+   color: #fff;
+}
+
+.button.button--secondary:hover {
+   border: 1px solid var(--secondary);
+}
+
+.button.button--primary:hover:after,
+.button.button--secondary:hover:after {
+   width: 100%;
+}
+
+.button svg {
+   margin-right: 8px;
+}
+
+.contact__card span,
+.button.button--primary,
+.button.button--secondary {
+   font-weight: 600;
 }
 
 .button--link {
