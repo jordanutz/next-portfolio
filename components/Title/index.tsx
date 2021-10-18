@@ -6,6 +6,7 @@ import { Button } from "../Button";
 import { Cover } from "../Cover";
 import { Navigation } from "../Navigation";
 import { Social } from "../Social";
+import { TypeWriter } from "../TypeWriter";
 
 import styles from "./Title.module.css";
 
@@ -22,7 +23,10 @@ export const Title = () => {
          </section>
          <section className={styles.title__content} ref={titleRef}>
             <h1>Jordan Utz</h1>
-            <h2>Front End Software Engineer</h2>
+            <TypeWriter
+               words={["Front End Software Engineer.", "Designer."]}
+               level={2}
+            />
             <p>
                I’m a software engineer specializing in building (and
                occasionally designing) exceptional digital experiences.

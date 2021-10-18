@@ -3,6 +3,7 @@ import { Button } from "../Button";
 import { Anchor } from "../Anchor";
 import styles from "./Contact.module.css";
 import { AiOutlineMail } from "react-icons/ai";
+import { SiMinutemailer } from "react-icons/si";
 
 export const Contact = () => {
    return (
@@ -16,7 +17,6 @@ export const Contact = () => {
                <h4>
                   Let&apos;s <span>Collaborate!</span>
                </h4>
-
                <p>
                   If you have an employment opportunity in St. Petersburg,
                   Florida for a <span>Front End Software Engineer</span> and you
@@ -31,7 +31,7 @@ export const Contact = () => {
                   and don&apos;t hesitate to drop a line!
                </p>
                <Anchor href="mailto:jordanutz@outlook.com">
-                  <Button type="primary" icon={<AiOutlineMail />}>
+                  <Button type="primary" icon={<SiMinutemailer />}>
                      Drop a Line
                   </Button>
                </Anchor>
