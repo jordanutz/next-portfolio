@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef } from "react";
-import { BsFillCursorFill } from "react-icons/bs";
 import { Anchor } from "../Anchor";
 import { Button } from "../Button";
 import { Cover } from "../Cover";
 import { Navigation } from "../Navigation";
 import { Social } from "../Social";
 import { TypeWriter } from "../TypeWriter";
+import { BsChevronDown } from "react-icons/bs";
+import { BsFillCursorFill } from "react-icons/bs";
 
 import styles from "./Title.module.css";
 
@@ -39,6 +40,14 @@ export const Title = () => {
                </Button>
             </Anchor>
          </section>
+         <BsChevronDown
+            aria-label="Scroll Down"
+            className={styles.title__chevron}
+            data-sal="fade"
+            data-sal-easing="ease-in"
+            data-sal-duration="3000"
+            data-sal-delay="3000"
+         />
          <section className={styles.title__social}>
             <Social />
          </section>
