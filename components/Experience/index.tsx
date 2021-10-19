@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { AppContext } from "../../context";
 import { Container } from "../Container";
 import { Carousel } from "../Carousel";
 import { Card } from "../Card";
@@ -15,11 +16,12 @@ import kroger from "./assets/kroger.jpg";
 import devmountain from "./assets/devmountain.jpg";
 
 export const Experience = () => {
+   const context = useContext(AppContext);
    const indicators = [kroger, webstaurant, elink, devmountain];
    const [active, setActive] = useState(0);
 
    return (
-      <Container>
+      <Container ref={context.experience}>
          <Card className={styles.experience__card} title="Experience">
             <section className={styles.experience__grid}>
                {experienceData.map(

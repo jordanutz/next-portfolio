@@ -97,6 +97,10 @@
    color: #b0e1ff;
 }
 
+.title .title__social a:hover {
+   color: #d3eeff;
+}
+
 .title .title__chevron {
    position: absolute;
    z-index: 4;

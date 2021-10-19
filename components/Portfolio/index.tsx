@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../../context";
 import { Container } from "../Container";
 import { Card } from "../Card";
 import { Anchor } from "../Anchor";
@@ -11,18 +12,10 @@ import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
 import styles from "./Portfolio.module.css";
 
 export const Portfolio = () => {
-   const renderTechnologies = (technologies) =>
-      technologies.map((technology, index) => (
-         <Tag key={`${technology}-${index}`} {...technology} />
-      ));
-
+   const context = useContext(AppContext);
    return (
-      <Container className={styles.portfolio}>
-         <Card
-            className={styles.portfolio__card}
-            label={<HiCode />}
-            title="Portfolio"
-         >
+      <Container className={styles.portfolio} ref={context.portfolio}>
+         <Card className={styles.portfolio__card} title="Portfolio">
             <section className={styles.portfolio__container}>
                {data.map((project) => {
                   return (

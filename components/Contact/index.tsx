@@ -1,3 +1,5 @@
+import React, { useContext } from "react";
+import { AppContext } from "../../context";
 import { Card } from "../Card";
 import { Button } from "../Button";
 import { Anchor } from "../Anchor";
@@ -6,8 +8,9 @@ import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
 
 export const Contact = () => {
+   const context = useContext(AppContext);
    return (
-      <section className={styles.contact}>
+      <section className={styles.contact} ref={context.contact}>
          <h2 className={styles.contact__header}>Contact</h2>
          <Card className={styles.contact__card} showArrow={false}>
             <section className={styles.contact__icon}>

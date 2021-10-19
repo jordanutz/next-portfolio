@@ -40,6 +40,7 @@ export const TypeWriter: FC<TypeWriterProps> = ({ words, ...rest }) => {
       /* Executes only when each character has been removed and we're ready to shift to the next word. */
       if (!typed && isDeleting) {
          setIsDeleting(false);
+         setSpeed(600);
 
          /* Tests whether or not our current word is the last word in our array of words. 
          If so, reset to initial. Otherwise, increment the currentIndex. */

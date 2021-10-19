@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "../../context";
 import { NavItem } from "../NavItem";
 
 import { AiOutlineMail } from "react-icons/ai";
@@ -9,29 +10,38 @@ import { MdLaptopMac, MdVideogameAsset } from "react-icons/md";
 import styles from "./Navigation.module.css";
 
 export const Navigation: FC = () => {
+   const context = useContext(AppContext);
    return (
       <nav className={styles.navigation}>
          <ul className={styles.navigation__list}>
             <NavItem
                icon={<MdVideogameAsset />}
-               onClick={() => console.log("#About")}
+               onClick={() => context.handleSmoothScroll(context.about.current)}
             />
             <NavItem
                active={true}
                icon={<MdLaptopMac />}
-               onClick={() => console.log("#Skills")}
+               onClick={() =>
+                  context.handleSmoothScroll(context.skills.current)
+               }
             />
             <NavItem
                icon={<IoIosRocket />}
-               onClick={() => console.log("#Work")}
+               onClick={() =>
+                  context.handleSmoothScroll(context.experience.current)
+               }
             />
             <NavItem
                icon={<HiCode />}
-               onClick={() => console.log("#Portfolio")}
+               onClick={() =>
+                  context.handleSmoothScroll(context.portfolio.current)
+               }
             />
             <NavItem
                icon={<AiOutlineMail />}
-               onClick={() => console.log("#Contact")}
+               onClick={() =>
+                  context.handleSmoothScroll(context.contact.current)
+               }
             />
          </ul>
       </nav>
