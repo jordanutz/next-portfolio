@@ -2,6 +2,7 @@
 import { PageHeader } from "../PageHeader";
 import { FC } from "react";
 import { CardProps } from "../../models/card";
+import { useInView } from "react-intersection-observer";
 
 import styles from "./Card.module.css";
 
@@ -11,12 +12,16 @@ export const Card: FC<CardProps> = ({
    image,
    showArrow = true,
    title,
-   inView,
 }) => {
    const modifiers = {
       arrow: "card--arrow",
       animate: "card--animate-in",
    };
+
+   const [ref, inView] = useInView({
+      triggerOnce: true,
+      threshold: 0.5,
+   });
 
    const cardArrow = showArrow ? styles[modifiers.arrow] : "";
    const cardClass = `${styles.card} ${className} ${cardArrow}`;
@@ -33,7 +38,7 @@ export const Card: FC<CardProps> = ({
    const cardAnimation = inView ? styles[modifiers.animate] : "";
 
    return (
-      <section className={`${cardClass} ${cardAnimation.trim()}`}>
+      <section className={`${cardClass} ${cardAnimation.trim()}`} ref={ref}>
          {cardImage}
          <section className={styles.card__container}>
             <section className={styles.card__content}>

@@ -4,6 +4,10 @@
    grid-gap: 8px;
 }
 
+.portfolio__card {
+   margin-bottom: 32px;
+}
+
 .portfolio__project {
    position: relative;
    margin: auto;

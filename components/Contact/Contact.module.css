@@ -3,6 +3,11 @@
    position: relative;
 }
 
+.contact > section {
+   animation: none;
+   opacity: 1;
+}
+
 .contact__icon {
    background: var(--primary);
    position: absolute;

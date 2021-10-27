@@ -49,6 +49,7 @@ main .card {
    color: var(--fonr-primary);
    display: flex;
    align-items: center;
+   opacity: 0;
 }
 
 .card--arrow {
@@ -107,5 +108,40 @@ main .card__content {
 }
 
 main .card--animate-in {
-   background: red;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-name: fadeInLeft;
+   animation-name: fadeInLeft;
+}
+
+/* Animations */
+
+@keyframes fadeInLeft {
+   from {
+      opacity: 0;
+      -webkit-transform: translate3d(15%, 0, 0);
+      transform: translate3d(15%, 0, 0);
+   }
+
+   to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+   }
+}
+
+@-webkit-keyframes fadeInLeft {
+   from {
+      opacity: 0;
+      -webkit-transform: translate3d(15%, 0, 0);
+      transform: translate3d(15%, 0, 0);
+   }
+
+   to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+   }
 }
