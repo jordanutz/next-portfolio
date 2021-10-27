@@ -27,3 +27,8 @@
 .navItem > button > svg {
    margin-right: 0;
 }
+
+.nav-item--active > button {
+   background: #b7dcfeca;
+   color: var(--primary);
+}

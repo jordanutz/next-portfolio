@@ -16,32 +16,43 @@ export const Navigation: FC = () => {
          <ul className={styles.navigation__list}>
             <NavItem
                icon={<MdVideogameAsset />}
-               onClick={() => context.handleSmoothScroll(context.about.current)}
+               title="About"
+               onClick={() =>
+                  context.handleSmoothScroll(context.entries.about.current)
+               }
+               ref={context.entries.about}
             />
             <NavItem
-               active={true}
                icon={<MdLaptopMac />}
+               title="Skills"
                onClick={() =>
-                  context.handleSmoothScroll(context.skills.current)
+                  context.handleSmoothScroll(context.entries.skills.current)
                }
+               ref={context.entries.skills}
             />
             <NavItem
                icon={<IoIosRocket />}
                onClick={() =>
-                  context.handleSmoothScroll(context.experience.current)
+                  context.handleSmoothScroll(context.entries.experience.current)
                }
+               title="Experience"
+               ref={context.entries.experience}
             />
             <NavItem
                icon={<HiCode />}
                onClick={() =>
-                  context.handleSmoothScroll(context.portfolio.current)
+                  context.handleSmoothScroll(context.entries.portfolio.current)
                }
+               title="Portfolio"
+               ref={context.entries.portfolio}
             />
             <NavItem
                icon={<AiOutlineMail />}
                onClick={() =>
-                  context.handleSmoothScroll(context.contact.current)
+                  context.handleSmoothScroll(context.entries.contact.current)
                }
+               title="Contact"
+               ref={context.entries.contact}
             />
          </ul>
       </nav>

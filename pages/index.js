@@ -1,6 +1,7 @@
 // our-domain.com/
 import React, { useRef } from "react";
 import Head from "next/head";
+import { InView } from "react-intersection-observer";
 
 import { Cover } from "../components/Cover";
 import { Aside } from "../components/Aside";

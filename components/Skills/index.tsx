@@ -9,7 +9,7 @@ import styles from "./Skills.module.css";
 export const Skills = () => {
    const context = useContext(AppContext);
    return (
-      <Container className={styles.skills} ref={context.skills}>
+      <Container id="skills" ref={context.entries.skills}>
          <Card className={styles.skills__card} title="Skills">
             <p className={styles.skills__paragraph}>
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris

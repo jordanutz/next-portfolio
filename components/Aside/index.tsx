@@ -20,7 +20,7 @@ export const Aside = () => (
          <section className={styles.aside__quicklinks}>
             <Anchor
                className={styles.aside__anchor}
-               href="https://drive.google.com/file/d/1pSxbKb7ZTj7DvMCaFk0zTeeIQNkLgEkn/view"
+               href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing"
             >
                Resume
             </Anchor>

@@ -3,4 +3,5 @@ export interface CardProps {
    image?: string;
    showArrow?: boolean;
    title?: string;
+   inView: boolean;
 }

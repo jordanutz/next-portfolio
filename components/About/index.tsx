@@ -3,14 +3,12 @@ import { AppContext } from "../../context";
 import { Container } from "../Container";
 import { Card } from "../Card";
 import { Anchor } from "../Anchor";
-import { MdVideogameAsset } from "react-icons/md";
 import styles from "./About.module.css";
 
 export const About = () => {
    const context = useContext(AppContext);
-
    return (
-      <Container className={styles.about} ref={context.about}>
+      <Container id="about" ref={context.entries.about}>
          <Card className={styles.about__card} title="About">
             <section className={styles.about__overlay}>
                <section className={styles.about__details}>

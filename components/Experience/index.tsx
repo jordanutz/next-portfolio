@@ -21,7 +21,7 @@ export const Experience = () => {
    const [active, setActive] = useState(0);
 
    return (
-      <Container ref={context.experience}>
+      <Container ref={context.entries.experience} id="experience">
          <Card className={styles.experience__card} title="Experience">
             <section className={styles.experience__grid}>
                {experienceData.map(

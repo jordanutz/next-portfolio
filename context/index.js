@@ -1,29 +1,27 @@
-import React, { createContext, useRef } from "react";
+import React, { createContext, useRef, useState } from "react";
 
-export const AppContext = createContext({
-   about: null,
-});
+export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-   const about = useRef();
-   const skills = useRef();
-   const experience = useRef();
-   const portfolio = useRef();
-   const contact = useRef();
-
-   const handleSmoothScroll = (id) => {
-      id.scrollIntoView({ block: "start", behavior: "smooth" });
+   const [activeCard, setActiveCard] = useState(null);
+   const entries = {
+      about: useRef(),
+      skills: useRef(),
+      experience: useRef(),
+      portfolio: useRef(),
+      contact: useRef(),
    };
+
+   const handleSmoothScroll = (id) =>
+      id.scrollIntoView({ block: "start", behavior: "smooth" });
 
    return (
       <AppContext.Provider
          value={{
-            about,
-            skills,
-            experience,
-            portfolio,
-            contact,
+            entries,
             handleSmoothScroll,
+            activeCard,
+            setActiveCard,
          }}
       >
          {children}

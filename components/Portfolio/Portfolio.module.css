@@ -8,7 +8,7 @@
    position: relative;
    margin: auto;
    overflow: hidden;
-   height: 200px;
+   height: 225px;
 }
 
 .portfolio__overlay {
@@ -32,12 +32,14 @@
    object-fit: cover;
    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   border-radius: 0.25rem;
 }
 
 .portfolio__project:hover .portfolio__overlay {
    opacity: 1;
    width: 100%;
    height: 100%;
+   border-radius: 0.25rem;
 }
 
 .portfolio__details {

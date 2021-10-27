@@ -11,9 +11,11 @@ export const Card: FC<CardProps> = ({
    image,
    showArrow = true,
    title,
+   inView,
 }) => {
    const modifiers = {
       arrow: "card--arrow",
+      animate: "card--animate-in",
    };
 
    const cardArrow = showArrow ? styles[modifiers.arrow] : "";
@@ -28,8 +30,10 @@ export const Card: FC<CardProps> = ({
       </PageHeader>
    );
 
+   const cardAnimation = inView ? styles[modifiers.animate] : "";
+
    return (
-      <section className={cardClass}>
+      <section className={`${cardClass} ${cardAnimation.trim()}`}>
          {cardImage}
          <section className={styles.card__container}>
             <section className={styles.card__content}>

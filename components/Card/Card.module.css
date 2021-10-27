@@ -1,5 +1,5 @@
 .card {
-   background: #fdfbfb;
+   background: hsl(0, 33%, 99%);
    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
    position: relative;
@@ -45,11 +45,10 @@
 }
 
 main .card {
-   background-color: transparent;
+   background-color: rgba(255, 255, 255, 0.889);
    color: var(--fonr-primary);
    display: flex;
    align-items: center;
-   min-width: 100%;
 }
 
 .card--arrow {
@@ -91,7 +90,6 @@ main .card::after {
 main .card__container {
    padding: 0;
    width: 100%;
-   min-width: 100%;
 }
 
 main .card__title::after {
@@ -106,4 +104,8 @@ main .card__title::after {
 
 main .card__content {
    padding: 32px;
+}
+
+main .card--animate-in {
+   background: red;
 }
