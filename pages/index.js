@@ -1,8 +1,6 @@
-// our-domain.com/
-import React, { useRef } from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context";
 import Head from "next/head";
-import { InView } from "react-intersection-observer";
-
 import { Cover } from "../components/Cover";
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
@@ -15,28 +13,32 @@ import { Title } from "../components/Title";
 
 import ContactImg from "../assets/contact.jpg";
 
-const Index = () => (
-   <div>
-      <Head>
-         <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
-      </Head>
-      <Aside />
-      <main>
-         <Title />
-         <section className="content">
-            <Steps />
-            <section>
-               <About />
-               <Skills />
-               <Experience />
-               <Portfolio />
+const Index = () => {
+   const context = useContext(AppContext);
+
+   return (
+      <div>
+         <Head>
+            <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
+         </Head>
+         <Aside />
+         <main>
+            <Title />
+            <section className="content">
+               <Steps />
+               <section>
+                  <About />
+                  <Skills />
+                  <Experience />
+                  <Portfolio />
+               </section>
             </section>
-         </section>
-         <Cover image={ContactImg.src}>
-            <Contact />
-         </Cover>
-      </main>
-   </div>
-);
+            <Cover image={ContactImg.src}>
+               <Contact />
+            </Cover>
+         </main>
+      </div>
+   );
+};
 
 export default Index;

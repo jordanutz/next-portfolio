@@ -12,12 +12,14 @@ export const Skills = () => {
       <Container id="skills" ref={context.entries.skills}>
          <Card className={styles.skills__card} title="Skills">
             <p className={styles.skills__paragraph}>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-               eu dui nec metus euismod hendrerit. Duis eros nisi, rutrum non
-               ante nec, varius ultricies lectus. Nullam blandit scelerisque
-               turpis sed tempor. Proin luctus porta nisl, id mollis nunc
-               lacinia varius. Nunc euismod tortor in viverra auctor. Maecenas
-               euismod ac ipsum eu sagittis.
+               My technical skillset is grounded in all areas existing within
+               the domain of the browser. I take immense enjoyment in leveraging
+               React to write lean, reusable components and scalable JavaScript
+               code that serves the purpose of solving complex user stories,
+               further fueled by a relentless commitment to deliver exceptional
+               users interfaces that are semantically structured, translate
+               seamlessly across multiple devices and browsers, and are
+               accessible to all users.
             </p>
             <section className={styles.skills__content}>
                {skillsData.map((skills) => (

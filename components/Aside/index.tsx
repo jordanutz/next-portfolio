@@ -1,3 +1,6 @@
+import React, { useContext } from "react";
+import { Parallax } from "react-scroll-parallax";
+import { AppContext } from "../../context";
 import { Navigation } from "../Navigation";
 import { Card } from "../Card";
 import { Social } from "../Social";
@@ -5,11 +8,12 @@ import { PageHeader } from "../PageHeader";
 import { Anchor } from "../Anchor";
 import styles from "./Aside.module.css";
 
-export const Aside = () => (
-   <aside className={styles.aside}>
-      <Navigation />
+export const Aside = () => {
+   const context = useContext(AppContext);
+
+   const MainCard = ({ className = "" }) => (
       <Card
-         className={styles.aside__card}
+         className={`${styles.aside__card} ${className}`}
          image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
       >
          <section className={styles.aside__subheader}>
@@ -32,5 +36,14 @@ export const Aside = () => (
             </Anchor>
          </section>
       </Card>
-   </aside>
-);
+   );
+
+   return (
+      <React.Fragment>
+         <aside className={styles.aside}>
+            {!context.showNav && <Navigation />}
+            <MainCard />
+         </aside>
+      </React.Fragment>
+   );
+};

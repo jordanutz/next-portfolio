@@ -14,6 +14,7 @@ import {
    SiNextDotJs,
    SiTailwindcss,
    SiJavascript,
+   SiJest,
 } from "react-icons/si";
 
 export const skillsData = [
@@ -30,6 +31,7 @@ export const skillsData = [
    { id: 11, title: "Tailwind", icon: <SiTailwindcss /> },
    { id: 12, title: "Bootstrap 4", icon: <SiBootstrap /> },
    { id: 13, title: "Ant Design", icon: <AiOutlineAntDesign /> },
-   { id: 14, title: "Res. Design", icon: <SiAdobephonegap /> },
-   { id: 15, title: "A11y", icon: <ImAccessibility /> },
+   { id: 14, title: "Unit Testing", icon: <SiJest /> },
+   { id: 15, title: "Res. Design", icon: <SiAdobephonegap /> },
+   { id: 16, title: "A11y", icon: <ImAccessibility /> },
 ];

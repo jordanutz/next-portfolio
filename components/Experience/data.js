@@ -38,9 +38,9 @@ export const experienceData = [
       role: "Full Stack Web Development",
       date: "1/19 - 4/19",
       responsibilities: [
-         "Designed and developed responsive, cross-browser compatible websites.",
-         "Coordinated directly with clients from the initial project planning session to the final deployment of their product, facilitating communication and implementing feedback promptly so that timelines were being met.",
-         "Clientele included many local and regional based companies spanning the Bluegrass State.",
+         "Successfully completed an immersive three-month web development bootcamp with a full-stack cirriculum.",
+         "Program emphasis on React and Node.js driven by a hybrid model approach to learning through combination of lecture and project building.",
+         "Acquired a comprehensive understanding on leveraging Github to track and merge changes through development phase of projects. ",
       ],
    },
 ];

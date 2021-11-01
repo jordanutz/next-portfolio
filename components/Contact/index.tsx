@@ -12,46 +12,50 @@ export const Contact = () => {
    const context = useContext(AppContext);
    return (
       <InView
-         threshold={0.5}
-         onChange={(inView) =>
-            inView && context.setActiveCard(context.entries.contact)
-         }
+         threshold={0.25}
+         onChange={(inView) => {
+            inView && context.setActiveCard(context.entries.contact);
+            context.setIsContactInView(inView);
+         }}
       >
-         <section
-            className={styles.contact}
-            ref={context.entries.contact}
-            id="contact"
-         >
-            <h2 className={styles.contact__header}>Contact</h2>
-            <Card className={styles.contact__card} showArrow={false}>
-               <section className={styles.contact__icon}>
-                  <AiOutlineMail />
+         {({ inView, ref }) => {
+            return (
+               <section className={styles.contact} ref={ref} id="contact">
+                  <section ref={context.entries.contact}>
+                     <h2 className={styles.contact__header}>Contact</h2>
+                     <Card className={styles.contact__card} showArrow={false}>
+                        <section className={styles.contact__icon}>
+                           <AiOutlineMail />
+                        </section>
+                        <section className={styles.contact__overlay}>
+                           <h4>
+                              Let&apos;s <span>Connect!</span>
+                           </h4>
+                           <p>
+                              If you have an employment opportunity in St.
+                              Petersburg, Florida for a{" "}
+                              <span>Front End Software Engineer</span> and you
+                              believe I would be a great fit for it, snag
+                              yourself a copy of my{" "}
+                              <Anchor
+                                 href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing"
+                                 className="contact__link"
+                              >
+                                 digital resume{" "}
+                              </Anchor>
+                              and don&apos;t hesitate to drop a line!
+                           </p>
+                           <Anchor href="mailto:jordanutz@outlook.com">
+                              <Button type="primary" icon={<SiMinutemailer />}>
+                                 Drop a Line
+                              </Button>
+                           </Anchor>
+                        </section>
+                     </Card>
+                  </section>
                </section>
-               <section className={styles.contact__overlay}>
-                  <h4>
-                     Let&apos;s <span>Connect!</span>
-                  </h4>
-                  <p>
-                     If you have an employment opportunity in St. Petersburg,
-                     Florida for a <span>Front End Software Engineer</span> and
-                     you believe I would be a great fit for it, snag yourself a
-                     copy of my{" "}
-                     <Anchor
-                        href="https://drive.google.com/file/d/1pSxbKb7ZTj7DvMCaFk0zTeeIQNkLgEkn/view?usp=sharing"
-                        className="contact__link"
-                     >
-                        digital resume{" "}
-                     </Anchor>
-                     and don&apos;t hesitate to drop a line!
-                  </p>
-                  <Anchor href="mailto:jordanutz@outlook.com">
-                     <Button type="primary" icon={<SiMinutemailer />}>
-                        Drop a Line
-                     </Button>
-                  </Anchor>
-               </section>
-            </Card>
-         </section>
+            );
+         }}
       </InView>
    );
 };

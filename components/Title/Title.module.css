@@ -1,6 +1,6 @@
 .title {
    position: relative;
-   z-index: 2;
+   z-index: 5;
    display: grid;
    grid-template-columns: 350px auto;
    justify-content: initial;

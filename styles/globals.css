@@ -6,6 +6,14 @@
    --font-primary: #31363e;
 }
 
+/* 
+Dark Theme Variables:
+
+.card {
+   background: #1f2328;
+
+*/
+
 html {
    line-height: 1.5; /* 1 */
    -webkit-text-size-adjust: 100%; /* 2 */
@@ -170,6 +178,10 @@ button,
 ul {
    margin: 0;
    padding-left: 24px;
+}
+
+.relative {
+   position: relative;
 }
 
 .content li {

@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import React, { useContext } from "react";
+import { AppContext } from "../../context";
 import { PageHeader } from "../PageHeader";
 import { FC } from "react";
 import { CardProps } from "../../models/card";
 import { useInView } from "react-intersection-observer";
-
 import styles from "./Card.module.css";
+import cn from "classnames";
 
 export const Card: FC<CardProps> = ({
    className = "",
@@ -13,6 +15,7 @@ export const Card: FC<CardProps> = ({
    showArrow = true,
    title,
 }) => {
+   const context = useContext(AppContext);
    const modifiers = {
       arrow: "card--arrow",
       animate: "card--animate-in",
@@ -38,7 +41,7 @@ export const Card: FC<CardProps> = ({
    const cardAnimation = inView ? styles[modifiers.animate] : "";
 
    return (
-      <section className={`${cardClass} ${cardAnimation.trim()}`} ref={ref}>
+      <section className={cn(cardClass, cardAnimation.trim())} ref={ref}>
          {cardImage}
          <section className={styles.card__container}>
             <section className={styles.card__content}>

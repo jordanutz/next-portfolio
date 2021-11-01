@@ -1,10 +1,10 @@
 .navigation {
-   width: 76px;
+   min-width: 76px;
    background: #fdfbfbd1;
    -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
       0 2px 4px -1px rgb(0 0 0 / 6%);
    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
-   margin: auto auto auto 32px;
+   margin: auto auto auto 36px;
    z-index: 2;
    opacity: 9;
    border-radius: 0.5rem;
