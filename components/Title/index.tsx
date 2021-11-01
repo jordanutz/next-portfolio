@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useRef, useContext } from "react";
-import { Parallax } from "react-scroll-parallax";
 import { InView } from "react-intersection-observer";
 import { AppContext } from "../../context";
 import { Anchor } from "../Anchor";

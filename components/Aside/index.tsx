@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Parallax } from "react-scroll-parallax";
 import { AppContext } from "../../context";
 import { Navigation } from "../Navigation";
 import { Card } from "../Card";
