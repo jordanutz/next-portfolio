@@ -1,7 +1,12 @@
 import React, { createContext, useRef, useState } from "react";
-import styles from "../styles/dark.module.css";
 
-export const AppContext = createContext();
+export const AppContext = createContext({
+   about: null,
+   skills: null,
+   experience: null,
+   portfolio: null,
+   contact: null,
+});
 
 export const AppProvider = ({ children }) => {
    const entries = {
@@ -13,27 +18,18 @@ export const AppProvider = ({ children }) => {
    };
 
    const [activeCard, setActiveCard] = useState(null);
-   const [showNav, setShowNav] = useState(false);
-   const [isContactInView, setIsContactInView] = useState(false);
 
    // Dark Theme Controls
    const [darkTheme, setDarkTheme] = useState(true);
-   const handleSmoothScroll = (id) =>
-      id.scrollIntoView({ block: "start", behavior: "smooth" });
 
    return (
       <AppContext.Provider
          value={{
             entries,
-            handleSmoothScroll,
             activeCard,
             setActiveCard,
-            showNav,
-            setShowNav,
             darkTheme,
             setDarkTheme,
-            isContactInView,
-            setIsContactInView,
          }}
       >
          {children}

@@ -1,13 +1,8 @@
-import { ReactNode, FC } from "react";
-import styles from "./Tag.module.css";
-
-interface TagProps {
-   title: string;
-   icon: ReactNode;
-}
+import { FC } from "react";
+import { TagProps } from "../../models/tag";
 
 export const Tag: FC<TagProps> = ({ title, icon }) => (
-   <section className={styles.tag}>
+   <section className="tag">
       {icon}
       <span>{title}</span>
    </section>

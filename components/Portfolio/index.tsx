@@ -1,39 +1,33 @@
-/* eslint-disable @next/next/no-img-element */
-import React, { useContext } from "react";
-import { AppContext } from "../../context";
+import useAppContext from "../../context/useContext";
 import { Container } from "../Container";
+
 import { Card } from "../Card";
 import { Anchor } from "../Anchor";
 import { data } from "./data";
+
 import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
 
-import styles from "./Portfolio.module.css";
-
 export const Portfolio = () => {
-   const context = useContext(AppContext);
+   const { entries } = useAppContext();
+
    return (
-      <Container ref={context.entries.portfolio} id="portfolio" offset={4}>
-         <Card className={styles.portfolio__card} title="Portfolio">
-            <section className={styles.portfolio__container}>
+      <Container ref={entries.portfolio} id="portfolio" offset={4}>
+         <Card className="portfolio__card" title="Portfolio">
+            <section className="portfolio__container">
                {data.map((project) => (
-                  <section
-                     className={styles.portfolio__project}
-                     key={project.id}
-                  >
-                     <div className={styles.portfolio__overlay}></div>
+                  <section className="portfolio__project" key={project.id}>
+                     <div className="portfolio__overlay"></div>
                      <img
-                        className={styles.portfolio__img}
+                        className="portfolio__img"
                         src={project.image}
                         alt={project.title}
                      />
-                     <div className={styles.portfolio__details}>
-                        <h3 className={styles.portfolio__title}>
-                           {project.title}
-                        </h3>
-                        <p className={styles.portfolio__description}>
+                     <div className="portfolio__details">
+                        <h3 className="portfolio__title">{project.title}</h3>
+                        <p className="portfolio__description">
                            {project.description}
                         </p>
-                        <section className={styles.portfolio__social}>
+                        <section className="portfolio__social">
                            <Anchor href={project.github}>
                               <RiGithubFill />
                            </Anchor>

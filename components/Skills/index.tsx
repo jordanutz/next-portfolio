@@ -1,17 +1,17 @@
-import { useContext } from "react";
-import { AppContext } from "../../context";
+import useAppContext from "../../context/useContext";
+import { skills } from "./data";
+
 import { Container } from "../Container";
 import { Card } from "../Card";
 import { Tag } from "../Tag";
-import { skillsData } from "./data";
-import styles from "./Skills.module.css";
 
 export const Skills = () => {
-   const context = useContext(AppContext);
+   const { entries } = useAppContext();
+
    return (
-      <Container id="skills" ref={context.entries.skills} offset={2}>
-         <Card className={styles.skills__card} title="Skills">
-            <p className={styles.skills__paragraph}>
+      <Container id="skills" ref={entries.skills} offset={2}>
+         <Card className="skills__card" title="Skills">
+            <p className="skills__paragraph">
                My technical skillset is grounded in all areas existing within
                the domain of the browser. I take immense enjoyment in leveraging
                React to write lean, reusable components and scalable JavaScript
@@ -21,8 +21,8 @@ export const Skills = () => {
                seamlessly across multiple devices and browsers, and are
                accessible to all users.
             </p>
-            <section className={styles.skills__content}>
-               {skillsData.map((skills) => (
+            <section className="skills__content">
+               {skills.map((skills) => (
                   <Tag key={skills.id} {...skills} />
                ))}
             </section>

@@ -7,9 +7,18 @@
    max-width: 700px;
 }
 
+.card__container {
+   padding: 0;
+   width: 100%;
+}
+
 .card__content {
    display: block;
    padding: 24px;
+}
+
+.card__body {
+   padding: 32px !important;
 }
 
 .card__title {
@@ -46,7 +55,7 @@
    object-position: top;
 }
 
-main .card {
+.card {
    background-color: rgba(255, 255, 255, 0.889);
    color: var(--fonr-primary);
    display: flex;
@@ -58,7 +67,7 @@ main .card {
    position: relative;
 }
 
-/* main .card--arrow::before {
+.card--arrow::before {
    content: "\A";
    border-style: solid;
    border-width: 10px 15px 10px 0;
@@ -69,9 +78,9 @@ main .card {
    left: -15px;
    z-index: 0;
    filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.2));
-} */
+}
 
-/* main .card::after {
+.card::after {
    background-color: #aad7ff;
    color: #999;
    border-radius: 50%;
@@ -88,14 +97,9 @@ main .card {
    position: absolute;
    top: 0;
    left: 0;
-} */
-
-.card__container {
-   padding: 0;
-   width: 100%;
 }
 
-main .card__title::after {
+.card__title::after {
    content: "";
    display: block;
    position: relative;

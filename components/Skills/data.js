@@ -17,7 +17,7 @@ import {
    SiJest,
 } from "react-icons/si";
 
-export const skillsData = [
+export const skills = [
    { id: 1, title: "HTML5", icon: <SiHtml5 /> },
    { id: 2, title: "CSS3", icon: <SiCss3 /> },
    { id: 3, title: "JavaScript", icon: <SiJavascript /> },

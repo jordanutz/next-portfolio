@@ -1,5 +1,4 @@
 import { FC } from "react";
-import styles from "./Anchor.module.css";
 
 interface AnchorProps {
    className?: string;
@@ -8,7 +7,7 @@ interface AnchorProps {
 
 export const Anchor: FC<AnchorProps> = ({ children, className = "", href }) => (
    <a
-      className={`${styles.anchor} ${className}`}
+      className={`anchor ${className}`}
       href={href}
       rel="noopener noreferrer"
       target="_blank"

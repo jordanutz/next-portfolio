@@ -1,5 +1,4 @@
 import { Anchor } from "../Anchor";
-import styles from "./Social.module.css";
 import {
    RiInstagramLine,
    RiLinkedinFill,
@@ -9,7 +8,7 @@ import {
 } from "react-icons/ri";
 
 export const Social = () => (
-   <section className={styles.social}>
+   <section className="social">
       <Anchor href="https://github.com/jordanutz">
          <RiGithubFill />
       </Anchor>

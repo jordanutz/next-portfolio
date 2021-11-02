@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { ButtonProps } from "../../models/button";
-import styles from "./Button.module.css";
 
 export const Button: FC<ButtonProps> = ({ children, icon, onClick, type }) => {
    const modifiers = {
@@ -11,7 +10,7 @@ export const Button: FC<ButtonProps> = ({ children, icon, onClick, type }) => {
 
    return (
       <button
-         className={`${styles.button} ${styles[modifiers[type]]}`}
+         className={`button ${modifiers[type]}`}
          onClick={onClick}
          type="button"
       >

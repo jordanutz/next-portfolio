@@ -1,12 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { FC, useState, useEffect } from "react";
 import { PageHeader } from "../PageHeader";
-import styles from "./TypeWriter.module.css";
-
-interface TypeWriterProps {
-   words: string[];
-   level: number;
-}
+import { TypeWriterProps } from "../../models/typewriter";
 
 export const TypeWriter: FC<TypeWriterProps> = ({ words, ...rest }) => {
    const [typed, setTyped] = useState("");
@@ -66,7 +61,7 @@ export const TypeWriter: FC<TypeWriterProps> = ({ words, ...rest }) => {
    }, [typed.length, isDeleting, currentIndex]);
 
    return (
-      <section className={styles.typewriter}>
+      <section className="typewriter">
          <PageHeader {...rest}>
             {typed}
             {blink ? <span>|</span> : ""}

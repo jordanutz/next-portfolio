@@ -1,10 +1,9 @@
 import { FC, createElement } from "react";
 import { PageHeaderProps } from "../../models/pageheader";
-import styles from "./PageHeader.module.css";
 
 export const PageHeader: FC<PageHeaderProps> = ({
    children,
-   className,
+   className = "",
    level = 2,
 }) => {
    const modifiers = {
@@ -34,9 +33,7 @@ export const PageHeader: FC<PageHeaderProps> = ({
    return createElement(
       renderTag(),
       {
-         className: `${styles.pageheader} ${styles[modifiers[level]]} ${
-            className ? className : ""
-         }`,
+         className: `pageheader ${modifiers[level]} ${className}`,
       },
       children
    );

@@ -1,56 +1,51 @@
-import { ParallaxLayer } from "@react-spring/parallax";
-import { FC, forwardRef, useContext } from "react";
-import { AppContext } from "../../context";
+import { FC, forwardRef } from "react";
 import { InView } from "react-intersection-observer";
-import styles from "./Container.module.css";
+import { ParallaxLayer } from "@react-spring/parallax";
+import useAppContext from "../../context/useContext";
 
 interface ContainerProps {
    id: string;
-   offset?: number;
+   offset: number;
    ref: any;
 }
 
-export const Container: FC<ContainerProps> = forwardRef<
-   HTMLElement,
-   ContainerProps
->(({ id, children, offset }, forwardRef) => {
-   const context = useContext(AppContext);
+export const Container: FC<ContainerProps> = forwardRef<any, ContainerProps>(
+   ({ id, children, offset }, forwardRef) => {
+      const { setActiveCard } = useAppContext();
 
-   const modifiers = {
-      animate: "container__step--animate",
-   };
+      const modifiers = {
+         animate: "container__step--animate",
+      };
 
-   return (
-      <ParallaxLayer
-         style={{
-            display: "flex",
-            alignItems: "center",
-         }}
-         offset={offset}
-      >
-         <InView
-            threshold={0.5}
-            onChange={(inView) => inView && context.setActiveCard(forwardRef)}
-         >
-            {({ inView, ref }) => {
-               return (
-                  <section ref={forwardRef} id={id}>
-                     <section className={styles.container} ref={ref}>
-                        <section
-                           className={`${styles.container__step} ${
-                              inView ? styles[modifiers.animate] : "".trim()
-                           }`}
-                        ></section>
-                        <section ref={forwardRef} style={{ width: "100%" }}>
-                           {children}
-                        </section>
-                     </section>
-                  </section>
-               );
+      return (
+         <ParallaxLayer
+            style={{
+               display: "flex",
+               alignItems: "center",
             }}
-         </InView>
-      </ParallaxLayer>
-   );
-});
+            ref={forwardRef}
+            offset={offset}
+         >
+            <InView
+               threshold={0.5}
+               onChange={(inView) => inView && setActiveCard(forwardRef)}
+            >
+               {({ inView, ref }) => {
+                  return (
+                     <section className="container" id={id} ref={ref}>
+                        <section
+                           className={`container__step ${
+                              inView ? modifiers.animate : ""
+                           }`}
+                        />
+                        {children}
+                     </section>
+                  );
+               }}
+            </InView>
+         </ParallaxLayer>
+      );
+   }
+);
 
 Container.displayName = "Container";

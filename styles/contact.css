@@ -43,7 +43,7 @@
 
 .contact .contact__card {
    background-color: #fdfbfbd8;
-   max-width: 525px;
+   max-width: 475px;
 }
 
 .contact__card > section {
@@ -60,7 +60,9 @@
 }
 
 .contact__card h4 {
-   font-size: 1.15rem;
+   font-size: 1.25rem;
+   margin-top: 8px;
+   text-align: center;
 }
 
 .contact__card h4 > span {

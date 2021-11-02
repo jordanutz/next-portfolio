@@ -1,41 +1,38 @@
-import React, { useContext } from "react";
+import useAppContext from "../../context/useContext";
+
 import { ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
-import { Cover } from "../Cover";
-import { AppContext } from "../../context";
-import { Card } from "../Card";
-import { Button } from "../Button";
+
 import { Anchor } from "../Anchor";
-import styles from "./Contact.module.css";
+import { Button } from "../Button";
+import { Card } from "../Card";
+import { Cover } from "../Cover";
+
 import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
+
 import ContactImg from "../../assets/contact.jpg";
 
 export const Contact = () => {
-   const context = useContext(AppContext);
+   const { entries, setActiveCard } = useAppContext();
+
    return (
       <ParallaxLayer offset={5}>
          <InView
             threshold={0.25}
-            onChange={(inView) => {
-               inView && context.setActiveCard(context.entries.contact);
-               context.setIsContactInView(inView);
-            }}
+            onChange={(inView) => inView && setActiveCard(entries.contact)}
          >
             {({ inView, ref }) => {
                return (
                   <Cover image={ContactImg.src}>
-                     <section className={styles.contact} ref={ref} id="contact">
-                        <section ref={context.entries.contact}>
-                           <h2 className={styles.contact__header}>Contact</h2>
-                           <Card
-                              className={styles.contact__card}
-                              showArrow={false}
-                           >
-                              <section className={styles.contact__icon}>
+                     <section className="contact" ref={ref} id="contact">
+                        <section ref={entries.contact}>
+                           <h2 className="contact__header">Contact</h2>
+                           <Card className="contact__card" showArrow={false}>
+                              <section className="contact__icon">
                                  <AiOutlineMail />
                               </section>
-                              <section className={styles.contact__overlay}>
+                              <section className="contact__overlay">
                                  <h4>
                                     Let&apos;s <span>Connect!</span>
                                  </h4>

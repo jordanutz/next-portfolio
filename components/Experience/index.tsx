@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState, useContext } from "react";
-import { AppContext } from "../../context";
+import React, { useState } from "react";
+import useAppContext from "../../context/useContext";
+
 import { Container } from "../Container";
 import { Carousel } from "../Carousel";
 import { Card } from "../Card";
 import { Tag } from "../Tag";
 import { experienceData } from "./data";
-import { AiTwotoneCalendar } from "react-icons/ai";
 
-import styles from "./Experience.module.css";
+import { AiTwotoneCalendar } from "react-icons/ai";
 
 import elink from "./assets/elink.jpg";
 import webstaurant from "./assets/webstaurant.jpg";
@@ -16,22 +16,23 @@ import kroger from "./assets/kroger.jpg";
 import devmountain from "./assets/devmountain.jpg";
 
 export const Experience = () => {
-   const context = useContext(AppContext);
+   const { entries } = useAppContext();
+
    const indicators = [kroger, webstaurant, elink, devmountain];
    const [active, setActive] = useState(0);
 
    return (
-      <Container ref={context.entries.experience} id="experience" offset={3}>
+      <Container ref={entries.experience} id="experience" offset={3}>
          <Card title="Experience">
-            <section className={styles.experience__grid}>
+            <section className="experience__grid">
                {experienceData.map(
                   (experience, index) =>
                      active === index && (
                         <section
-                           className={styles.experience__section}
+                           className="experience__section"
                            key={experience.id}
                         >
-                           <section className={styles.experience__details}>
+                           <section className="experience__details">
                               <h4>
                                  {`${experience.role} | `}
                                  <span>{`${experience.company}`}</span>
@@ -41,11 +42,11 @@ export const Experience = () => {
                                  title={experience.date}
                               />
                            </section>
-                           <ul className={styles.experience__list}>
+                           <ul className="experience__list">
                               {experience.responsibilities.map(
                                  (responsibility, index) => (
                                     <li
-                                       className={styles.experience__item}
+                                       className="experience__item"
                                        key={index}
                                     >
                                        {responsibility}

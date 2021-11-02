@@ -1,51 +1,33 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { handleCarouselControls } from "./helpers";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import styles from "./Carousel.module.css";
 
 export const Carousel = ({ indicators, active, setActive }) => {
    const modifiers = {
       active: "carousel__image--active",
    };
 
-   const handleCarouselControls = (control) => {
-      const indicatorsTotal = indicators.length - 1;
-
-      if (control == "increment") {
-         if (active < indicatorsTotal) {
-            setActive(active + 1);
-            return;
-         }
-
-         setActive(0);
-         return;
-      }
-
-      if (control === "decrement") {
-         if (active === 0) {
-            setActive(indicatorsTotal);
-            return;
-         }
-
-         setActive(active - 1);
-         return;
-      }
-   };
-
    return (
-      <section className={styles.carousel}>
+      <section className="carousel">
          <button
-            className={styles.carousel__arrow}
-            onClick={() => handleCarouselControls("decrement")}
+            className="carousel__arrow"
+            onClick={() =>
+               handleCarouselControls(
+                  "decrement",
+                  indicators,
+                  active,
+                  setActive
+               )
+            }
          >
-            <BsArrowLeftShort className={styles.carousel__icon} />
+            <BsArrowLeftShort className="carousel__icon" />
          </button>
-         <section className={styles.carousel__widget}>
+         <section className="carousel__widget">
             {indicators.map((image, index) => (
                <button
                   onClick={() => setActive(index)}
-                  className={`${styles.carousel__button} ${
-                     active === index ? styles[modifiers.active] : ""
+                  className={`carousel__button ${
+                     active === index ? modifiers.active : ""
                   }`}
                   key={index}
                   style={{ backgroundImage: `url(${image.src})` }}
@@ -53,10 +35,17 @@ export const Carousel = ({ indicators, active, setActive }) => {
             ))}
          </section>
          <button
-            className={styles.carousel__arrow}
-            onClick={() => handleCarouselControls("increment")}
+            className="carousel__arrow"
+            onClick={() =>
+               handleCarouselControls(
+                  "increment",
+                  indicators,
+                  active,
+                  setActive
+               )
+            }
          >
-            <BsArrowRightShort className={styles.carousel__icon} />
+            <BsArrowRightShort className="carousel__icon" />
          </button>
       </section>
    );
