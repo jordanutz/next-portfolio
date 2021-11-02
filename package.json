@@ -9,6 +9,7 @@
       "lint": "next lint"
    },
    "dependencies": {
+      "@react-spring/parallax": "^9.3.0",
       "@storybook/addon-a11y": "^6.3.5",
       "next": "^11.1.2",
       "react": "17.0.2",

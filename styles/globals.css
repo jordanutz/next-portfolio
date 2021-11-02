@@ -26,14 +26,6 @@ body {
    font-weight: 300;
 }
 
-.content {
-   background-color: var(--bg-primary);
-   min-height: 100vh;
-   padding-left: 450px;
-   display: grid;
-   grid-template-columns: 100px 8fr;
-}
-
 hr {
    box-sizing: content-box; /* 1 */
    height: 0; /* 1 */
@@ -185,20 +177,20 @@ ul {
 }
 
 .content li {
-   list-style-type: none;
+   list-style-type: none !important;
    position: relative;
    margin-bottom: 8px;
-   padding-left: 24px;
+   /* padding-left: 24px; */
 }
 
-.content li::before {
+/* .content li::before {
    color: hsl(0, 0%, 25%);
    content: "\25A0";
    font-size: 22px;
    position: absolute;
    left: -8px;
    top: -6px;
-}
+} */
 
 /**
  * Remove the inner border and padding in Firefox.

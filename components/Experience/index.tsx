@@ -21,8 +21,8 @@ export const Experience = () => {
    const [active, setActive] = useState(0);
 
    return (
-      <Container ref={context.entries.experience} id="experience">
-         <Card className={styles.experience__card} title="Experience">
+      <Container ref={context.entries.experience} id="experience" offset={3}>
+         <Card title="Experience">
             <section className={styles.experience__grid}>
                {experienceData.map(
                   (experience, index) =>
@@ -56,7 +56,6 @@ export const Experience = () => {
                         </section>
                      )
                )}
-
                <Carousel
                   indicators={indicators}
                   active={active}

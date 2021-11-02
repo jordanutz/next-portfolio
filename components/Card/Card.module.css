@@ -4,14 +4,12 @@
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
    position: relative;
    border-radius: 0.5rem;
-}
-
-.dark .card {
-   background-color: red !important;
+   max-width: 700px;
 }
 
 .card__content {
    display: block;
+   padding: 24px;
 }
 
 .card__title {
@@ -53,14 +51,14 @@ main .card {
    color: var(--fonr-primary);
    display: flex;
    align-items: center;
-   opacity: 0;
+   /* opacity: 0; */
 }
 
 .card--arrow {
    position: relative;
 }
 
-main .card--arrow::before {
+/* main .card--arrow::before {
    content: "\A";
    border-style: solid;
    border-width: 10px 15px 10px 0;
@@ -71,9 +69,9 @@ main .card--arrow::before {
    left: -15px;
    z-index: 0;
    filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.2));
-}
+} */
 
-main .card::after {
+/* main .card::after {
    background-color: #aad7ff;
    color: #999;
    border-radius: 50%;
@@ -90,9 +88,9 @@ main .card::after {
    position: absolute;
    top: 0;
    left: 0;
-}
+} */
 
-main .card__container {
+.card__container {
    padding: 0;
    width: 100%;
 }
@@ -107,22 +105,18 @@ main .card__title::after {
    width: 100%;
 }
 
-main .card__content {
-   padding: 32px;
-}
-
-main .card--animate-in {
+/* main .card--animate-in {
    -webkit-animation-duration: 1s;
    animation-duration: 1s;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
    -webkit-animation-name: fadeInLeft;
    animation-name: fadeInLeft;
-}
+} */
 
 /* Animations */
 
-@keyframes fadeInLeft {
+/* @keyframes fadeInLeft {
    from {
       opacity: 0;
       -webkit-transform: translate3d(15%, 0, 0);
@@ -134,9 +128,9 @@ main .card--animate-in {
       -webkit-transform: none;
       transform: none;
    }
-}
+} */
 
-@-webkit-keyframes fadeInLeft {
+/* @-webkit-keyframes fadeInLeft {
    from {
       opacity: 0;
       -webkit-transform: translate3d(15%, 0, 0);
@@ -148,4 +142,4 @@ main .card--animate-in {
       -webkit-transform: none;
       transform: none;
    }
-}
+} */

@@ -10,12 +10,10 @@
    content: "";
    background-color: hsl(0deg 5% 89%);
    position: absolute;
-   left: 50%;
+   left: 72px;
    width: 2px;
-   left: 50%;
-   height: 100%;
+   height: 100vh;
    z-index: 1;
-   transform: translateX(-50%);
 }
 
 .step {

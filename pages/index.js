@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
-import { AppContext } from "../context";
+import React from "react";
 import Head from "next/head";
-import { Cover } from "../components/Cover";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
 import { Steps } from "../components/Steps";
@@ -11,34 +10,28 @@ import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
 import { Title } from "../components/Title";
 
-import ContactImg from "../assets/contact.jpg";
-
-const Index = () => {
-   const context = useContext(AppContext);
-
-   return (
-      <div>
-         <Head>
-            <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
-         </Head>
-         <Aside />
-         <main>
+const Index = () => (
+   <div>
+      <Head>
+         <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
+      </Head>
+      <main className="content">
+         <Parallax pages={6} innerStyle={{ zIndex: 9 }}>
             <Title />
-            <section className="content">
-               <Steps />
-               <section>
-                  <About />
-                  <Skills />
-                  <Experience />
-                  <Portfolio />
-               </section>
-            </section>
-            <Cover image={ContactImg.src}>
-               <Contact />
-            </Cover>
-         </main>
-      </div>
-   );
-};
+            <ParallaxLayer
+               sticky={{ start: 1, end: 4 }}
+               style={{ width: "25%", zIndex: 10 }}
+            >
+               <Aside />
+            </ParallaxLayer>
+            <About />
+            <Skills />
+            <Experience />
+            <Portfolio />
+            <Contact />
+         </Parallax>
+      </main>
+   </div>
+);
 
 export default Index;

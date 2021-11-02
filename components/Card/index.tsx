@@ -41,7 +41,7 @@ export const Card: FC<CardProps> = ({
    const cardAnimation = inView ? styles[modifiers.animate] : "";
 
    return (
-      <section className={cn(cardClass, cardAnimation.trim())} ref={ref}>
+      <section className={cardClass} ref={ref}>
          {cardImage}
          <section className={styles.card__container}>
             <section className={styles.card__content}>

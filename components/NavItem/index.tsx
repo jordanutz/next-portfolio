@@ -16,9 +16,9 @@ export const NavItem: FC<NavItemProps> = forwardRef<HTMLElement, NavItemProps>(
       const generateActiveClass = () => {
          if (!context.activeCard) return;
 
-         if (context.activeCard.current.id === ref.current.id) {
-            return styles[modifiers.active];
-         }
+         // if (context.activeCard.current.id === ref.current.id) {
+         //    return styles[modifiers.active];
+         // }
       };
 
       return (

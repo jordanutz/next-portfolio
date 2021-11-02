@@ -1,11 +1,10 @@
 .container {
-   min-height: 100vh;
-   margin: 0 32px 0 0;
+   width: 100%;
+   margin: 0 32px 0 570px;
    display: flex;
    align-items: center;
    position: relative;
    background-color: transparent;
-   max-width: 700px;
 }
 
 .container__step {
@@ -16,15 +15,12 @@
    border-radius: 50%;
    height: 25px;
    width: 25px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    transition: 0.4s ease;
-   z-index: 1;
+   z-index: 99;
    box-shadow: 0 0 0 0 rgb(90, 84, 84);
    top: 50%;
    transform: translateY(-50%) scale(0.95);
-   left: -64px;
+   left: -62px;
 }
 
 .container__step--animate {

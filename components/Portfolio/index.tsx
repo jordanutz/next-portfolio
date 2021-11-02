@@ -12,7 +12,7 @@ import styles from "./Portfolio.module.css";
 export const Portfolio = () => {
    const context = useContext(AppContext);
    return (
-      <Container ref={context.entries.portfolio} id="portfolio">
+      <Container ref={context.entries.portfolio} id="portfolio" offset={4}>
          <Card className={styles.portfolio__card} title="Portfolio">
             <section className={styles.portfolio__container}>
                {data.map((project) => (

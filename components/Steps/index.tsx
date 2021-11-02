@@ -1,5 +1,4 @@
 import styles from "./Steps.module.css";
+import { ParallaxLayer } from "@react-spring/parallax";
 
-export const Steps = () => {
-   return <section className={styles.steps} />;
-};
+export const Steps = () => <section className={styles.steps} />;

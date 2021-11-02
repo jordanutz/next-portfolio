@@ -9,7 +9,7 @@ import styles from "./Skills.module.css";
 export const Skills = () => {
    const context = useContext(AppContext);
    return (
-      <Container id="skills" ref={context.entries.skills}>
+      <Container id="skills" ref={context.entries.skills} offset={2}>
          <Card className={styles.skills__card} title="Skills">
             <p className={styles.skills__paragraph}>
                My technical skillset is grounded in all areas existing within

@@ -1,4 +1,5 @@
 import React, { FC } from "react";
+import { ParallaxLayer } from "@react-spring/parallax";
 import styles from "./Cover.module.css";
 
 interface CoverProps {
@@ -7,10 +8,12 @@ interface CoverProps {
 }
 
 export const Cover: FC<CoverProps> = ({ className, children, image }) => (
-   <section
-      className={`${styles.cover} ${className ? className : ""}`}
-      style={{ backgroundImage: `url(${image})` }}
-   >
-      {children}
-   </section>
+   <ParallaxLayer offset={0}>
+      <section
+         className={`${styles.cover} ${className ? className : ""}`}
+         style={{ backgroundImage: `url(${image})` }}
+      >
+         {children}
+      </section>
+   </ParallaxLayer>
 );

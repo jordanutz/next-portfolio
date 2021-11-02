@@ -1,15 +1,8 @@
 .aside {
-   background-size: cover;
-   background-position: 100%;
-   background-attachment: scroll;
-   min-height: 100vh;
-   width: 300px;
-   position: fixed;
-   left: 0;
-   top: 0;
+   width: 450px;
+   height: 100%;
    display: flex;
    align-items: center;
-   z-index: 3;
 }
 
 .aside::before {
@@ -25,13 +18,12 @@
 }
 
 .aside__card {
-   width: 294px;
-   position: fixed;
-   top: 50%;
-   transform: translate(50%, -50%);
+   min-width: 294px;
    text-align: center;
    z-index: 2;
    border-radius: 0.5rem;
+   flex-direction: column;
+   margin-left: 36px;
 }
 
 .aside__subheader {
@@ -41,7 +33,7 @@
 .aside__quicklinks {
    display: flex;
    justify-content: space-between;
-   padding: 0 16px 16px;
+   padding: 0 16px 0;
 }
 
 .aside img {
@@ -49,7 +41,6 @@
    border-top-right-radius: 0.5rem;
 }
 
-.absolute {
-   position: static;
-   transform: translate(34px, -50%);
+aside .card__content {
+   padding: 16px !important;
 }
