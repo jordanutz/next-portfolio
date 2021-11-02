@@ -7,16 +7,11 @@
 }
 
 /* 
-Dark Theme Variables:
-
-.card {
-   background: #1f2328;
-
-*/
+Dark Theme Variables:*/
 
 html {
-   line-height: 1.5; /* 1 */
-   -webkit-text-size-adjust: 100%; /* 2 */
+   line-height: 1.5;
+   -webkit-text-size-adjust: 100%;
    background-color: var(--bg-primary);
 }
 
@@ -175,22 +170,6 @@ ul {
 .relative {
    position: relative;
 }
-
-.content li {
-   list-style-type: none !important;
-   position: relative;
-   margin-bottom: 8px;
-   /* padding-left: 24px; */
-}
-
-/* .content li::before {
-   color: hsl(0, 0%, 25%);
-   content: "\25A0";
-   font-size: 22px;
-   position: absolute;
-   left: -8px;
-   top: -6px;
-} */
 
 /**
  * Remove the inner border and padding in Firefox.

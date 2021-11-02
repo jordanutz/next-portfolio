@@ -18,7 +18,6 @@ import "../styles/pageheader.css";
 import "../styles/portfolio.css";
 import "../styles/skills.css";
 import "../styles/social.css";
-import "../styles/steps.css";
 import "../styles/tag.css";
 import "../styles/title.css";
 import "../styles/typewriter.css";

@@ -3,7 +3,6 @@ import Head from "next/head";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
-import { Steps } from "../components/Steps";
 import { Skills } from "../components/Skills";
 import { Experience } from "../components/Experience";
 import { Portfolio } from "../components/Portfolio";

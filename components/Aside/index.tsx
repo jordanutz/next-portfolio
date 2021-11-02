@@ -3,7 +3,6 @@ import { Card } from "../Card";
 import { Navigation } from "../Navigation";
 import { PageHeader } from "../PageHeader";
 import { Social } from "../Social";
-import { Steps } from "../Steps";
 
 export const Aside = () => (
    <aside className="aside">
@@ -11,6 +10,7 @@ export const Aside = () => (
       <Card
          className="aside__card"
          image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
+         showArrow={false}
       >
          <section className="aside__subheader">
             <PageHeader level={2}>Jordan Utz</PageHeader>
@@ -32,6 +32,5 @@ export const Aside = () => (
             </Anchor>
          </section>
       </Card>
-      <Steps />
    </aside>
 );

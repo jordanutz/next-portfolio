@@ -26,6 +26,10 @@
    margin-left: 36px;
 }
 
+aside .card__content {
+   padding: 16px;
+}
+
 .aside__subheader {
    padding-top: 8px;
 }
@@ -39,8 +43,4 @@
 .aside img {
    border-top-left-radius: 0.5rem;
    border-top-right-radius: 0.5rem;
-}
-
-aside .card__content {
-   padding: 16px !important;
 }

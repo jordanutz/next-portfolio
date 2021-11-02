@@ -1,7 +1,10 @@
 import { FC, forwardRef } from "react";
+import useAppContext from "../../context/useContext";
+
 import { InView } from "react-intersection-observer";
 import { ParallaxLayer } from "@react-spring/parallax";
-import useAppContext from "../../context/useContext";
+
+import { Steps } from "../Steps";
 
 interface ContainerProps {
    id: string;
@@ -34,9 +37,7 @@ export const Container: FC<ContainerProps> = forwardRef<any, ContainerProps>(
                   return (
                      <section className="container" id={id} ref={ref}>
                         <section
-                           className={`container__step ${
-                              inView ? modifiers.animate : ""
-                           }`}
+                           className={`container__step ${modifiers.animate}`}
                         />
                         {children}
                      </section>

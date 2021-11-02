@@ -23,7 +23,7 @@ export const Experience = () => {
 
    return (
       <Container ref={entries.experience} id="experience" offset={3}>
-         <Card title="Experience">
+         <Card title="Experience" className="card--bulleted">
             <section className="experience__grid">
                {experienceData.map(
                   (experience, index) =>

@@ -1,16 +1,13 @@
 .pageheader {
    font-family: "museo-sans-display";
-   margin-bottom: 0;
+   margin-bottom: 4px;
    letter-spacing: -0.5px;
    color: var(--primary);
    font-weight: 900;
 }
 
 .pageheader--1,
-.pageheader--2 {
-   color: var(--primary);
-}
-
+.pageheader--2,
 .pageheader--3,
 .pageheader--4,
 .pageheader--5,

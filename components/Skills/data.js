@@ -1,9 +1,10 @@
 import { AiOutlineAntDesign } from "react-icons/ai";
+import { DiPhonegap } from "react-icons/di";
 import { ImAccessibility } from "react-icons/im";
+import { MdComputer } from "react-icons/md";
 import {
    SiRedux,
    SiGatsby,
-   SiAdobephonegap,
    SiWebpack,
    SiSass,
    SiHtml5,
@@ -11,10 +12,9 @@ import {
    SiCss3,
    SiTypescript,
    SiReact,
-   SiNextDotJs,
+   SiNextdotjs,
    SiTailwindcss,
    SiJavascript,
-   SiJest,
 } from "react-icons/si";
 
 export const skills = [
@@ -25,13 +25,13 @@ export const skills = [
    { id: 5, title: "Redux", icon: <SiRedux /> },
    { id: 6, title: "TypeScript", icon: <SiTypescript /> },
    { id: 7, title: "Webpack", icon: <SiWebpack /> },
-   // { id: 8, title: "Next.js", icon: <SiNextDotJs /> },
+   { id: 8, title: "Next.js", icon: <SiNextdotjs /> },
    { id: 9, title: "Gatsby", icon: <SiGatsby /> },
    { id: 10, title: "Sass", icon: <SiSass /> },
    { id: 11, title: "Tailwind", icon: <SiTailwindcss /> },
    { id: 12, title: "Bootstrap 4", icon: <SiBootstrap /> },
    { id: 13, title: "Ant Design", icon: <AiOutlineAntDesign /> },
-   // { id: 14, title: "Unit Testing", icon: <SiJest /> },
-   // { id: 15, title: "Res. Design", icon: <SiAdobephonegap /> },
+   { id: 14, title: "Unit Testing", icon: <MdComputer /> },
+   { id: 15, title: "Res. Design", icon: <DiPhonegap /> },
    { id: 16, title: "A11y", icon: <ImAccessibility /> },
 ];

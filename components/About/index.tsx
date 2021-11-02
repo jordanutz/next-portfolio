@@ -5,10 +5,9 @@ import { Anchor } from "../Anchor";
 
 export const About = () => {
    const { entries } = useAppContext();
-   console.log(entries);
    return (
       <Container id="about" ref={null} offset={1} ref={entries.about}>
-         <Card title="About">
+         <Card title="About" className="card--bulleted">
             <section className="about__details">
                <p>
                   Hey there! My name is Jordan and I powered up my development

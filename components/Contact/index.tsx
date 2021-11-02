@@ -33,9 +33,7 @@ export const Contact = () => {
                                  <AiOutlineMail />
                               </section>
                               <section className="contact__overlay">
-                                 <h4>
-                                    Let&apos;s <span>Connect!</span>
-                                 </h4>
+                                 <h3>Let's Connect!</h3>
                                  <p>
                                     If you have an employment opportunity in St.
                                     Petersburg, Florida for a{" "}
