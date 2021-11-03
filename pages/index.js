@@ -1,6 +1,8 @@
 import React from "react";
+import useAppContext from "../context/useContext";
 import Head from "next/head";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Navigation } from "../components/Navigation";
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
 import { Skills } from "../components/Skills";
@@ -9,28 +11,37 @@ import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
 import { Title } from "../components/Title";
 
-const Index = () => (
-   <div>
-      <Head>
-         <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
-      </Head>
-      <main className="content">
-         <Parallax pages={6} innerStyle={{ zIndex: 9 }}>
-            <Title />
-            <ParallaxLayer
-               sticky={{ start: 1, end: 4 }}
-               style={{ width: "25%", zIndex: 10 }}
-            >
-               <Aside />
-            </ParallaxLayer>
-            <About />
-            <Skills />
-            <Experience />
-            <Portfolio />
-            <Contact />
-         </Parallax>
-      </main>
-   </div>
-);
+const Index = () => {
+   const { parallax } = useAppContext();
 
+   return (
+      <div>
+         <Head>
+            <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
+         </Head>
+         <main className="content">
+            <Parallax pages={6} ref={parallax}>
+               <Title offset={0} />
+               <ParallaxLayer
+                  sticky={{ start: 1, end: 5 }}
+                  style={{ display: "flex", width: "10%", zIndex: 3 }}
+               >
+                  <Navigation />
+               </ParallaxLayer>
+               <ParallaxLayer
+                  sticky={{ start: 1, end: 4 }}
+                  style={{ width: "25%", zIndex: 2 }}
+               >
+                  <Aside />
+               </ParallaxLayer>
+               <About />
+               <Skills />
+               <Experience />
+               <Portfolio />
+               <Contact />
+            </Parallax>
+         </main>
+      </div>
+   );
+};
 export default Index;

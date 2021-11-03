@@ -16,12 +16,13 @@ import { BsFillCursorFill } from "react-icons/bs";
 
 export const Title = ({ offset }) => {
    const titleRef = useRef();
-   const { setActiveCard } = useAppContext();
+   const { setActiveCard, scroll } = useAppContext();
+
    return (
-      <ParallaxLayer offset={0}>
+      <ParallaxLayer offset={offset}>
          <InView
             threshold={0}
-            onChange={(inView) => inView && setActiveCard(null)}
+            onChange={(inView) => inView && setActiveCard(0)}
          >
             {({ inView, ref }) => {
                return (
@@ -41,7 +42,7 @@ export const Title = ({ offset }) => {
                         <TypeWriter
                            words={[
                               "Front End Software Engineer.",
-                              "Arcade Ninja.",
+                              "Kentucky Wildcat.",
                               "Sun Chaser.",
                            ]}
                            level={2}
@@ -65,6 +66,7 @@ export const Title = ({ offset }) => {
                         data-sal-easing="ease-in"
                         data-sal-duration="3000"
                         data-sal-delay="3000"
+                        onClick={() => scroll(1)}
                      />
                      <section className="title__social">
                         <Social />

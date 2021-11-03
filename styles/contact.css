@@ -57,9 +57,10 @@
    position: relative;
    z-index: 3;
    padding: 1rem 0;
+   text-align: center;
 }
 
-.contact__card h4 {
+.contact__card h3 {
    font-size: 1.25rem;
    margin-top: 8px;
    text-align: center;

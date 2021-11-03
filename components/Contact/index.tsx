@@ -20,7 +20,7 @@ export const Contact = () => {
       <ParallaxLayer offset={5}>
          <InView
             threshold={0.25}
-            onChange={(inView) => inView && setActiveCard(entries.contact)}
+            onChange={(inView) => inView && setActiveCard(5)}
          >
             {({ inView, ref }) => {
                return (

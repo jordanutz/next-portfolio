@@ -4,8 +4,6 @@ import useAppContext from "../../context/useContext";
 import { InView } from "react-intersection-observer";
 import { ParallaxLayer } from "@react-spring/parallax";
 
-import { Steps } from "../Steps";
-
 interface ContainerProps {
    id: string;
    offset: number;
@@ -31,7 +29,7 @@ export const Container: FC<ContainerProps> = forwardRef<any, ContainerProps>(
          >
             <InView
                threshold={0.5}
-               onChange={(inView) => inView && setActiveCard(forwardRef)}
+               onChange={(inView) => inView && setActiveCard(offset)}
             >
                {({ inView, ref }) => {
                   return (

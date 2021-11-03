@@ -9,6 +9,10 @@ export const AppContext = createContext({
 });
 
 export const AppProvider = ({ children }) => {
+   // Dark Theme Controls
+   const [darkTheme, setDarkTheme] = useState(true);
+
+   const [activeCard, setActiveCard] = useState(0);
    const entries = {
       about: useRef(),
       skills: useRef(),
@@ -17,18 +21,24 @@ export const AppProvider = ({ children }) => {
       contact: useRef(),
    };
 
-   const [activeCard, setActiveCard] = useState(null);
+   const parallax = useRef(null);
 
-   // Dark Theme Controls
-   const [darkTheme, setDarkTheme] = useState(true);
+   const scroll = (card) => {
+      if (parallax.current) {
+         parallax.current.scrollTo(card);
+         setActiveCard(card);
+      }
+   };
 
    return (
       <AppContext.Provider
          value={{
-            entries,
             activeCard,
-            setActiveCard,
+            entries,
             darkTheme,
+            parallax,
+            scroll,
+            setActiveCard,
             setDarkTheme,
          }}
       >

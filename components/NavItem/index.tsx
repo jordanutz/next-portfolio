@@ -1,31 +1,28 @@
-import { FC, forwardRef } from "react";
 import useAppContext from "../../context/useContext";
-
 import { Button } from "../Button";
 import { NavItemProps } from "../../models/navitem";
 
-export const NavItem: FC<NavItemProps> = forwardRef<HTMLElement, NavItemProps>(
-   ({ title, inView, ...rest }, forwardRef) => {
-      const { activeCard } = useAppContext();
+export const NavItem = ({ title, inView, card, ...rest }: NavItemProps) => {
+   const { activeCard, scroll } = useAppContext();
 
-      const modifiers = {
-         active: "nav-item--active",
-      };
+   const generateActiveClass = () => {
+      if (!activeCard) return;
 
-      const generateActiveClass = () => {
-         if (activeCard) return;
+      if (activeCard === card) {
+         return "nav-item--active";
+      }
+   };
 
-         // if (context.activeCard.current.id === forwardRef.current.id) {
-         //    return styles[modifiers.active];
-         // }
-      };
-
-      return (
-         <li className={`navItem ${generateActiveClass()}`}>
-            <Button type="link" {...rest} aria-label={title} />
-         </li>
-      );
-   }
-);
+   return (
+      <li className={`navItem ${generateActiveClass()}`}>
+         <Button
+            type="link"
+            onClick={() => scroll(card)}
+            aria-label={title}
+            {...rest}
+         />
+      </li>
+   );
+};
 
 NavItem.displayName = "NavItem";

@@ -17,13 +17,13 @@
    opacity: 0.85;
 }
 
-.aside__card {
-   min-width: 294px;
+.card.aside__card {
+   max-width: 294px;
+   transform: translateX(calc(72px + 84px));
    text-align: center;
    z-index: 2;
    border-radius: 0.5rem;
    flex-direction: column;
-   margin-left: 36px;
 }
 
 aside .card__content {

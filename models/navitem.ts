@@ -1,7 +1,7 @@
 import { ButtonProps } from "./button";
 
 export interface NavItemProps extends ButtonProps {
-   title: string;
+   card: number;
    inView?: boolean;
-   ref: any;
+   title: string;
 }
