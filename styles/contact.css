@@ -43,27 +43,24 @@
 
 .contact .contact__card {
    background-color: #fdfbfbd8;
-   max-width: 475px;
+   max-width: 450px;
 }
 
 .contact__card > section {
    position: relative;
    display: flex;
    align-items: center;
-   padding-top: 14px;
 }
 
 .contact__card p {
    position: relative;
    z-index: 3;
-   padding: 1rem 0;
-   text-align: center;
+   padding: 4px 0 24px 0;
 }
 
 .contact__card h3 {
-   font-size: 1.25rem;
-   margin-top: 8px;
-   text-align: center;
+   font-size: 1.4rem;
+   margin-top: 16px;
 }
 
 .contact__card h4 > span {
@@ -71,7 +68,7 @@
 }
 
 .contact__card button {
-   margin: 0 auto;
+   width: 100%;
    padding-right: 24px;
    padding-left: 24px;
    font-size: 0.75rem;
@@ -79,4 +76,13 @@
 
 .contact__card button svg {
    font-size: 1rem;
+}
+
+.contact .card__title::after {
+   background-color: rgb(203, 203, 203);
+   height: 1px;
+}
+
+.contact .card__content {
+   padding: 32px 24px;
 }

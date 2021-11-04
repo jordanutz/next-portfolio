@@ -1,18 +1,14 @@
 .card {
-   background: hsl(0, 33%, 99%);
+   background-color: hsl(0, 33%, 99%);
    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
    position: relative;
    border-radius: 0.5rem;
    width: 100%;
    max-width: 700px;
-   color: var(--fonr-primary);
+   color: var(--font-primary);
    display: flex;
    align-items: center;
-}
-
-.card {
-   /* opacity: 0; */
 }
 
 .card__container {
@@ -29,13 +25,12 @@
    padding: 32px !important;
 }
 
-.card__title {
+.card .card__title {
    text-align: center;
    display: inline;
    font-size: 1.75rem;
    font-weight: 800;
    color: var(--font-primary);
-   font-family: museo-sans-display;
    display: -moz-box;
    display: flex;
    -moz-box-align: center;
@@ -83,6 +78,10 @@
    position: relative;
 }
 
+.card--arrow.card {
+   opacity: 0;
+}
+
 .card.card--arrow .card__content {
    padding: 32px;
 }
@@ -121,26 +120,26 @@
 
 .card__title::after {
    content: "";
-   display: block;
+   display: flex;
    position: relative;
    height: 1px;
-   background-color: #e3e3e3a6;
+   background-color: #e3e3e3dc;
    margin-left: 24px;
-   width: 100%;
+   flex-grow: 1;
 }
 
-/* main .card--animate-in {
+.card--arrow.card--animate-in {
    -webkit-animation-duration: 1s;
    animation-duration: 1s;
    -webkit-animation-fill-mode: both;
    animation-fill-mode: both;
    -webkit-animation-name: fadeInLeft;
    animation-name: fadeInLeft;
-} */
+}
 
 /* Animations */
 
-/* @keyframes fadeInLeft {
+@keyframes fadeInLeft {
    from {
       opacity: 0;
       -webkit-transform: translate3d(15%, 0, 0);
@@ -152,9 +151,9 @@
       -webkit-transform: none;
       transform: none;
    }
-} */
+}
 
-/* @-webkit-keyframes fadeInLeft {
+@-webkit-keyframes fadeInLeft {
    from {
       opacity: 0;
       -webkit-transform: translate3d(15%, 0, 0);
@@ -166,4 +165,4 @@
       -webkit-transform: none;
       transform: none;
    }
-} */
+}

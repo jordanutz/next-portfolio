@@ -1,9 +1,7 @@
 .pageheader {
-   font-family: "museo-sans-display";
    margin-bottom: 4px;
    letter-spacing: -0.5px;
    color: var(--primary);
-   font-weight: 900;
 }
 
 .pageheader--1,
@@ -22,6 +20,7 @@
 
 .pageheader--2 {
    font-size: 2.25rem;
+   font-weight: 800;
 }
 
 .pageheader--3 {
@@ -38,4 +37,5 @@
 
 .pageheader--6 {
    font-size: 1rem;
+   font-weight: 600;
 }

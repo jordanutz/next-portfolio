@@ -1,6 +1,6 @@
 .anchor {
    font-size: 1.5rem;
-   color: var(--font-primary);
+   color: var(--primary);
    text-decoration: none;
    font-size: 0.8rem;
    font-weight: 800;
@@ -9,14 +9,6 @@
 }
 
 .anchor:hover {
-   color: var(--primary);
-   transition: 0.2s;
-}
-
-main .anchor {
-   color: var(--primary);
-}
-
-main .anchor:hover {
    color: #006dccd3;
+   transition: 0.2s;
 }

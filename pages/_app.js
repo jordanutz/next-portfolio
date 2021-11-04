@@ -11,6 +11,7 @@ import "../styles/carousel.css";
 import "../styles/contact.css";
 import "../styles/container.css";
 import "../styles/cover.css";
+import "../styles/dark-theme.css";
 import "../styles/experience.css";
 import "../styles/navigation.css";
 import "../styles/navitem.css";
@@ -18,9 +19,11 @@ import "../styles/pageheader.css";
 import "../styles/portfolio.css";
 import "../styles/skills.css";
 import "../styles/social.css";
+import "../styles/switch.css";
 import "../styles/tag.css";
 import "../styles/title.css";
 import "../styles/typewriter.css";
+import "react-toggle/style.css";
 
 function MyApp({ Component, pageProps }) {
    return (

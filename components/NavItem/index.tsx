@@ -6,7 +6,7 @@ export const NavItem = ({ title, inView, card, ...rest }: NavItemProps) => {
    const { activeCard, scroll } = useAppContext();
 
    const generateActiveClass = () => {
-      if (!activeCard) return;
+      if (!activeCard) return "".trim();
 
       if (activeCard === card) {
          return "nav-item--active";
@@ -24,5 +24,3 @@ export const NavItem = ({ title, inView, card, ...rest }: NavItemProps) => {
       </li>
    );
 };
-
-NavItem.displayName = "NavItem";

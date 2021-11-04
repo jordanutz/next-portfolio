@@ -22,7 +22,7 @@ export const Title = ({ offset }) => {
       <ParallaxLayer offset={offset}>
          <InView
             threshold={0}
-            onChange={(inView) => inView && setActiveCard(0)}
+            onChange={(inView) => inView && setActiveCard(null)}
          >
             {({ inView, ref }) => {
                return (
@@ -31,7 +31,6 @@ export const Title = ({ offset }) => {
                      image="https://i.ibb.co/NrcND69/DSC03981-3.jpg"
                   >
                      <section className="title__overlay" ref={ref}>
-                        <Navigation />
                         <img
                            src="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
                            alt="Jordan Utz"
@@ -43,7 +42,6 @@ export const Title = ({ offset }) => {
                            words={[
                               "Front End Software Engineer.",
                               "Kentucky Wildcat.",
-                              "Sun Chaser.",
                            ]}
                            level={2}
                         />

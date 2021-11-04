@@ -12,7 +12,7 @@ import { Contact } from "../components/Contact";
 import { Title } from "../components/Title";
 
 const Index = () => {
-   const { parallax } = useAppContext();
+   const { parallax, isDark } = useAppContext();
 
    return (
       <div>
@@ -20,10 +20,11 @@ const Index = () => {
             <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
          </Head>
          <main className="content">
-            <Parallax pages={6} ref={parallax}>
+            <Parallax pages={6} ref={parallax} className={isDark ? "dark" : ""}>
                <Title offset={0} />
                <ParallaxLayer
-                  sticky={{ start: 1, end: 5 }}
+                  offset={0}
+                  sticky={{ start: 0, end: 5 }}
                   style={{ display: "flex", width: "10%", zIndex: 3 }}
                >
                   <Navigation />

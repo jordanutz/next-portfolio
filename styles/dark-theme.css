@@ -1,3 +1,89 @@
-.dark {
-   background-color: #181b20 !important;
+.content > .dark {
+   background-color: #0c0c19;
+}
+
+/* Navigation ------------------------------------- */
+
+.content > .dark .navigation__nav {
+   background-color: #131320c7;
+}
+
+.content > .dark .navItem > button {
+   color: #e9e6e6;
+}
+
+.content > .dark .nav-item--active > button {
+   color: var(--primary);
+}
+
+.content > .dark .navItem > button:hover {
+   color: var(--primary);
+}
+
+.content > .dark .container::after {
+   background-color: #11111d;
+}
+
+/* Card ------------------------------------- */
+
+.content > .dark .card {
+   background-color: #11111d;
+   color: #e9e6e6;
+}
+
+.content > .dark .card.card--arrow::before {
+   border-color: transparent #11111d transparent transparent !important;
+}
+
+.content > .dark .card h3,
+.content > .dark .card h4,
+.content > .dark .card h5,
+.content > .dark .card h6 {
+   color: #e9e6e6;
+}
+
+.content > .dark .card .pageheader {
+   color: #e9e6e6;
+}
+
+.content > .dark .card.card--bulleted li::before {
+   color: #e9e6e6;
+}
+
+.content > .dark .card__title::after {
+   background-color: #4f4f606e;
+}
+
+/* Anchor ------------------------------------- */
+
+.content > .dark .anchor {
+   color: #78c0fff1;
+}
+
+.content > .dark .anchor:hover {
+   color: #aed9fff1;
+}
+
+/* Carousel ------------------------------------- */
+
+.content > .dark .carousel__icon {
+   color: #fff;
+}
+
+/* Cover ------------------------------------- */
+
+.content > .dark .cover::before {
+   background: linear-gradient(170deg, #01162a 60%, #168ce0);
+   opacity: 0.9;
+}
+
+.content > .dark .title .title__overlay {
+   background-color: #565acd1f;
+}
+
+/* Switch ------------------------------------- */
+
+.content > .dark .switch {
+   background-color: #131320c7;
+   color: #e9e6e6;
 }

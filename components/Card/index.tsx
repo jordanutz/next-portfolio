@@ -21,7 +21,7 @@ export const Card: FC<CardProps> = ({
    };
 
    const cardArrow = showArrow ? modifiers.arrow : "";
-   // const cardAnimation = inView ? modifiers.animate : "";
+   const cardAnimation = inView ? modifiers.animate : "";
    const cardClass = `card ${className} ${cardArrow}`;
    const cardImage = image && (
       <img src={image} className="card__image" alt="" role="presentation" />
@@ -33,7 +33,10 @@ export const Card: FC<CardProps> = ({
    );
 
    return (
-      <section className={`${cardClass} ${className}`} ref={ref}>
+      <section
+         className={`${cardClass} ${className} ${cardAnimation}`}
+         ref={ref}
+      >
          {cardImage}
          <section className="card__container">
             <section className="card__content">

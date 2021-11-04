@@ -1,0 +1,44 @@
+.switch {
+   width: 84px;
+   height: 84px;
+   background: #fdfbfbd1;
+   border-radius: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 16px;
+   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+}
+
+.switch label {
+   font-size: 0.8rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   margin-top: 8px;
+}
+
+/* Overwrites Default Styles to react-toggle */
+
+.switch .react-toggle--checked .react-toggle-track,
+.switch
+   .react-toggle--checked:hover:not(.react-toggle--disabled)
+   .react-toggle-track {
+   background-color: #b7dcfeca;
+}
+
+.switch .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+   background-color: #131320e6;
+}
+
+.switch .react-toggle-track {
+   background-color: #131320c7;
+}
+
+.switch .react-toggle:hover.react-toggle--checked .react-toggle-track {
+   background-color: #72b6f6ca;
+}
+
+.switch .react-toggle--checked .react-toggle-thumb {
+   border-color: var(--primary);
+}

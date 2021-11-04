@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
-import useAppContext from "../../context/useContext";
 
 import { Container } from "../Container";
 import { Carousel } from "../Carousel";
@@ -16,13 +15,11 @@ import kroger from "./assets/kroger.jpg";
 import devmountain from "./assets/devmountain.jpg";
 
 export const Experience = () => {
-   const { entries } = useAppContext();
-
    const indicators = [kroger, webstaurant, elink, devmountain];
    const [active, setActive] = useState(0);
 
    return (
-      <Container ref={entries.experience} id="experience" offset={3}>
+      <Container id="experience" offset={3}>
          <Card title="Experience" className="card--bulleted">
             <section className="experience__grid">
                {experienceData.map(

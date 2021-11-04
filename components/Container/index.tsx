@@ -1,50 +1,34 @@
-import { FC, forwardRef } from "react";
+import { FC } from "react";
+import { ParallaxLayer } from "@react-spring/parallax";
+import { InView } from "react-intersection-observer";
+import { ContainerProps } from "../../models/container";
 import useAppContext from "../../context/useContext";
 
-import { InView } from "react-intersection-observer";
-import { ParallaxLayer } from "@react-spring/parallax";
+export const Container: FC<ContainerProps> = ({ id, children, offset }) => {
+   const { setActiveCard } = useAppContext();
 
-interface ContainerProps {
-   id: string;
-   offset: number;
-   ref: any;
-}
-
-export const Container: FC<ContainerProps> = forwardRef<any, ContainerProps>(
-   ({ id, children, offset }, forwardRef) => {
-      const { setActiveCard } = useAppContext();
-
-      const modifiers = {
-         animate: "container__step--animate",
-      };
-
-      return (
-         <ParallaxLayer
-            style={{
-               display: "flex",
-               alignItems: "center",
-            }}
-            ref={forwardRef}
-            offset={offset}
+   return (
+      <ParallaxLayer
+         style={{
+            display: "flex",
+            alignItems: "center",
+         }}
+         offset={offset}
+         factor={1}
+      >
+         <InView
+            threshold={0.5}
+            onChange={(inView) => inView && setActiveCard(offset)}
          >
-            <InView
-               threshold={0.5}
-               onChange={(inView) => inView && setActiveCard(offset)}
-            >
-               {({ inView, ref }) => {
-                  return (
-                     <section className="container" id={id} ref={ref}>
-                        <section
-                           className={`container__step ${modifiers.animate}`}
-                        />
-                        {children}
-                     </section>
-                  );
-               }}
-            </InView>
-         </ParallaxLayer>
-      );
-   }
-);
-
-Container.displayName = "Container";
+            {({ inView, ref }) => {
+               return (
+                  <section className="container" id={id} ref={ref}>
+                     <section className="container__step container__step--animate" />
+                     {children}
+                  </section>
+               );
+            }}
+         </InView>
+      </ParallaxLayer>
+   );
+};

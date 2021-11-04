@@ -1,35 +1,41 @@
-.navigation {
+.navigation__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: auto auto auto 36px;
+}
+
+.navigation__nav {
    width: 84px;
    background: #fdfbfbd1;
    -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%),
       0 2px 4px -1px rgb(0 0 0 / 6%);
    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
-   margin: auto auto auto 36px;
    z-index: 2;
    opacity: 9;
    border-radius: 0.5rem;
 }
 
-.navigation > .navigation__list {
+.navigation__nav > .navigation__list {
    padding: 0.5rem 0;
    margin: 0;
 }
 
-.navigation > .navigation__list li {
+.navigation__nav > .navigation__list li {
    list-style-type: none;
 }
 
-.navigation > .navigation__list > li:last-child > button {
+.navigation__nav > .navigation__list > li:last-child > button {
    border-bottom: none;
 }
 
-.navigation > .navigation__list > li > button {
+.navigation__nav > .navigation__list > li > button {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
 }
 
-.navigation > .navigation__list > li > button > svg {
+.navigation__nav > .navigation__list > li > button > svg {
    font-size: 1.5rem;
 }
