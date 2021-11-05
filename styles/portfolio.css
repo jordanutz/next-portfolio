@@ -102,3 +102,56 @@
 .portfolio__social svg:hover {
    color: #8cd4ff;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 575px) {
+   .portfolio__container {
+      grid-template-columns: 1fr;
+   }
+
+   .portfolio__project {
+      height: 200px;
+   }
+
+   .portfolio__project h3 {
+      font-size: 1.25rem;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+   .portfolio__container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .portfolio__project {
+      height: 200px;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+   .portfolio__container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .portfolio__project {
+      height: 200px;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+   .portfolio__container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .portfolio__project {
+      height: 225px;
+   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1201px) {
+   /* ...; */
+}

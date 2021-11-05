@@ -39,3 +39,9 @@
 .navigation__nav > .navigation__list > li > button > svg {
    font-size: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+   .navigation__container {
+      display: none;
+   }
+}

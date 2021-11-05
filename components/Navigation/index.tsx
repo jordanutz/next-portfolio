@@ -1,13 +1,18 @@
 import { NavItem } from "../NavItem";
 import { Switch } from "../Switch";
+import { Button } from "../Button";
+import { Block } from "../Block";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
-import { IoIosRocket } from "react-icons/Io";
+import { IoIosRocket, IoIosMenu } from "react-icons/Io";
 import { MdLaptopMac, MdVideogameAsset } from "react-icons/md";
 
 export const Navigation = () => (
    <section className="navigation__container">
+      <Block className="menu">
+         <Button icon={<IoIosMenu />} />
+      </Block>
       <Switch />
       <nav className="navigation__nav">
          <ul className="navigation__list">

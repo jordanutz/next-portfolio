@@ -86,3 +86,22 @@
 .contact .card__content {
    padding: 32px 24px;
 }
+
+@media screen and (max-width: 575px) {
+   .contact {
+      margin: 0 24px;
+   }
+
+   .contact .contact__card {
+      max-width: 100%;
+      margin-bottom: 54px;
+   }
+
+   .contact .contact__header {
+      font-size: 5rem;
+   }
+
+   .contact .card__title {
+      font-size: 1.25rem;
+   }
+}

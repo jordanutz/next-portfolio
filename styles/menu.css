@@ -1,0 +1,23 @@
+.menu {
+   display: none;
+}
+
+.menu .button {
+   width: 100%;
+   height: 100%;
+}
+
+.menu svg {
+   color: #11111d;
+   font-size: 2.5rem;
+}
+
+.menu .button svg {
+   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+   .menu {
+      display: block;
+   }
+}

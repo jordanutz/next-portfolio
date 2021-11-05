@@ -23,7 +23,7 @@ export const Contact = () => {
          >
             {({ inView, ref }) => {
                return (
-                  <Cover image={ContactImg.src}>
+                  <Cover image={ContactImg.src} className="contact__cover">
                      <section className="contact" ref={ref} id="contact">
                         <h2 className="contact__header">Contact</h2>
                         <Card

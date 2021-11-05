@@ -44,3 +44,35 @@ aside .card__content {
    border-top-left-radius: 0.5rem;
    border-top-right-radius: 0.5rem;
 }
+
+@media screen and (max-width: 575px) {
+   .aside {
+      display: none;
+   }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+   .aside {
+      display: none;
+   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+   .aside {
+      display: none;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+   .aside {
+      display: none;
+   }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1201px) {
+   /* ...; */
+}

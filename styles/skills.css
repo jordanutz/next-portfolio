@@ -14,3 +14,9 @@
    position: relative;
    z-index: 3;
 }
+
+@media screen and (max-width: 574px) {
+   .skills__content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}

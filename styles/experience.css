@@ -34,3 +34,14 @@
 .experience__item:first-of-type {
    margin-top: 8px;
 }
+
+@media screen and (max-width: 574px) {
+   .experience__details {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .experience__details > .tag {
+      margin-top: 8px;
+   }
+}

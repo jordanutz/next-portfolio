@@ -1,6 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
 import useAppContext from "../../context/useContext";
 import Toggle from "react-toggle";
+import { Block } from "../Block";
 
 export const Switch = () => {
    const { isDark, setIsDark } = useAppContext();
@@ -10,7 +11,7 @@ export const Switch = () => {
    const handleToggleTheme = () => setIsDark(!isDark);
 
    return (
-      <section className="switch">
+      <Block className="switch">
          <Toggle
             id="theme-toggle"
             onChange={handleToggleTheme}
@@ -18,6 +19,6 @@ export const Switch = () => {
             icons={false}
          />
          <label htmlFor="theme-toggle">{displayText}</label>
-      </section>
+      </Block>
    );
 };

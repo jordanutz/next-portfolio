@@ -19,7 +19,7 @@
 }
 
 .navItem > button:hover {
-   background: #b7dcfeca;
+   background-color: #b7dcfeca;
    color: var(--primary);
    border-radius: 50%;
 }
@@ -29,6 +29,6 @@
 }
 
 .nav-item--active > button {
-   background: #b7dcfeca;
+   background-color: #b7dcfeca;
    color: var(--primary);
 }
