@@ -5,6 +5,7 @@ import { Switch } from "../Switch";
 
 export const Mobile = () => {
    const { isActivated } = useAppContext();
+
    return (
       <section className="menu__layer">
          <section className="menu">

@@ -50,15 +50,15 @@ aside .card__content {
 }
 
 @media screen and (max-width: 575px) {
-   .aside {
-      display: none;
+   .layer--aside {
+      display: none !important;
    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-   .aside {
-      display: none;
+   .layer--aside {
+      display: none !important;
    }
 }
 

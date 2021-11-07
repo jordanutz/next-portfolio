@@ -1,4 +1,3 @@
-import React from "react";
 import { handleCarouselControls } from "./helpers";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 
@@ -11,12 +10,13 @@ export const Carousel = ({ indicators, active, setActive }) => {
       <section className="carousel">
          <button
             className="carousel__arrow"
-            onClick={() =>
+            onClick={(event) =>
                handleCarouselControls(
                   "decrement",
                   indicators,
                   active,
-                  setActive
+                  setActive,
+                  event
                )
             }
          >
@@ -36,12 +36,13 @@ export const Carousel = ({ indicators, active, setActive }) => {
          </section>
          <button
             className="carousel__arrow"
-            onClick={() =>
+            onClick={(event) =>
                handleCarouselControls(
                   "increment",
                   indicators,
                   active,
-                  setActive
+                  setActive,
+                  event
                )
             }
          >

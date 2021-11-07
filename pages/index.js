@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { NavigationContainer } from "../components/NavigationContainer";
 import { Aside } from "../components/Aside";
@@ -16,7 +17,7 @@ import { Title } from "../components/Title";
 import useAppContext from "../context/useContext";
 
 const Index = () => {
-   const { parallax, isDark, isActivated } = useAppContext();
+   const { isActivated, isDark, parallax } = useAppContext();
 
    return (
       <div>
@@ -37,7 +38,7 @@ const Index = () => {
                   className={`menu__layer ${
                      isActivated ? "menu--overlay" : ""
                   }`}
-                  style={{ width: isActivated ? "100%" : "15%" }}
+                  style={{ width: isActivated ? "100%" : "5%" }}
                >
                   <Mobile />
                </ParallaxLayer>
@@ -52,6 +53,7 @@ const Index = () => {
                <ParallaxLayer
                   sticky={{ start: 1, end: 4 }}
                   style={{ width: "25%", zIndex: 2 }}
+                  className="layer--aside"
                >
                   <Aside />
                </ParallaxLayer>

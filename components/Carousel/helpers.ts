@@ -2,8 +2,10 @@ export const handleCarouselControls = (
    control,
    indicators,
    active,
-   setActive
+   setActive,
+   event
 ) => {
+   console.log(event);
    const indicatorsTotal = indicators.length - 1;
 
    if (control == "increment") {

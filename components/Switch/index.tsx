@@ -17,6 +17,7 @@ export const Switch = () => {
             onChange={handleToggleTheme}
             value={isDark}
             icons={false}
+            checked={isDark}
          />
          <label htmlFor="theme-toggle">{displayText}</label>
       </Block>

@@ -71,8 +71,7 @@
 }
 
 @media screen and (max-width: 574px) {
-   .carousel__widget {
-      max-width: 150px;
-      overflow-x: scroll;
+   .carousel__arrow {
+      display: none;
    }
 }
