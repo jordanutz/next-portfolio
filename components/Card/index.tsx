@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
+import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { PageHeader } from "../PageHeader";
 import { CardProps } from "../../models/card";

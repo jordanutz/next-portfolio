@@ -1,9 +1,9 @@
-import { Container } from "../Container";
-import { Card } from "../Card";
 import { Anchor } from "../Anchor";
+import { Card } from "../Card";
+import { Container } from "../Container";
 
 export const About = () => (
-   <Container id="about" ref={null} offset={1}>
+   <Container id="about" offset={1}>
       <Card title="About" className="card--bulleted">
          <section className="about__details">
             <p>
@@ -17,7 +17,7 @@ export const About = () => (
             <p>
                These days, I have the privilege of contributing solutions as a
                developer on the AMP Hydra team at{" "}
-               <Anchor href="https://kroger.com/"> Kroger</Anchor>, the largest
+               <Anchor href="https://kroger.com/"> Kroger</Anchor> - the largest
                grocery retailer in the country, where I spend my day building
                performant component assets in React while leveling up my
                JavaScript skills.

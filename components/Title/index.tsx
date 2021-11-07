@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useRef } from "react";
 import useAppContext from "../../context/useContext";
 
@@ -25,15 +26,9 @@ export const Title = ({ offset }) => {
          >
             {({ inView, ref }) => {
                return (
-                  <Cover
-                     className="title"
-                     image="https://i.ibb.co/NrcND69/DSC03981-3.jpg"
-                  >
+                  <Cover className="title" image="./cover.jpg">
                      <section className="title__overlay" ref={ref}>
-                        <img
-                           src="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
-                           alt="Jordan Utz"
-                        />
+                        <img src="/main.jpg" alt="" role="presentation" />
                      </section>
                      <section className="title__content" ref={titleRef}>
                         <h1>Jordan Utz</h1>

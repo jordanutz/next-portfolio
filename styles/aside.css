@@ -26,6 +26,10 @@
    flex-direction: column;
 }
 
+.card.aside__card > div {
+   width: 100% !important;
+}
+
 aside .card__content {
    padding: 16px;
 }

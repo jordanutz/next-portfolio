@@ -5,11 +5,7 @@ import { Social } from "../Social";
 
 export const Aside = () => (
    <aside className="aside">
-      <Card
-         className="aside__card"
-         image="https://i.ibb.co/6BJWW7n/DSC3017.jpg"
-         showArrow={false}
-      >
+      <Card className="aside__card" image="/main.jpg" showArrow={false}>
          <section className="aside__subheader">
             <PageHeader level={2}>Jordan Utz</PageHeader>
             <PageHeader level={6}>Front End Software Engineer</PageHeader>

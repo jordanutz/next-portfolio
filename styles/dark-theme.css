@@ -85,7 +85,7 @@
 
 .content > .dark .cover::before {
    background: linear-gradient(170deg, #01162a 60%, #168ce0);
-   opacity: 0.9;
+   opacity: 0.8;
 }
 
 .content > .dark .title .title__overlay {
