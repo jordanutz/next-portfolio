@@ -37,6 +37,7 @@ const Index = () => {
                   className={`menu__layer ${
                      isActivated ? "menu--overlay" : ""
                   }`}
+                  style={{ width: isActivated ? "100%" : "15%" }}
                >
                   <Mobile />
                </ParallaxLayer>
