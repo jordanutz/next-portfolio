@@ -14,6 +14,7 @@ import "../styles/container.css";
 import "../styles/cover.css";
 import "../styles/dark-theme.css";
 import "../styles/experience.css";
+import "../styles/footer.css";
 import "../styles/menu.css";
 import "../styles/navigation.css";
 import "../styles/navitem.css";

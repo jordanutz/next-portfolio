@@ -6,6 +6,7 @@ import { Anchor } from "../Anchor";
 import { Button } from "../Button";
 import { Card } from "../Card";
 import { Cover } from "../Cover";
+import { Footer } from "../Footer";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
@@ -54,12 +55,13 @@ export const Contact = () => {
                                     type="primary"
                                     icon={<SiMinutemailer />}
                                  >
-                                    Drop a Line
+                                    Hire Me
                                  </Button>
                               </Anchor>
                            </section>
                         </Card>
                      </section>
+                     <Footer />
                   </Cover>
                );
             }}

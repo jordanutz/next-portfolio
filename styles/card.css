@@ -175,4 +175,8 @@
    .card.card--arrow .card__content {
       padding: 16px;
    }
+
+   .card--arrow::before {
+      display: none;
+   }
 }

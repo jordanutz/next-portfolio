@@ -1,12 +1,30 @@
 .block {
-   width: 84px;
-   height: 84px;
+   width: 80px;
+   height: 80px;
    background: #fdfbfbd1;
    border-radius: 0.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-bottom: 16px;
    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+   margin-bottom: 16px;
+   transition: border-radius 0.2s ease 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+   .block {
+      width: 54px;
+      height: 54px;
+      margin-bottom: 0;
+   }
+
+   .block--activated.block {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+   }
+
+   .block--activated.block + .navigation__nav > .navigation__list {
+      padding: 0;
+   }
 }

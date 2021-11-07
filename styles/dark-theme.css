@@ -110,3 +110,18 @@
 .content > .dark .menu svg {
    color: #e9e6e6;
 }
+
+@media screen and (max-width: 769px) {
+   .content > .dark .nav-item--active > button,
+   .content > .dark .navItem > button:hover {
+      background-color: transparent;
+   }
+}
+
+.content > .dark .footer {
+   background-color: #131320c7;
+}
+
+.content > .dark .footer p {
+   color: #e9e6e6;
+}

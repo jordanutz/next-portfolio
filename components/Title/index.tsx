@@ -7,7 +7,6 @@ import { InView } from "react-intersection-observer";
 import { Anchor } from "../Anchor";
 import { Button } from "../Button";
 import { Cover } from "../Cover";
-import { Navigation } from "../Navigation";
 import { Social } from "../Social";
 import { TypeWriter } from "../TypeWriter";
 
@@ -42,6 +41,7 @@ export const Title = ({ offset }) => {
                            words={[
                               "Front End Software Engineer.",
                               "Kentucky Wildcat.",
+                              "Always Elevating.",
                            ]}
                            level={2}
                         />

@@ -1,0 +1,22 @@
+.footer {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 9;
+   background: #ffffffa4;
+   padding: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer p {
+   font-size: 0.8rem;
+   text-align: center;
+   color: #fff;
+   margin: 0;
+   font-weight: 500;
+   color: var(--font-primary);
+   letter-spacing: -0.5px;
+}

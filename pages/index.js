@@ -1,18 +1,22 @@
-import React from "react";
-import useAppContext from "../context/useContext";
 import Head from "next/head";
+
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { Navigation } from "../components/Navigation";
+import { NavigationContainer } from "../components/NavigationContainer";
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
 import { Skills } from "../components/Skills";
 import { Experience } from "../components/Experience";
+import { Menu } from "../components/Menu";
+import { Mobile } from "../components/Mobile";
+import { Navigation } from "../components/Navigation";
 import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
 import { Title } from "../components/Title";
 
+import useAppContext from "../context/useContext";
+
 const Index = () => {
-   const { parallax, isDark } = useAppContext();
+   const { parallax, isDark, isActivated } = useAppContext();
 
    return (
       <div>
@@ -20,14 +24,29 @@ const Index = () => {
             <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
          </Head>
          <main className="content">
-            <Parallax pages={6} ref={parallax} className={isDark ? "dark" : ""}>
+            <Parallax
+               pages={6}
+               ref={parallax}
+               className={isDark ? "dark" : ""}
+               enabled={!isActivated}
+            >
                <Title offset={0} />
+               <ParallaxLayer
+                  offset={0}
+                  sticky={{ start: 0, end: 6 }}
+                  className={`menu__layer ${
+                     isActivated ? "menu--overlay" : ""
+                  }`}
+               >
+                  <Mobile />
+               </ParallaxLayer>
                <ParallaxLayer
                   offset={0}
                   sticky={{ start: 0, end: 5 }}
                   style={{ display: "flex", width: "10%", zIndex: 3 }}
+                  className="layer--desktop"
                >
-                  <Navigation />
+                  <NavigationContainer />
                </ParallaxLayer>
                <ParallaxLayer
                   sticky={{ start: 1, end: 4 }}

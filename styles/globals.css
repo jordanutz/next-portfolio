@@ -317,10 +317,8 @@ template {
    display: none;
 }
 
-#tsparticles {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   right: 0;
-   left: 0;
+@media screen and (max-width: 768px) {
+   .layer--desktop {
+      display: none !important;
+   }
 }

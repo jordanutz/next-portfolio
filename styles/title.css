@@ -154,6 +154,14 @@
    .title__overlay img {
       display: none;
    }
+
+   .title__social {
+      right: 0.5rem;
+   }
+
+   .title__social svg {
+      font-size: 1.5rem;
+   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -176,6 +184,10 @@
 
    .title__overlay img {
       display: none;
+   }
+
+   .title__social svg {
+      font-size: 1.5rem;
    }
 }
 

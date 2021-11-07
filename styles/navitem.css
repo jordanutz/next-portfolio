@@ -18,17 +18,19 @@
    border-radius: 50%;
 }
 
-.navItem > button:hover {
-   background-color: #b7dcfeca;
-   color: var(--primary);
-   border-radius: 50%;
-}
-
 .navItem > button > svg {
    margin-right: 0;
 }
 
-.nav-item--active > button {
-   background-color: #b7dcfeca;
-   color: var(--primary);
+@media screen and (min-width: 769px) {
+   .nav-item--active > button {
+      background-color: #b7dcfeca;
+      color: var(--primary);
+   }
+
+   .navItem > button:hover {
+      background-color: #b7dcfeca;
+      color: var(--primary);
+      border-radius: 50%;
+   }
 }
