@@ -2,7 +2,7 @@ import { NavItem } from "../NavItem";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { HiCode } from "react-icons/hi";
-import { IoIosRocket } from "react-icons/Io";
+import { IoIosRocket } from "react-icons/io";
 import { MdLaptopMac, MdVideogameAsset } from "react-icons/md";
 
 export const Navigation = () => (
