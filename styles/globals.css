@@ -6,6 +6,20 @@
    --font-primary: #31363e;
 }
 
+@font-face {
+   font-family: "Mockhand";
+   src: url("/Mockhand.ttf");
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Museo Sans";
+   src: url("/MuseoSans_500.otf");
+   font-style: normal;
+   font-display: swap;
+}
+
 html {
    line-height: 1.5;
    -webkit-text-size-adjust: 100%;

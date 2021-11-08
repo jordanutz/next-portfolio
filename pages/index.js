@@ -23,6 +23,13 @@ const Index = () => {
       <div>
          <Head>
             <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
+            <link rel="preload" href="/Mockhand.ttf" as="font" crossOrigin="" />
+            <link
+               rel="preload"
+               href="/MuseoSans_500.otf"
+               as="font"
+               crossOrigin=""
+            />
          </Head>
          <main className="content">
             <Parallax
