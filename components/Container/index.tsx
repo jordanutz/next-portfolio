@@ -10,7 +10,7 @@ export const Container: FC<ContainerProps> = ({ id, children, offset }) => {
    const { setActiveCard } = useAppContext();
    const [selectors, data] = useDeviceSelectors(window.navigator.userAgent);
 
-   const isMobileContainer = selectors.isMobile ? (
+   const isMobileContainer = !selectors.isMobile ? (
       <ParallaxLayer
          offset={offset}
          style={{
