@@ -1,6 +1,5 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
-import useAppContext from "../../context/useContext";
 
 import { Anchor } from "../Anchor";
 import { Button } from "../Button";
@@ -12,6 +11,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
 
 import ContactImg from "../../assets/contact.jpg";
+import useAppContext from "../../context/useContext";
 
 export const Contact = () => {
    const { setActiveCard } = useAppContext();

@@ -18,6 +18,7 @@ import "../styles/footer.css";
 import "../styles/menu.css";
 import "../styles/navigation.css";
 import "../styles/navitem.css";
+import "../styles/overlay.css";
 import "../styles/pageheader.css";
 import "../styles/portfolio.css";
 import "../styles/skills.css";

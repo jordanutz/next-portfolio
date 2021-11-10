@@ -1,17 +1,15 @@
 import Head from "next/head";
 
-import { useState, useEffect } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { NavigationContainer } from "../components/NavigationContainer";
+
 import { Aside } from "../components/Aside";
 import { About } from "../components/About";
-import { Skills } from "../components/Skills";
-import { Experience } from "../components/Experience";
-import { Menu } from "../components/Menu";
-import { Mobile } from "../components/Mobile";
-import { Navigation } from "../components/Navigation";
-import { Portfolio } from "../components/Portfolio";
 import { Contact } from "../components/Contact";
+import { Experience } from "../components/Experience";
+import { NavigationContainer } from "../components/NavigationContainer";
+import { Overlay } from "../components/Overlay";
+import { Portfolio } from "../components/Portfolio";
+import { Skills } from "../components/Skills";
 import { Title } from "../components/Title";
 
 import useAppContext from "../context/useContext";
@@ -39,16 +37,7 @@ const Index = () => {
                enabled={!isActivated}
             >
                <Title offset={0} />
-               <ParallaxLayer
-                  offset={0}
-                  sticky={{ start: 0, end: 6 }}
-                  className={`menu__layer ${
-                     isActivated ? "menu--overlay" : ""
-                  }`}
-                  style={{ width: isActivated ? "100%" : "5%" }}
-               >
-                  <Mobile />
-               </ParallaxLayer>
+               <Overlay />
                <ParallaxLayer
                   offset={0}
                   sticky={{ start: 0, end: 5 }}

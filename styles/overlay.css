@@ -1,0 +1,69 @@
+.overlay__menu,
+.overlay {
+   display: none;
+}
+
+.overlay__menu .button {
+   width: 100%;
+   height: 100%;
+   padding: 4px;
+}
+
+.overlay__menu svg {
+   color: #11111d;
+   font-size: 2rem;
+}
+
+.overlay__menu .button svg {
+   margin: 0;
+}
+
+.overlay--active {
+   transition: background-color 0.3 ease;
+   background-color: #000000c7;
+}
+
+@media screen and (max-width: 768px) {
+   .overlay {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      z-index: 9;
+      width: 100%;
+   }
+
+   .overlay__menu {
+      display: flex;
+      flex-direction: column;
+      align-items: initial;
+      margin: 16px;
+   }
+
+   .overlay__menu .navigation__nav {
+      width: 54px;
+      height: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      overflow-y: hidden;
+      transition: height 0.2s ease;
+   }
+
+   .overlay__menu .block.block--activated + .navigation__nav {
+      display: block;
+      height: 260px;
+      transition: height 0.2s ease 0.3s;
+      overflow-y: visible;
+   }
+
+   .overlay__menu .button {
+      padding: 5px;
+   }
+
+   .overlay__switch {
+      margin: 16px;
+   }
+
+   .overlay__switch > .switch {
+      padding: 8px;
+   }
+}

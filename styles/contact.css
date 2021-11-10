@@ -37,6 +37,7 @@
    color: #fff;
    font-size: 6rem;
    border-radius: 0.5rem;
+   letter-spacing: -2px;
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
       -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
 }

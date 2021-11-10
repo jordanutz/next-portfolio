@@ -64,6 +64,7 @@
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
       -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
    margin: 8px 0;
+   letter-spacing: -2px;
 }
 
 .title .title__content p {
@@ -140,11 +141,11 @@
    }
 
    .title .title__content h1 {
-      font-size: 5rem;
+      font-size: 4rem;
    }
 
    .title h2 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
    }
 
    .title .title__overlay {
