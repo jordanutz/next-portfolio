@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Container } from "../Container";
+import WithParallaxWrapped from "../Container";
 
 import { Card } from "../Card";
 import { Anchor } from "../Anchor";
@@ -8,7 +8,7 @@ import { data } from "./data";
 import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
 
 export const Portfolio = () => (
-   <Container id="portfolio" offset={4}>
+   <WithParallaxWrapped id="portfolio" offset={4}>
       <Card className="portfolio__card" title="Portfolio">
          <section className="portfolio__container">
             {data.map((project) => (
@@ -37,5 +37,5 @@ export const Portfolio = () => (
             ))}
          </section>
       </Card>
-   </Container>
+   </WithParallaxWrapped>
 );

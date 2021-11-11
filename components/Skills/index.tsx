@@ -1,11 +1,11 @@
-import { Container } from "../Container";
+import WithParallaxWrapped from "../Container";
+
 import { Card } from "../Card";
 import { Tag } from "../Tag";
-
 import { skills } from "./data";
 
 export const Skills = () => (
-   <Container id="skills" offset={2}>
+   <WithParallaxWrapped id="skills" offset={2}>
       <Card className="skills__card" title="Skills">
          <p className="skills__paragraph">
             My technical skillset is grounded in all areas existing within the
@@ -22,5 +22,5 @@ export const Skills = () => (
             ))}
          </section>
       </Card>
-   </Container>
+   </WithParallaxWrapped>
 );

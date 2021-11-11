@@ -1,7 +1,6 @@
 .container {
    width: 100%;
-   max-height: 100vh;
-   height: 100vh;
+   min-height: 100vh;
    margin: 0 32px 0 570px;
    display: flex;
    align-items: center;
@@ -59,7 +58,7 @@
 
 @media screen and (max-width: 575px) {
    .container {
-      margin: 0 16px;
+      margin: 0;
    }
 
    .layer--height {

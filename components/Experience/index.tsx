@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
+import WithParallaxWrapped from "../Container";
 
-import { Container } from "../Container";
 import { Carousel } from "../Carousel";
 import { Card } from "../Card";
 import { Tag } from "../Tag";
@@ -19,7 +19,7 @@ export const Experience = () => {
    const [active, setActive] = useState(0);
 
    return (
-      <Container id="experience" offset={3}>
+      <WithParallaxWrapped id="experience" offset={3}>
          <Card title="Experience" className="card--bulleted">
             <section className="experience__grid">
                {experienceData.map(
@@ -61,6 +61,6 @@ export const Experience = () => {
                />
             </section>
          </Card>
-      </Container>
+      </WithParallaxWrapped>
    );
 };

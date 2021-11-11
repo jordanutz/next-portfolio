@@ -1,9 +1,9 @@
 import { Anchor } from "../Anchor";
 import { Card } from "../Card";
-import { Container } from "../Container";
+import WithParallaxWrapped from "../Container";
 
 export const About = () => (
-   <Container id="about" offset={1}>
+   <WithParallaxWrapped id="about" offset={1}>
       <Card title="About" className="card--bulleted">
          <section className="about__details">
             <p>
@@ -39,5 +39,5 @@ export const About = () => (
             </ul>
          </section>
       </Card>
-   </Container>
+   </WithParallaxWrapped>
 );
