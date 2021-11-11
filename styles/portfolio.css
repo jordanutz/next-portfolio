@@ -116,6 +116,10 @@
    .portfolio__project h3 {
       font-size: 1.25rem;
    }
+
+   #portfolio {
+      padding-bottom: 64px;
+   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

@@ -131,15 +131,6 @@
    flex-grow: 1;
 }
 
-.card--arrow.card--animate-in {
-   -webkit-animation-duration: 1s;
-   animation-duration: 1s;
-   -webkit-animation-fill-mode: both;
-   animation-fill-mode: both;
-   -webkit-animation-name: fadeInLeft;
-   animation-name: fadeInLeft;
-}
-
 /* Animations */
 
 @keyframes fadeInLeft {
@@ -170,7 +161,7 @@
    }
 }
 
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 575px) {
    .card {
       max-width: 700px;
    }
@@ -185,5 +176,20 @@
 
    .card--arrow::before {
       display: none;
+   }
+
+   .card--arrow.card {
+      opacity: 1;
+   }
+}
+
+@media screen and (min-width: 576px) {
+   .card--arrow.card--animate-in {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
    }
 }
