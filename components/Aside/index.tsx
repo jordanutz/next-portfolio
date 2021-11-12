@@ -3,9 +3,11 @@ import { Card } from "../Card";
 import { PageHeader } from "../PageHeader";
 import { Social } from "../Social";
 
+import MainImg from "../../assets/main.webp";
+
 export const Aside = () => (
    <aside className="aside">
-      <Card className="aside__card" image="/main.jpg" showArrow={false}>
+      <Card className="aside__card" image={MainImg.src} showArrow={false}>
          <section className="aside__subheader">
             <PageHeader level={2}>Jordan Utz</PageHeader>
             <PageHeader level={3}>Front End Software Engineer</PageHeader>

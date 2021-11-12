@@ -14,7 +14,8 @@ import { TypeWriter } from "../TypeWriter";
 import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
-import ContactImg from "../../assets/contact.jpg";
+import MainImg from "../../assets/main.webp";
+import ContactImg from "../../assets/contact.webp";
 
 const Title = ({ offset }) => {
    const titleRef = useRef();
@@ -29,7 +30,7 @@ const Title = ({ offset }) => {
             return (
                <Cover className="title" image={ContactImg.src}>
                   <section className="title__overlay" ref={ref}>
-                     <img src="/main.jpg" alt="" role="presentation" />
+                     <img src={MainImg.src} alt="" role="presentation" />
                   </section>
                   <section className="title__content" ref={titleRef}>
                      <h1>Jordan Utz</h1>

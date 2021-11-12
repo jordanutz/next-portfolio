@@ -10,7 +10,7 @@ import { Footer } from "../Footer";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
 
-import ContactImg from "../../assets/contact.jpg";
+import ContactImg from "../../assets/contact.webp";
 import useAppContext from "../../context/useContext";
 
 export const Contact = ({ offset, id }) => {

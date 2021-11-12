@@ -87,8 +87,8 @@
 /* Cover ------------------------------------- */
 
 .content.dark .cover::before {
-   background: linear-gradient(170deg, #01162a 60%, #168ce0);
-   opacity: 0.8;
+   background: linear-gradient(170deg, #01162a 60%, #0295ff);
+   opacity: 0.85;
 }
 
 .content.dark .title .title__overlay {

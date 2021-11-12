@@ -2,6 +2,10 @@ import { SiSass, SiNpm, SiReact, SiJavascript } from "react-icons/si";
 
 import { GiLaptop } from "react-icons/gi";
 
+import QuizImg from "../../assets/quiz.webp";
+import CalculatorImg from "../../assets/calculator.webp";
+import WeatherImg from "../../assets/weather.webp";
+
 export const data = [
    {
       id: 1,
@@ -9,7 +13,7 @@ export const data = [
       year: "2021",
       description:
          "Intuitive trivia game that tests players on their knowledge of video games.",
-      image: "https://i.ibb.co/TcGZYQX/FA0890-A4-1-A62-4-FBD-81-F9-CDA0554-ADAF1-1-201-a.jpg",
+      image: QuizImg.src,
       technologies: [
          { id: 1, title: "React", icon: <SiReact /> },
          { id: 2, title: "Sass", icon: <SiSass /> },
@@ -23,7 +27,7 @@ export const data = [
       id: 2,
       title: "Calculator",
       year: "2021",
-      image: "https://i.ibb.co/rQrPr7Y/E68-A33-BE-7917-4-FA2-9-C3-D-D1-EDF4-F1-BB73-1-105-c.jpg",
+      image: CalculatorImg.src,
       description:
          "React powered calculator with a stylish and accessible interface.",
       technologies: [
@@ -38,7 +42,7 @@ export const data = [
       id: 3,
       title: "WeatherFi",
       year: "2021",
-      image: "https://i.ibb.co/2vBf60S/Screen-Shot-2021-09-26-at-12-07-30-PM.jpg",
+      image: WeatherImg.src,
       description: "Application that generates the three day weather forecast.",
       walkthrough: null,
       technologies: [

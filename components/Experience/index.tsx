@@ -9,10 +9,10 @@ import { experienceData } from "./data";
 
 import { AiTwotoneCalendar } from "react-icons/ai";
 
-import elink from "./assets/elink.jpg";
-import webstaurant from "./assets/webstaurant.jpg";
-import kroger from "./assets/kroger.jpg";
-import devmountain from "./assets/devmountain.jpg";
+import elink from "../../assets/elink.webp";
+import webstaurant from "../../assets/webstaurant.webp";
+import kroger from "../../assets/kroger.webp";
+import devmountain from "../../assets/devmountain.webp";
 
 export const Experience = () => {
    const indicators = [
