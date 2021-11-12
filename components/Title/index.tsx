@@ -41,8 +41,10 @@ const Title = ({ offset }) => {
                         level={2}
                      />
                      <p>
-                        I’m a software engineer specializing in building (and
-                        occasionally designing) exceptional digital experiences.
+                        I&apos;m a Front End Software Engineer based in St.
+                        Petersburg, Florida with three years of professional
+                        development experience architecting (and occasionally
+                        designing) scalable JavaScript powered applications.
                         Currently, I’m focused on building accessible,
                         human-centered products at Kroger.
                      </p>

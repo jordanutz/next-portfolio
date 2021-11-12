@@ -43,6 +43,11 @@ const Index = () => {
                crossOrigin=""
             />
             <title>Jordan Utz | Front End Software Engineer</title>
+            <meta
+               name="description"
+               content="Jordan Utz is a Front End Software Engineer based in St. Petersburg, Florida with three years of professional development experience architecting scalable JavaScript applications."
+            />
+            <meta name="siteUrl" content="https://jordanutz.dev" />
          </Head>
          <main className={`content ${setClassName(isDark, "dark")}`}>
             {isMobileOnly ? (
