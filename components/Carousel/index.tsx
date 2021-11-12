@@ -9,6 +9,7 @@ export const Carousel = ({ indicators, active, setActive }) => {
    return (
       <section className="carousel">
          <button
+            aria-label="previous"
             className="carousel__arrow"
             onClick={(event) =>
                handleCarouselControls(
@@ -23,18 +24,20 @@ export const Carousel = ({ indicators, active, setActive }) => {
             <BsArrowLeftShort className="carousel__icon" />
          </button>
          <section className="carousel__widget">
-            {indicators.map((image, index) => (
+            {indicators.map(({ id, label, image }) => (
                <button
-                  onClick={() => setActive(index)}
+                  aria-label={label}
+                  onClick={() => setActive(id)}
                   className={`carousel__button ${
-                     active === index ? modifiers.active : ""
+                     active === id ? modifiers.active : ""
                   }`}
-                  key={index}
+                  key={id}
                   style={{ backgroundImage: `url(${image.src})` }}
                />
             ))}
          </section>
          <button
+            aria-label="next"
             className="carousel__arrow"
             onClick={(event) =>
                handleCarouselControls(

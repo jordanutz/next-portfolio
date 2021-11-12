@@ -38,6 +38,10 @@ aside .card__content {
    padding-top: 8px;
 }
 
+.aside__subheader h3 {
+   font-size: 1rem;
+}
+
 .aside__quicklinks {
    display: flex;
    justify-content: space-between;

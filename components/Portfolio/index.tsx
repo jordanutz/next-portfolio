@@ -25,10 +25,16 @@ export const Portfolio = () => (
                         {project.description}
                      </p>
                      <section className="portfolio__social">
-                        <Anchor href={project.github}>
+                        <Anchor
+                           href={project.github}
+                           label="View project on Github"
+                        >
                            <RiGithubFill />
                         </Anchor>
-                        <Anchor href={project.codepen}>
+                        <Anchor
+                           href={project.codepen}
+                           label="View project on Codepen"
+                        >
                            <RiCodepenFill />
                         </Anchor>
                      </section>

@@ -15,7 +15,12 @@ import kroger from "./assets/kroger.jpg";
 import devmountain from "./assets/devmountain.jpg";
 
 export const Experience = () => {
-   const indicators = [kroger, webstaurant, elink, devmountain];
+   const indicators = [
+      { id: 0, label: "Kroger", image: kroger },
+      { id: 1, label: "WebstaurantStore", image: webstaurant },
+      { id: 2, label: "eLink Design", image: elink },
+      { id: 3, label: "DevMountain", image: devmountain },
+   ];
    const [active, setActive] = useState(0);
 
    return (

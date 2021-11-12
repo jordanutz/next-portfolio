@@ -8,7 +8,7 @@ export const Aside = () => (
       <Card className="aside__card" image="/main.jpg" showArrow={false}>
          <section className="aside__subheader">
             <PageHeader level={2}>Jordan Utz</PageHeader>
-            <PageHeader level={6}>Front End Software Engineer</PageHeader>
+            <PageHeader level={3}>Front End Software Engineer</PageHeader>
          </section>
          <Social />
          <section className="aside__quicklinks">
