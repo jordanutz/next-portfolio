@@ -1,4 +1,4 @@
-import { ParallaxLayer } from "@react-spring/parallax";
+import { isMobileOnly } from "react-device-detect";
 
 import { Menu } from "../Menu";
 import { Navigation } from "../Navigation";
@@ -7,14 +7,15 @@ import { Switch } from "../Switch";
 import useAppContext from "../../context/useContext";
 
 export const Overlay = () => {
-   const { isActivated } = useAppContext();
+   const { isActivated, setClassName } = useAppContext();
 
    return (
-      <ParallaxLayer
-         offset={0}
-         sticky={{ start: 0, end: 6 }}
-         className={`overlay ${isActivated ? "overlay--active" : ""}`}
-         style={{ width: isActivated ? "100%" : "5%" }}
+      <section
+         className={`${
+            isMobileOnly
+               ? `overlay ${setClassName(isActivated, "overlay--active")}`
+               : "overlay-tablet"
+         }`}
       >
          <section className="overlay__menu">
             <Menu />
@@ -25,6 +26,6 @@ export const Overlay = () => {
                <Switch />
             </section>
          )}
-      </ParallaxLayer>
+      </section>
    );
 };

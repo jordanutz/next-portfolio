@@ -1,27 +1,28 @@
 import Head from "next/head";
 
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 
-import { Aside } from "../components/Aside";
 import { About } from "../components/About";
+import { Aside } from "../components/Aside";
 import { Experience } from "../components/Experience";
 import { NavigationContainer } from "../components/NavigationContainer";
 import { Overlay } from "../components/Overlay";
 import { Portfolio } from "../components/Portfolio";
 import { Skills } from "../components/Skills";
 
-import WithTitleWrapped from "../components/Title";
 import WithContactWrapped from "../components/Contact";
+import WithTitleWrapped from "../components/Title";
 
 import useAppContext from "../context/useContext";
 
 const Index = () => {
-   const { isActivated, isDark, parallax } = useAppContext();
+   const { isActivated, isDark, parallax, setClassName } = useAppContext();
 
-   const content = (
+   const pageContent = (
       <>
          <WithTitleWrapped offset={null} />
+         <Overlay />
          <About />
          <Skills />
          <Experience />
@@ -41,34 +42,35 @@ const Index = () => {
                as="font"
                crossOrigin=""
             />
+            <title>Jordan Utz | Front End Software Engineer</title>
          </Head>
-         <main className="content">
-            {isMobile ? (
-               <>{content}</>
+         <main className={`content ${setClassName(isDark, "dark")}`}>
+            {isMobileOnly ? (
+               <>{pageContent}</>
             ) : (
-               <Parallax
-                  pages={6}
-                  ref={parallax}
-                  className={isDark ? "dark" : "test"}
-                  enabled={!isActivated}
-               >
-                  <Overlay />
+               <Parallax pages={6} ref={parallax} enabled={!isActivated}>
                   <ParallaxLayer
-                     offset={0}
+                     className={`overlay ${setClassName(
+                        isActivated,
+                        "overlay--active"
+                     )}`}
+                     sticky={{ start: 0, end: 6 }}
+                  >
+                     <Overlay />
+                  </ParallaxLayer>
+                  <ParallaxLayer
+                     className="parallax-layer__desktop"
                      sticky={{ start: 0, end: 5 }}
-                     style={{ display: "flex", width: "10%", zIndex: 3 }}
-                     className="layer--desktop"
                   >
                      <NavigationContainer />
                   </ParallaxLayer>
                   <ParallaxLayer
+                     className="parallax-layer__aside"
                      sticky={{ start: 1, end: 4 }}
-                     style={{ width: "25%", zIndex: 2 }}
-                     className="layer--aside"
                   >
                      <Aside />
                   </ParallaxLayer>
-                  {content}
+                  {pageContent}
                </Parallax>
             )}
          </main>

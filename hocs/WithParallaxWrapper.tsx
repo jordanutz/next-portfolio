@@ -1,18 +1,17 @@
-import { isMobile } from "react-device-detect";
+import { isMobileOnly } from "react-device-detect";
 import { ParallaxLayer } from "@react-spring/parallax";
 
 const WithParallaxWrapper = (Component) => {
    return function ({ factor = 1, offset, ...rest }) {
-      const content = isMobile ? (
-         <Component {...rest} />
+      const content = isMobileOnly ? (
+         <Component offset={offset} {...rest} />
       ) : (
          <ParallaxLayer
-            factor={factor}
             className="parallax-wrapper"
+            factor={factor}
             offset={offset}
-            {...rest}
          >
-            <Component {...rest} />
+            <Component offset={offset} {...rest} />
          </ParallaxLayer>
       );
 

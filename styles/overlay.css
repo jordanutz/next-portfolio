@@ -18,9 +18,18 @@
    margin: 0;
 }
 
-.overlay--active {
+.overlay.overlay--active {
    transition: background-color 0.3 ease;
    background-color: #000000c7;
+   width: 100% !important;
+}
+
+@media screen and (max-width: 575px) {
+   .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -29,7 +38,8 @@
       justify-content: space-between;
       align-items: flex-start;
       z-index: 9;
-      width: 100%;
+      width: 2% !important;
+      height: 100%;
    }
 
    .overlay__menu {
@@ -48,11 +58,20 @@
       transition: height 0.2s ease;
    }
 
+   .overlay__menu .navigation__nav button {
+      opacity: 0;
+      transition: opacity 0.2s ease 0.3s;
+   }
+
    .overlay__menu .block.block--activated + .navigation__nav {
       display: block;
       height: 260px;
       transition: height 0.2s ease 0.3s;
       overflow-y: visible;
+   }
+
+   .overlay__menu .block.block--activated + .navigation__nav button {
+      opacity: 1;
    }
 
    .overlay__menu .button {
@@ -65,5 +84,11 @@
 
    .overlay__switch > .switch {
       padding: 8px;
+   }
+
+   .overlay-tablet {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
    }
 }

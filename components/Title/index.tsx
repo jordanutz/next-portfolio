@@ -18,7 +18,7 @@ import ContactImg from "../../assets/contact.jpg";
 
 const Title = ({ offset }) => {
    const titleRef = useRef();
-   const { setActiveCard, scroll } = useAppContext();
+   const { setActiveCard, contentRefs, scroll } = useAppContext();
 
    return (
       <InView
@@ -37,7 +37,6 @@ const Title = ({ offset }) => {
                         words={[
                            "Front End Software Engineer.",
                            "Kentucky Wildcat.",
-                           "Always Elevating.",
                         ]}
                         level={2}
                      />
@@ -60,7 +59,7 @@ const Title = ({ offset }) => {
                      data-sal-easing="ease-in"
                      data-sal-duration="3000"
                      data-sal-delay="3000"
-                     onClick={() => scroll(1)}
+                     onClick={() => scroll(1, "about")}
                   />
                   <section className="title__social">
                      <Social />

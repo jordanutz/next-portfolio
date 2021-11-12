@@ -6,12 +6,12 @@ import useAppContext from "../../context/useContext";
 import WithParallaxWrapper from "../../hocs/WithParallaxWrapper";
 
 const Container: FC<ContainerProps> = ({ id, children, offset }) => {
-   const { setActiveCard } = useAppContext();
-
+   const { setActiveCard, contentRefs } = useAppContext();
    return (
       <InView
          threshold={0.5}
          onChange={(inView) => inView && setActiveCard(offset)}
+         ref={contentRefs[id]}
       >
          {({ inView, ref }) => {
             return (

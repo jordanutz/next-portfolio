@@ -335,9 +335,3 @@ template {
    display: flex;
    align-items: center;
 }
-
-@media screen and (max-width: 768px) {
-   .layer--desktop {
-      display: none !important;
-   }
-}

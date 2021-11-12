@@ -1,0 +1,18 @@
+.parallax-layer__aside {
+   width: 25% !important;
+   z-index: 2;
+}
+
+.parallax-layer__desktop {
+   display: flex !important;
+   width: 10% !important;
+   z-index: 3;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 768px) {
+   .parallax-layer__aside,
+   .parallax-layer__desktop {
+      display: none !important;
+   }
+}

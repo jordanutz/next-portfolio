@@ -1,4 +1,5 @@
-import React, { createContext, useRef, useState, useEffect } from "react";
+import React, { createContext, useRef, useState } from "react";
+import { setClassName } from "../helpers/setClassName";
 
 export const AppContext = createContext();
 
@@ -14,23 +15,43 @@ export const AppProvider = ({ children }) => {
 
    const parallax = useRef(null);
 
-   const scroll = (card) => {
+   const contentRefs = {
+      about: useRef(),
+      skills: useRef(),
+      experience: useRef(),
+      portfolio: useRef(),
+      contact: useRef(),
+   };
+
+   const scroll = (card, title) => {
+      const key = title.toLowerCase();
+
       if (parallax.current) {
          parallax.current.scrollTo(card);
          setActiveCard(card);
          setIsActivated(false);
+         return;
       }
+
+      contentRefs[key].current.node.scrollIntoView({
+         block: "start",
+         behavior: "smooth",
+      });
+
+      setIsActivated(false);
    };
 
    return (
       <AppContext.Provider
          value={{
             activeCard,
+            contentRefs,
             isActivated,
             isDark,
             parallax,
             scroll,
             setActiveCard,
+            setClassName,
             setIsActivated,
             setIsDark,
          }}

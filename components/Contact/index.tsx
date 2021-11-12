@@ -14,12 +14,13 @@ import ContactImg from "../../assets/contact.jpg";
 import useAppContext from "../../context/useContext";
 
 export const Contact = ({ offset, id }) => {
-   const { setActiveCard } = useAppContext();
+   const { setActiveCard, contentRefs } = useAppContext();
 
    return (
       <InView
          threshold={0.25}
          onChange={(inView) => inView && setActiveCard(offset)}
+         ref={contentRefs[id]}
       >
          {({ inView, ref }) => {
             return (
@@ -36,8 +37,8 @@ export const Contact = ({ offset, id }) => {
                         </section>
                         <section className="contact__overlay">
                            <p>
-                              I&apos;m currently not seeking any opportunities
-                              at this time, but take a copy of my{" "}
+                              I&apos;m not seeking any opportunities at this
+                              time, but feel free to take a copy of my{" "}
                               <Anchor
                                  href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing"
                                  className="contact__link"
@@ -46,8 +47,8 @@ export const Contact = ({ offset, id }) => {
                               </Anchor>{" "}
                               and please keep me in mind if you have any
                               opportunities for a{" "}
-                              <span>Front End Software Engineer</span> in
-                              St.Petersburg, Florida open in the future.
+                              <span>Front End Software Engineer</span> open in
+                              the future.
                            </p>
                            <Anchor href="mailto:jordanutz@outlook.com">
                               <Button type="primary" icon={<SiMinutemailer />}>

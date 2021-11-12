@@ -47,8 +47,7 @@
 }
 
 .card--bulleted li::before {
-   color: transparent;
-   content: "\25A0";
+   content: "";
    font-size: 19px;
    position: absolute;
    left: -4px;
