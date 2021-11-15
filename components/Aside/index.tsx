@@ -3,7 +3,7 @@ import { Card } from "../Card";
 import { PageHeader } from "../PageHeader";
 import { Social } from "../Social";
 
-import MainImg from "../../assets/main.webp";
+import MainImg from "../../public/main.webp";
 
 export const Aside = () => (
    <aside className="aside">

@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useRef } from "react";
+import Image from "next/image";
 import useAppContext from "../../context/useContext";
 import WithParallaxWrapper from "../../hocs/WithParallaxWrapper";
 
@@ -14,7 +14,7 @@ import { TypeWriter } from "../TypeWriter";
 import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
-import MainImg from "../../assets/main.webp";
+import MainImg from "../../public/main.webp";
 import ContactImg from "../../assets/contact.webp";
 
 const Title = ({ offset }) => {
@@ -30,7 +30,12 @@ const Title = ({ offset }) => {
             return (
                <Cover className="title" image={ContactImg.src}>
                   <section className="title__overlay" ref={ref}>
-                     <img src={MainImg.src} alt="" role="presentation" />
+                     <Image
+                        src={MainImg.src}
+                        alt=""
+                        role="presentation"
+                        layout="fill"
+                     />
                   </section>
                   <section className="title__content" ref={titleRef}>
                      <h1>Jordan Utz</h1>

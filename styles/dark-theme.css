@@ -35,9 +35,14 @@
 
 /* Card ------------------------------------- */
 
-.content.dark .card {
+.content.dark .card,
+.content.dark .card.aside__card .card__container {
    background-color: #11111d;
    color: #e9e6e6;
+}
+
+.content.dark .card.aside__card .card__container {
+   opacity: 0.9;
 }
 
 .content.dark .card.card--arrow::before {

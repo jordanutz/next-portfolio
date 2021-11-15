@@ -18,12 +18,22 @@
 }
 
 .card.aside__card {
-   max-width: 294px;
+   width: 294px;
+   height: 500px;
    transform: translateX(calc(72px + 84px));
    text-align: center;
    z-index: 2;
    border-radius: 0.5rem;
    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.card.aside__card .card__container {
+   background-color: #ffffffe3;
+   border-bottom-left-radius: 0.5rem;
+   border-bottom-right-radius: 0.5rem;
 }
 
 .card.aside__card > div {
@@ -49,8 +59,7 @@ aside .card__content {
 }
 
 .aside img {
-   border-top-left-radius: 0.5rem;
-   border-top-right-radius: 0.5rem;
+   border-radius: 0.5rem;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

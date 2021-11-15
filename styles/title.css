@@ -13,6 +13,12 @@
    z-index: 3;
 }
 
+.title__overlay > div {
+   overflow: initial !important;
+   height: 500px !important;
+   top: 50% !important;
+}
+
 .title__overlay img {
    width: 300px;
    height: 450px;

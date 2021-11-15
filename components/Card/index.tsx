@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { FC } from "react";
+import Image from "next/image";
+
 import { useInView } from "react-intersection-observer";
 import { PageHeader } from "../PageHeader";
 import { CardProps } from "../../models/card";
@@ -25,7 +26,13 @@ export const Card: FC<CardProps> = ({
    const cardAnimation = inView ? modifiers.animate : "";
    const cardClass = `card ${className} ${cardArrow}`;
    const cardImage = image && (
-      <img src={image} className="card__image" alt="" role="presentation" />
+      <Image
+         src={image}
+         className="card__image"
+         alt=""
+         role="presentation"
+         layout="fill"
+      />
    );
    const cardTitle = title && (
       <PageHeader className="card__title" level={3}>
