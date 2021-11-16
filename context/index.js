@@ -16,6 +16,7 @@ export const AppProvider = ({ children }) => {
    const parallax = useRef(null);
 
    const contentRefs = {
+      title: useRef(),
       about: useRef(),
       skills: useRef(),
       experience: useRef(),

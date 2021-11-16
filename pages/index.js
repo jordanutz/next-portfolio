@@ -21,7 +21,7 @@ const Index = () => {
 
    const pageContent = (
       <>
-         <WithTitleWrapped offset={null} />
+         <WithTitleWrapped offset={0} />
          <Overlay />
          <About />
          <Skills />

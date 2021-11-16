@@ -23,8 +23,9 @@ const Title = ({ offset }) => {
 
    return (
       <InView
-         threshold={0}
+         threshold={0.5}
          onChange={(inView) => inView && setActiveCard(offset)}
+         ref={contentRefs.title}
       >
          {({ inView, ref }) => {
             return (
