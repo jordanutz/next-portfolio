@@ -9,7 +9,6 @@
    z-index: 3;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 768px) {
    .parallax-layer__aside,
    .parallax-layer__desktop {

@@ -2,66 +2,69 @@
 .content.dark .container,
 .content.dark > div,
 .content.dark .parallax-wrapper {
-   background-color: #0c0c19;
+   background-color: var(--dark);
 }
 
 .content.dark .container::after {
-   background-color: #11111d;
+   background-color: #2b313e;
 }
 
 /* Navigation ------------------------------------- */
 
 .content.dark .navigation__nav {
-   background-color: #131320c7;
+   background-color: rgba(var(--bg-card-dark), 0.85);
 }
 
 .content.dark .navItem > button {
-   color: #e9e6e6;
+   color: var(--font-dark);
 }
 
 .content.dark .nav-item--active > button,
 .content.dark .navItem > button:hover {
-   background-color: #2c363e45;
-   color: #b7dcfee8;
+   background-color: rgba(var(--primary), 0.3);
 }
 
 .content.dark .nav-item--active > button {
-   color: var(--primary);
+   color: rgb(var(--accent));
 }
 
 .content.dark .navItem > button:hover {
-   color: var(--primary);
+   color: rgb(var(--accent));
 }
 
 /* Card ------------------------------------- */
 
 .content.dark .card,
 .content.dark .card.aside__card .card__container {
-   background-color: #11111d;
-   color: #e9e6e6;
+   background-color: rgba(var(--bg-card-dark), 0.9);
+   color: var(--font-dark);
 }
 
 .content.dark .card.aside__card .card__container {
-   opacity: 0.9;
+   opacity: 1;
+}
+
+.content.dark .card.aside__card .card__container a {
+   color: rgb(var(--primary));
 }
 
 .content.dark .card.card--arrow::before {
-   border-color: transparent #11111d transparent transparent !important;
+   border-color: transparent rgb(var(--bg-card-dark)) transparent transparent !important;
 }
 
 .content.dark .card h3,
 .content.dark .card h4,
 .content.dark .card h5,
 .content.dark .card h6 {
-   color: #e9e6e6;
+   color: var(--font-dark);
 }
 
 .content.dark .card .pageheader {
-   color: #e9e6e6;
+   color: var(--font-dark);
 }
 
 .content.dark .card.card--bulleted li::before {
-   background-color: #e9e6e6;
+   background-color: var(--font-dark);
 }
 
 .content.dark .card__title::after {
@@ -71,11 +74,11 @@
 /* Anchor ------------------------------------- */
 
 .content.dark .anchor {
-   color: #78c0fff1;
+   color: rgb(var(--accent));
 }
 
 .content.dark .anchor:hover {
-   color: #aed9fff1;
+   color: rgba(var(--accent), 0.8);
 }
 
 /* Carousel ------------------------------------- */
@@ -97,39 +100,44 @@
 }
 
 .content.dark .title .title__overlay {
-   background-color: #0078df47;
+   background-color: rgba(var(--accent), 0.2);
 }
 
 /* Switch ------------------------------------- */
 
 .content.dark .switch {
-   background-color: #131320c7;
-   color: #e9e6e6;
+   background-color: rgba(var(--bg-card-dark), 0.85);
+   color: var(--font-dark);
 }
 
 /* Block ------------------------------------- */
 
 .content.dark .block {
-   background-color: #131320c7;
+   background-color: rgba(var(--bg-card-dark), 0.85);
 }
 
 /* Menu ------------------------------------- */
 
 .content.dark .overlay svg {
-   color: #e9e6e6;
+   color: var(--font-dark);
 }
 
 @media screen and (max-width: 769px) {
    .content.dark .nav-item--active > button,
    .content.dark .navItem > button:hover {
       background-color: transparent;
+      color: rgb(var(--accent));
    }
 }
 
 .content.dark .footer {
-   background-color: #131320c7;
+   background-color: rgb(var(--bg-card-dark), 0.85);
 }
 
 .content.dark .footer p {
-   color: #e9e6e6;
+   color: var(--font-dark);
+}
+
+.content.dark .tag {
+   color: rgb(var(--accent));
 }

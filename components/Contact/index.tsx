@@ -40,7 +40,7 @@ export const Contact = ({ offset, id }) => {
                               I&apos;m not seeking any opportunities at this
                               time, but feel free to take a copy of my{" "}
                               <Anchor
-                                 href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing"
+                                 href="/resume.pdf"
                                  className="contact__link"
                               >
                                  digital resume{" "}

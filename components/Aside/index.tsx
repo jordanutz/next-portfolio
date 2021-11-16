@@ -14,10 +14,7 @@ export const Aside = () => (
          </section>
          <Social />
          <section className="aside__quicklinks">
-            <Anchor
-               className="aside__anchor"
-               href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing"
-            >
+            <Anchor className="aside__anchor" href="/resume.pdf">
                Resume
             </Anchor>
             <Anchor

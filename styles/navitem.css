@@ -24,13 +24,13 @@
 
 @media screen and (min-width: 769px) {
    .nav-item--active > button {
-      background-color: #b7dcfeca;
-      color: var(--primary);
+      background-color: rgba(var(--accent), 0.3);
+      color: rgb(var(--primary));
    }
 
    .navItem > button:hover {
-      background-color: #b7dcfeca;
-      color: var(--primary);
+      background-color: rgba(var(--accent), 0.3);
+      color: rgb(var(--primary));
       border-radius: 50%;
    }
 }

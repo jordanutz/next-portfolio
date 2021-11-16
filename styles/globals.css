@@ -1,23 +1,14 @@
 :root {
-   --primary: #006dcc;
-   --secondary: #002453;
-   --accent: #4cc9f0;
+   --accent: 67, 150, 250;
+   --bg-card: 253, 251, 251;
+   --bg-card-dark: 20, 20, 33;
    --bg-primary: #f7f7f7;
+   --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+   --dark: #0c0c19;
+   --font-dark: #e9e6e6;
    --font-primary: #31363e;
-}
-
-@font-face {
-   font-family: "Mockhand";
-   src: url("/Mockhand.ttf");
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-   font-family: "Museo Sans";
-   src: url("/MuseoSans_500.otf");
-   font-style: normal;
-   font-display: swap;
+   --primary: 0, 109, 204;
+   --secondary: #002453;
 }
 
 html {
@@ -334,4 +325,18 @@ template {
 .parallax-wrapper {
    display: flex;
    align-items: center;
+}
+
+@font-face {
+   font-family: "Mockhand";
+   src: url("/Mockhand.ttf");
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Museo Sans";
+   src: url("/MuseoSans_500.otf");
+   font-style: normal;
+   font-display: swap;
 }

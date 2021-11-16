@@ -7,8 +7,8 @@ export const About = () => (
       <Card title="About" className="card--bulleted">
          <section className="about__details">
             <p>
-               Heyooo! My name is Jordan and I powered up my development journey
-               by completing a full-stack web development course at
+               My name is Jordan and I powered up my development journey by
+               completing a full-stack web development course at
                <Anchor href="https://devmountain.com/"> DevMountain</Anchor>.
                This adventure has given me the rewarding opportunity to build
                web applications for a marketing firm and architect JavaScript

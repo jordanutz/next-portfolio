@@ -51,10 +51,10 @@ const Title = ({ offset }) => {
                         Petersburg, Florida with three years of professional
                         development experience architecting (and occasionally
                         designing) scalable JavaScript powered applications.
-                        Currently, I’m focused on building accessible,
-                        human-centered products at Kroger.
+                        Currently, I’m committed to building accessible,
+                        user-focused experiences at Kroger.
                      </p>
-                     <Anchor href="https://drive.google.com/file/d/1kSfGKXYyAFxBkBOcTTrAB6phvBypGsSl/view?usp=sharing">
+                     <Anchor href="/resume.pdf">
                         <Button type="primary" icon={<BsFillCursorFill />}>
                            Download My Resume
                         </Button>

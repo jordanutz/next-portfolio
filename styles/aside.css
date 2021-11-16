@@ -31,7 +31,7 @@
 }
 
 .card.aside__card .card__container {
-   background-color: #ffffffe3;
+   background-color: rgba(254, 254, 254, 0.9);
    border-bottom-left-radius: 0.5rem;
    border-bottom-right-radius: 0.5rem;
 }
@@ -62,21 +62,8 @@ aside .card__content {
    border-radius: 0.5rem;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
    .aside {
       display: none;
    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-   .aside {
-      display: none;
-   }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1201px) {
-   /* ...; */
 }

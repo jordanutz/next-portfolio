@@ -6,7 +6,7 @@
 }
 
 .carousel__widget {
-   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+   box-shadow: var(--box-shadow);
    padding: 12px 8px;
    border-radius: 4px;
    display: flex;
@@ -19,9 +19,8 @@
    cursor: pointer;
    margin: 0 16px;
    background-color: #b7dcfe45;
-   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+   box-shadow: var(--box-shadow);
    display: flex;
-   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
    align-items: center;
    width: 25px;
    height: 25px;
@@ -34,7 +33,7 @@
 }
 
 .carousel__icon {
-   color: var(--primary);
+   color: rgb(var(--primary));
 }
 
 .carousel__button {
@@ -44,7 +43,7 @@
    height: 50px;
    margin: 0 8px;
    overflow: hidden;
-   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+   box-shadow: var(--box-shadow);
    cursor: pointer;
    border: inherit;
    background-size: cover;

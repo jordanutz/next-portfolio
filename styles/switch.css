@@ -11,7 +11,7 @@
 .switch
    .react-toggle--checked:hover:not(.react-toggle--disabled)
    .react-toggle-track {
-   background-color: #b7dcfeca;
+   background-color: rgba(var(--accent), 0.6);
 }
 
 .switch .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
@@ -23,9 +23,9 @@
 }
 
 .switch .react-toggle:hover.react-toggle--checked .react-toggle-track {
-   background-color: #72b6f6ca;
+   background-color: rgba(var(--accent), 0.6);
 }
 
 .switch .react-toggle--checked .react-toggle-thumb {
-   border-color: var(--primary);
+   border-color: rgba(var(--primary), 0.8);
 }
