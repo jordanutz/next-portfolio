@@ -10,8 +10,8 @@ Most recent iteration of personal portfolio - [jordanutz.dev](https://www.jordan
 -  Responsive for mobile and tablet devices.
 -  Cross-compatible for all relevant browsers.
 -  Dark theme feature implemented to improve usability for all viewing scenarios.
--  Optimized to achieve satisfactory scores for all Lighthouse metrics.
--  User scrolling tracked to determine active card at that precise moment.
+-  Optimized to achieve satisfactory scores for all Lighthouse metrics (serving that green).
+-  User scrolling tracked to determine active card from position within viewport.
 
 ## Toolbox
 

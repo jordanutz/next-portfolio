@@ -36,6 +36,7 @@ const Title = ({ offset }) => {
                         alt=""
                         role="presentation"
                         layout="fill"
+                        priority={true}
                      />
                   </section>
                   <section className="title__content" ref={titleRef}>

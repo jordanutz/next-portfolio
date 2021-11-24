@@ -7,25 +7,26 @@ import { data } from "./data";
 
 import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
 
-export const Portfolio = () => (
-   <WithParallaxWrapped id="portfolio" offset={4}>
-      <Card className="portfolio__card" title="Portfolio">
-         <section className="portfolio__container">
+export const Projects = () => (
+   <WithParallaxWrapped id="project" offset={4}>
+      <Card className="project__card" title="Projects">
+         <section className="project__container">
             {data.map((project) => (
-               <section className="portfolio__project" key={project.id}>
-                  <div className="portfolio__overlay"></div>
+               <section className="project__project" key={project.id}>
+                  <div className="project__overlay"></div>
                   <Image
-                     className="portfolio__img"
+                     className="project__img"
                      src={project.image}
                      alt={project.title}
                      layout="fill"
+                     // placeholder="blur"
                   />
-                  <div className="portfolio__details">
-                     <h3 className="portfolio__title">{project.title}</h3>
-                     <p className="portfolio__description">
+                  <section className="project__details">
+                     <h3 className="project__title">{project.title}</h3>
+                     <p className="project__description">
                         {project.description}
                      </p>
-                     <section className="portfolio__social">
+                     <section className="project__social">
                         <Anchor
                            href={project.github}
                            label="View project on Github"
@@ -39,7 +40,7 @@ export const Portfolio = () => (
                            <RiCodepenFill />
                         </Anchor>
                      </section>
-                  </div>
+                  </section>
                </section>
             ))}
          </section>

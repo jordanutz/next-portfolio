@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { InView } from "react-intersection-observer";
+import { InView, useInView } from "react-intersection-observer";
 import { ContainerProps } from "../../models/container";
 
 import useAppContext from "../../context/useContext";
@@ -7,13 +7,14 @@ import WithParallaxWrapper from "../../hocs/WithParallaxWrapper";
 
 const Container: FC<ContainerProps> = ({ id, children, offset }) => {
    const { setActiveCard, contentRefs } = useAppContext();
+
    return (
       <InView
          threshold={0.5}
          onChange={(inView) => inView && setActiveCard(offset)}
          ref={contentRefs[id]}
       >
-         {({ inView, ref }) => {
+         {({ ref }) => {
             return (
                <section className="container" id={id} ref={ref}>
                   <section className="container__step container__step--animate" />

@@ -43,7 +43,7 @@
 
 .contact .contact__card {
    background-color: #fdfbfbd8;
-   max-width: 450px;
+   max-width: 400px;
 }
 
 .contact__card > section {
@@ -58,7 +58,7 @@
    padding: 4px 0 24px 0;
 }
 
-.contact__card h3 {
+.contact .contact__card h3 {
    font-size: 1.4rem;
    margin-top: 16px;
 }

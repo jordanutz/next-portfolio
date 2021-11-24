@@ -1,10 +1,10 @@
-.portfolio__container {
+.project__container {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 12px;
 }
 
-.portfolio__project {
+.project__project {
    position: relative;
    margin: auto;
    overflow: hidden;
@@ -12,7 +12,7 @@
    width: 100%;
 }
 
-.portfolio__overlay {
+.project__overlay {
    background: #082940f2;
    position: absolute;
    margin: auto;
@@ -28,20 +28,20 @@
    z-index: 1;
 }
 
-.portfolio__img {
+.project__img {
    object-fit: cover;
    box-shadow: var(--box-shadow);
    border-radius: 0.25rem;
 }
 
-.portfolio__project:hover .portfolio__overlay {
+.project__project:hover .project__overlay {
    opacity: 1;
    width: 100%;
    height: 100%;
    border-radius: 0.25rem;
 }
 
-.portfolio__details {
+.project__details {
    color: #fff;
    text-align: left;
    position: absolute;
@@ -62,7 +62,7 @@
    z-index: 3;
 }
 
-.portfolio__project:hover .portfolio__details {
+.project__project:hover .project__details {
    opacity: 1;
    -webkit-transform: scale(1);
    transform: scale(1);
@@ -71,70 +71,70 @@
    padding: 0 16px;
 }
 
-.portfolio__project h3 {
+.project__project h3 {
    border-bottom: 2px solid #fff;
 }
 
-.portfolio__project h3,
-.portfolio__description {
+.project__project h3,
+.project__description {
    color: #fff;
    font-size: 1.05rem;
 }
 
-.portfolio__description {
+.project__description {
    font-size: 0.8rem;
    padding-top: 8px;
    position: relative;
    z-index: 2;
 }
 
-.portfolio__social {
+.project__social {
    padding-top: 8px;
 }
 
-.portfolio__social svg {
+.project__social svg {
    color: #fff;
    font-size: 24px;
    margin: 0 4px;
    transition: 0.3s ease;
 }
 
-.portfolio__social svg:hover {
+.project__social svg:hover {
    color: #8cd4ff;
 }
 
 @media screen and (max-width: 575px) {
-   .portfolio__container {
+   .project__container {
       grid-template-columns: 1fr;
    }
 
-   .portfolio__project {
+   .project__project {
       height: 250px;
    }
 
-   .portfolio__project h3 {
+   .project__project h3 {
       font-size: 1.25rem;
    }
 
-   #portfolio {
+   #project {
       padding-bottom: 64px;
    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-   .portfolio__project {
+   .project__project {
       height: 200px;
    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 1200px) {
-   .portfolio__container {
+   .project__container {
       grid-template-columns: repeat(2, 1fr);
    }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-   .portfolio__project {
+   .project__project {
       height: 225px;
    }
 }

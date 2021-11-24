@@ -8,7 +8,7 @@ import { Aside } from "../components/Aside";
 import { Experience } from "../components/Experience";
 import { NavigationContainer } from "../components/NavigationContainer";
 import { Overlay } from "../components/Overlay";
-import { Portfolio } from "../components/Portfolio";
+import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
 
 import WithContactWrapped from "../components/Contact";
@@ -26,7 +26,7 @@ const Index = () => {
          <About />
          <Skills />
          <Experience />
-         <Portfolio />
+         <Projects />
          <WithContactWrapped offset={5} id="contact" />
       </>
    );

@@ -20,7 +20,7 @@ export const AppProvider = ({ children }) => {
       about: useRef(),
       skills: useRef(),
       experience: useRef(),
-      portfolio: useRef(),
+      project: useRef(),
       contact: useRef(),
    };
 

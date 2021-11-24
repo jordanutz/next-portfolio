@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { AppProvider } from "../context";
+import { Loader } from "../components/Loader";
 
 /* Stylesheets */
 import "../styles/globals.css";
@@ -16,12 +18,13 @@ import "../styles/dark-theme.css";
 import "../styles/experience.css";
 import "../styles/footer.css";
 import "../styles/menu.css";
+import "../styles/loader.css";
 import "../styles/navigation.css";
 import "../styles/navitem.css";
 import "../styles/overlay.css";
 import "../styles/pageheader.css";
 import "../styles/parallax.css";
-import "../styles/portfolio.css";
+import "../styles/projects.css";
 import "../styles/skills.css";
 import "../styles/social.css";
 import "../styles/switch.css";
