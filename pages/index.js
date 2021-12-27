@@ -71,7 +71,7 @@ const Index = () => {
                   </ParallaxLayer>
                   <ParallaxLayer
                      className="parallax-layer__aside"
-                     sticky={{ start: 1, end: 4 }}
+                     sticky={{ start: 0, end: 4 }}
                   >
                      <Aside />
                   </ParallaxLayer>

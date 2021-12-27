@@ -40,18 +40,22 @@ export const Card: FC<CardProps> = ({
       </PageHeader>
    );
 
+   const cardContent = children && (
+      <section className="card__container">
+         <section className="card__content">
+            {cardTitle}
+            {children}
+         </section>
+      </section>
+   );
+
    return (
       <section
          className={`${cardClass} ${className} ${cardAnimation}`}
          ref={ref}
       >
          {cardImage}
-         <section className="card__container">
-            <section className="card__content">
-               {cardTitle}
-               {children}
-            </section>
-         </section>
+         {cardContent}
       </section>
    );
 };

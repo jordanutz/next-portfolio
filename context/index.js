@@ -6,6 +6,7 @@ export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
    /* Controls whether user has selected dark or light theme */
    const [isDark, setIsDark] = useState(false);
+   const [isTitleInView, setIsTitleInView] = useState(false);
 
    /* Index of card present in the viewport */
    const [activeCard, setActiveCard] = useState(0);
@@ -55,6 +56,8 @@ export const AppProvider = ({ children }) => {
             setClassName,
             setIsActivated,
             setIsDark,
+            isTitleInView,
+            setIsTitleInView,
          }}
       >
          {children}

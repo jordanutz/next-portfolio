@@ -39,6 +39,7 @@
    letter-spacing: -2px;
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
       -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
+   margin-top: -48px;
 }
 
 .contact .contact__card {

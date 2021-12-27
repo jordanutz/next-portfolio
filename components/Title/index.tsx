@@ -14,12 +14,12 @@ import { TypeWriter } from "../TypeWriter";
 import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
-import MainImg from "../../public/main.webp";
 import ContactImg from "../../assets/contact.webp";
 
 const Title = ({ offset }) => {
    const titleRef = useRef();
-   const { setActiveCard, contentRefs, scroll } = useAppContext();
+   const { setActiveCard, contentRefs, scroll, setIsTitleInView } =
+      useAppContext();
 
    return (
       <InView
@@ -28,17 +28,10 @@ const Title = ({ offset }) => {
          ref={contentRefs.title}
       >
          {({ inView, ref }) => {
+            setIsTitleInView(inView);
             return (
                <Cover className="title" image={ContactImg.src}>
-                  <section className="title__overlay" ref={ref}>
-                     <Image
-                        src={MainImg.src}
-                        alt=""
-                        role="presentation"
-                        layout="fill"
-                        priority={true}
-                     />
-                  </section>
+                  <section className="title__overlay" ref={ref} />
                   <section className="title__content" ref={titleRef}>
                      <h1>Jordan Utz</h1>
                      <TypeWriter
@@ -49,12 +42,12 @@ const Title = ({ offset }) => {
                         level={2}
                      />
                      <p>
-                        I&apos;m a Front End Software Engineer based in St.
-                        Petersburg, Florida with three years of professional
-                        development experience architecting (and occasionally
-                        designing) scalable JavaScript powered applications.
-                        Currently, I’m committed to building accessible,
-                        user-focused experiences at Kroger.
+                        I&apos;m a <strong>Front End Software Engineer</strong>{" "}
+                        based in St. Petersburg, Florida with three years of
+                        professional development experience architecting (and
+                        occasionally designing) scalable JavaScript powered
+                        applications. Currently, I’m committed to building
+                        accessible, user-focused experiences at Kroger.
                      </p>
                      <Anchor href="/resume.pdf">
                         <Button type="primary" icon={<BsFillCursorFill />}>

@@ -18,22 +18,30 @@
 }
 
 .card.aside__card {
-   width: 294px;
+   width: 300px;
    height: 500px;
    transform: translateX(calc(72px + 84px));
    text-align: center;
    z-index: 2;
    border-radius: 0.5rem;
-   flex-direction: column;
+   overflow: hidden;
    display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.card.aside__card.aside__card--hidden .card__container {
+   transform: translateY(350px);
+   transition: 0.6s ease-in-out;
+   animation-fill-mode: forwards;
 }
 
 .card.aside__card .card__container {
-   background-color: rgba(254, 254, 254, 0.9);
+   background-color: rgba(254, 254, 254, 0.7);
    border-bottom-left-radius: 0.5rem;
    border-bottom-right-radius: 0.5rem;
+   transform: translateY(0);
+   transition: 0.6s ease-in-out;
+   animation-fill-mode: forwards;
 }
 
 .card.aside__card > div {
