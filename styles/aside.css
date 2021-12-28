@@ -29,19 +29,30 @@
    align-items: flex-end;
 }
 
-.card.aside__card.aside__card--hidden .card__container {
+.aside.aside--hidden .card__container {
+   visibility: hidden !important;
    transform: translateY(350px);
    transition: 0.6s ease-in-out;
    animation-fill-mode: forwards;
 }
 
-.card.aside__card .card__container {
-   background-color: rgba(254, 254, 254, 0.7);
-   border-bottom-left-radius: 0.5rem;
-   border-bottom-right-radius: 0.5rem;
+.aside.aside--display .card__container {
+   visibility: visible !important;
    transform: translateY(0);
    transition: 0.6s ease-in-out;
    animation-fill-mode: forwards;
+}
+
+.aside__card .card__container {
+   background-color: rgba(254, 254, 254, 0.7);
+   border-bottom-left-radius: 0.5rem;
+   border-bottom-right-radius: 0.5rem;
+   visibility: hidden !important;
+   transition: none;
+   -webkit-transition: none;
+   -moz-transition: none;
+   -ms-transition: none;
+   -o-transition: none;
 }
 
 .card.aside__card > div {

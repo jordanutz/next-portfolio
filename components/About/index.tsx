@@ -33,7 +33,7 @@ export const About = () => (
             </ul>
             <ul>
                <li className="about__interest">Horror Movies</li>
-               <li className="about__interest">Traveling</li>
+               <li className="about__interest">Paddleboarding</li>
                <li className="about__interest">Swimming</li>
                <li className="about__interest">Biking</li>
             </ul>
