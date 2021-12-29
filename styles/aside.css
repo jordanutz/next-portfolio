@@ -32,18 +32,18 @@
 .aside.aside--hidden .card__container {
    visibility: hidden !important;
    transform: translateY(100%);
-   transition: transform 0.4s ease-in-out;
-   animation-fill-mode: both !important;
+   transition: 0.4s ease-in-out;
+   animation-fill-mode: forwards;
 }
 
-.aside.aside--display .aside__card .card__container {
+.aside.aside--display .card__container {
    visibility: visible !important;
    transform: translateY(0);
-   transition: transform 0.4s ease-in-out;
-   animation-fill-mode: both !important;
+   transition: 0.4s ease-in-out;
+   animation-fill-mode: forwards;
 }
 
-.aside .card__container {
+.aside__card .card__container {
    background-color: rgba(254, 254, 254, 0.7);
    border-bottom-left-radius: 0.5rem;
    border-bottom-right-radius: 0.5rem;
@@ -53,8 +53,6 @@
    -moz-transition: none;
    -ms-transition: none;
    -o-transition: none;
-   animation-duration: 0s !important;
-   -webkit-animation-duration: 0s !important;
 }
 
 .card.aside__card > div {
