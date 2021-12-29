@@ -1,4 +1,4 @@
-![alt text](https://i.ibb.co/y8ZpH8x/Screen-Shot-2021-11-16-at-1-15-43-PM.jpg)
+![alt text](https://i.ibb.co/SJr5CBk/Screen-Shot-2021-12-29-at-4-27-47-PM.jpg)
 
 # jordanutz.dev
 
@@ -22,6 +22,6 @@ Most recent iteration of personal portfolio - [jordanutz.dev](https://www.jordan
 -  React Spring
 -  React Intersection Observer
 
-## Live Demo
+## Live
 
 [Portfolio](https://www.jordanutz.dev)

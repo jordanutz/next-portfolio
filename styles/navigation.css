@@ -2,11 +2,11 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: auto auto auto 36px;
+   margin: auto auto auto 42px;
 }
 
 .navigation__nav {
-   width: 84px;
+   width: 74px;
    background: rgba(var(--bg-card), 0.82);
    box-shadow: var(--box-shadow);
    z-index: 2;

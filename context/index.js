@@ -1,4 +1,4 @@
-import React, { createContext, useRef, useState } from "react";
+import React, { createContext, useRef, useState, useEffect } from "react";
 import { setClassName } from "../helpers/setClassName";
 
 export const AppContext = createContext();

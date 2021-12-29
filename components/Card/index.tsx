@@ -32,6 +32,7 @@ export const Card: FC<CardProps> = ({
          alt=""
          role="presentation"
          layout="fill"
+         priority={true}
       />
    );
    const cardTitle = title && (

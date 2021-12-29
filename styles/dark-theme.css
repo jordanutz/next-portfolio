@@ -19,6 +19,10 @@
    color: var(--font-dark);
 }
 
+.content.dark .switch .switch__icon {
+   color: var(--font-dark);
+}
+
 .content.dark .nav-item--active > button,
 .content.dark .navItem > button:hover {
    background-color: rgba(var(--primary), 0.3);

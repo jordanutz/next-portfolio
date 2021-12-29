@@ -2,7 +2,20 @@
    font-size: 0.8rem;
    font-weight: 800;
    text-transform: uppercase;
-   margin-top: 8px;
+   display: flex;
+}
+
+.switch .react-toggle {
+   margin-top: 0;
+}
+
+.switch .switch__icon {
+   font-size: 1.25rem;
+   color: var(--font-primary);
+}
+
+.switch .switch__icon.switch__icon--sun {
+   font-size: 1.45rem;
 }
 
 /* Overwrites Default Styles to react-toggle */
