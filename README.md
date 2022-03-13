@@ -6,9 +6,9 @@ Most recent iteration of personal portfolio - [jordanutz.dev](https://www.jordan
 
 ## Project Details
 
--  All components custom built from scratch with explicit typing set (excluding Switch).
--  Responsive for mobile and tablet devices.
--  Cross-compatible for all relevant browsers.
+-  All components custom built with explicit typing set (excluding Switch).
+-  Responsive for all device types.
+-  Cross-compatible for modern browsers.
 -  Dark theme feature implemented to improve usability for all viewing scenarios.
 -  Optimized to achieve satisfactory scores for all Lighthouse metrics (serving that green).
 -  User scrolling tracked to determine active card from position within viewport.
