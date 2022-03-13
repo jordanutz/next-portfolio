@@ -23,7 +23,7 @@ export const Carousel = ({ indicators, active, setActive }) => {
          >
             <BsArrowLeftShort className="carousel__icon" />
          </button>
-         <section className="carousel__widget">
+         <div className="carousel__widget">
             {indicators.map(({ id, label, image }) => (
                <button
                   aria-label={label}
@@ -35,7 +35,7 @@ export const Carousel = ({ indicators, active, setActive }) => {
                   style={{ backgroundImage: `url(${image.src})` }}
                />
             ))}
-         </section>
+         </div>
          <button
             aria-label="next"
             className="carousel__arrow"

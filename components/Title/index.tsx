@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Image from "next/image";
 import useAppContext from "../../context/useContext";
 import WithParallaxWrapper from "../../hocs/WithParallaxWrapper";
 
@@ -15,6 +14,8 @@ import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
 import ContactImg from "../../assets/contact.webp";
+import MainImg from "../../public/main.webp";
+import { Card } from "../Card";
 
 const Title = ({ offset }) => {
    const titleRef = useRef();
@@ -32,6 +33,7 @@ const Title = ({ offset }) => {
             return (
                <Cover className="title" image={ContactImg.src}>
                   <section className="title__overlay" ref={ref} />
+                  <Card image={MainImg.src} showArrow={false} className="aside__card" />
                   <section className="title__content" ref={titleRef}>
                      <h1>Jordan Utz</h1>
                      <TypeWriter

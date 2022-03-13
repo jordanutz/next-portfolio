@@ -5,7 +5,7 @@ import WithParallaxWrapped from "../Container";
 export const About = () => (
    <WithParallaxWrapped id="about" offset={1}>
       <Card title="About" className="card--bulleted">
-         <section className="about__details">
+         <div className="about__details">
             <p>
                My name is Jordan and I powered up my development journey by
                completing a full-stack web development course at
@@ -23,8 +23,8 @@ export const About = () => (
                JavaScript skills.
             </p>
             <p>Here are just a few interests of mine outside of programming:</p>
-         </section>
-         <section className="about__interests">
+         </div>
+         <div className="about__interests">
             <ul>
                <li className="about__interest">Roller Coasters</li>
                <li className="about__interest">Japanese Culture</li>
@@ -37,7 +37,7 @@ export const About = () => (
                <li className="about__interest">Swimming</li>
                <li className="about__interest">Biking</li>
             </ul>
-         </section>
+         </div>
       </Card>
    </WithParallaxWrapped>
 );

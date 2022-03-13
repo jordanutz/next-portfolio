@@ -1,11 +1,10 @@
 import { Anchor } from "../Anchor";
 import {
-   RiInstagramLine,
    RiLinkedinFill,
    RiCodepenFill,
    RiGithubFill,
-   RiSpotifyFill,
 } from "react-icons/ri";
+import { IoLogoApple } from "react-icons/Io";
 
 export const Social = () => (
    <section className="social">
@@ -18,11 +17,8 @@ export const Social = () => (
       <Anchor href="https://codepen.io/jordanutz" label="Codepen">
          <RiCodepenFill />
       </Anchor>
-      <Anchor href="https://www.instagram.com/thejordanutz" label="Instagram">
-         <RiInstagramLine />
-      </Anchor>
       <Anchor href="https://open.spotify.com/user/jordanuky" label="Spotify">
-         <RiSpotifyFill />
+         <IoLogoApple />
       </Anchor>
    </section>
 );

@@ -26,15 +26,15 @@ export const Experience = () => {
    return (
       <WithParallaxWrapped id="experience" offset={3}>
          <Card title="Experience" className="card--bulleted">
-            <section className="experience__grid">
+            <div className="experience__grid">
                {experienceData.map(
                   (experience, index) =>
                      active === index && (
-                        <section
+                        <div
                            className="experience__section"
                            key={experience.id}
                         >
-                           <section className="experience__details">
+                           <div className="experience__details">
                               <h4>
                                  {`${experience.role} | `}
                                  <span>{`${experience.company}`}</span>
@@ -43,7 +43,7 @@ export const Experience = () => {
                                  icon={<AiTwotoneCalendar />}
                                  title={experience.date}
                               />
-                           </section>
+                           </div>
                            <ul className="experience__list">
                               {experience.responsibilities.map(
                                  (responsibility, index) => (
@@ -56,7 +56,7 @@ export const Experience = () => {
                                  )
                               )}
                            </ul>
-                        </section>
+                        </div>
                      )
                )}
                <Carousel
@@ -64,7 +64,7 @@ export const Experience = () => {
                   active={active}
                   setActive={setActive}
                />
-            </section>
+            </div>
          </Card>
       </WithParallaxWrapped>
    );

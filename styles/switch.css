@@ -42,3 +42,9 @@
 .switch .react-toggle--checked .react-toggle-thumb {
    border-color: rgba(var(--primary), 0.8);
 }
+
+@media screen and (max-width: 768px) {
+   .switch label {
+      margin-bottom: 8px;
+   }
+}

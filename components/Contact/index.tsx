@@ -22,7 +22,7 @@ export const Contact = ({ offset, id }) => {
          onChange={(inView) => inView && setActiveCard(offset)}
          ref={contentRefs[id]}
       >
-         {({ inView, ref }) => {
+         {({ inview, ref }) => {
             return (
                <Cover image={ContactImg.src} className="contact__cover">
                   <section className="contact" ref={ref} id={id}>
@@ -32,10 +32,10 @@ export const Contact = ({ offset, id }) => {
                         showArrow={false}
                         title="Let's Connect"
                      >
-                        <section className="contact__icon">
+                        <div className="contact__icon">
                            <AiOutlineMail />
-                        </section>
-                        <section className="contact__overlay">
+                        </div>
+                        <div className="contact__overlay">
                            <p>
                               I&apos;m not seeking any opportunities at this
                               time, but feel free to take a copy of my{" "}
@@ -55,7 +55,7 @@ export const Contact = ({ offset, id }) => {
                                  Drop a Line
                               </Button>
                            </Anchor>
-                        </section>
+                        </div>
                      </Card>
                   </section>
                   <Footer />

@@ -16,11 +16,11 @@ export const Skills = () => (
             that are semantically structured, translate seamlessly across
             multiple devices and browsers, and are accessible to all users.
          </p>
-         <section className="skills__content">
+         <div className="skills__content">
             {skills.map((skills) => (
                <Tag key={skills.id} {...skills} />
             ))}
-         </section>
+         </div>
       </Card>
    </WithParallaxWrapped>
 );

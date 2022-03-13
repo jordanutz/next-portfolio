@@ -17,7 +17,7 @@ const Container: FC<ContainerProps> = ({ id, children, offset }) => {
          {({ ref }) => {
             return (
                <section className="container" id={id} ref={ref}>
-                  <section className="container__step container__step--animate" />
+                  <div className="container__step container__step--animate" />
                   {children}
                </section>
             );

@@ -2,7 +2,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: auto auto auto 42px;
+   margin: auto auto auto 40px;
 }
 
 .navigation__nav {

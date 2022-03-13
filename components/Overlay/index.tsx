@@ -17,14 +17,14 @@ export const Overlay = () => {
                : "overlay-tablet"
          }`}
       >
-         <section className="overlay__menu">
+         <div className="overlay__menu">
             <Menu />
             <Navigation />
-         </section>
+         </div>
          {isActivated && (
-            <section className="overlay__switch">
+            <div className="overlay__switch">
                <Switch />
-            </section>
+            </div>
          )}
       </section>
    );

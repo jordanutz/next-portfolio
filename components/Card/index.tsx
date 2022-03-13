@@ -42,12 +42,12 @@ export const Card: FC<CardProps> = ({
    );
 
    const cardContent = children && (
-      <section className="card__container">
-         <section className="card__content">
+      <div className="card__container">
+         <div className="card__content">
             {cardTitle}
             {children}
-         </section>
-      </section>
+         </div>
+      </div>
    );
 
    return (

@@ -10,9 +10,9 @@ import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
 export const Projects = () => (
    <WithParallaxWrapped id="project" offset={4}>
       <Card className="project__card" title="Projects">
-         <section className="project__container">
+         <div className="project__container">
             {data.map((project) => (
-               <section className="project__project" key={project.id}>
+               <div className="project__project" key={project.id}>
                   <div className="project__overlay"></div>
                   <Image
                      className="project__img"
@@ -21,12 +21,12 @@ export const Projects = () => (
                      layout="fill"
                      // placeholder="blur"
                   />
-                  <section className="project__details">
+                  <div className="project__details">
                      <h3 className="project__title">{project.title}</h3>
                      <p className="project__description">
                         {project.description}
                      </p>
-                     <section className="project__social">
+                     <div className="project__social">
                         <Anchor
                            href={project.github}
                            label="View project on Github"
@@ -39,11 +39,11 @@ export const Projects = () => (
                         >
                            <RiCodepenFill />
                         </Anchor>
-                     </section>
-                  </section>
-               </section>
+                     </div>
+                  </div>
+               </div>
             ))}
-         </section>
+         </div>
       </Card>
    </WithParallaxWrapped>
 );
