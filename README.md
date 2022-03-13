@@ -19,7 +19,6 @@ Most recent iteration of personal portfolio - [jordanutz.dev](https://www.jordan
 -  React Hooks & Context
 -  TypeScript
 -  Higher Order Components
--  React Spring
 -  React Intersection Observer
 
 ## Live
