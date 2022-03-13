@@ -1,4 +1,4 @@
-![alt text](https://i.ibb.co/SJr5CBk/Screen-Shot-2021-12-29-at-4-27-47-PM.jpg)
+![alt text](https://i.ibb.co/9hyMdGr/Screen-Shot-2022-03-12-at-7-51-58-PM-1.png)
 
 # jordanutz.dev
 
