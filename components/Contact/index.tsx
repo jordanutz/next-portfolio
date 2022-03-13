@@ -22,7 +22,7 @@ export const Contact = ({ offset, id }) => {
          onChange={(inView) => inView && setActiveCard(offset)}
          ref={contentRefs[id]}
       >
-         {({ inview, ref }) => {
+         {({ inView, ref }) => {
             return (
                <Cover image={ContactImg.src} className="contact__cover">
                   <section className="contact" ref={ref} id={id}>
