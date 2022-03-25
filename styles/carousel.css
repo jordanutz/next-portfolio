@@ -10,7 +10,7 @@
    padding: 12px 8px;
    border-radius: 4px;
    display: flex;
-   background-color: #b7dcfe45;
+   background-color: #e9ffe4fd;
    border-radius: 8px;
 }
 
@@ -18,7 +18,7 @@
    border: inherit;
    cursor: pointer;
    margin: 0 16px;
-   background-color: #b7dcfe45;
+   background-color: #e9ffe4fd;
    box-shadow: var(--box-shadow);
    display: flex;
    align-items: center;
@@ -29,7 +29,7 @@
 }
 
 .carousel__arrow:hover {
-   background-color: #b7dcfe99;
+   background-color: rgba(var(--accent), .45);
 }
 
 .carousel__icon {

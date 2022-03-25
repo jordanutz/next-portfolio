@@ -46,7 +46,7 @@
 }
 
 .title .title__overlay {
-   background-color: #cedfee1f;
+   background-color: #fffcd563;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -63,7 +63,7 @@
 
 .title .title__content h1 {
    font-family: "Mockhand";
-   color: #fff;
+   color: #fffdb6;
    font-size: 7rem;
    border-radius: 0.5rem;
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
@@ -100,11 +100,11 @@
 }
 
 .title .title__social a {
-   color: #b0e1ff;
+   color: #fffdb6;
 }
 
 .title .title__social a:hover {
-   color: #d3eeff;
+   color: #fbffcf;
 }
 
 .title .title__chevron {

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { InView, useInView } from "react-intersection-observer";
+import { InView } from "react-intersection-observer";
 import { ContainerProps } from "../../models/container";
 
 import useAppContext from "../../context/useContext";

@@ -1,9 +1,9 @@
 import React from "react";
 import useAppContext from "../../context/useContext";
-import Toggle from "react-toggle";
-import { HiMoon, HiSun } from "react-icons/hi";
 
+import Toggle from "react-toggle";
 import { Block } from "../Block";
+import { HiMoon, HiSun } from "react-icons/hi";
 
 export const Switch = () => {
    const { isDark, setIsDark } = useAppContext();
@@ -23,11 +23,10 @@ export const Switch = () => {
       <Block className="switch">
          <label htmlFor="theme-toggle">{displayIcon}</label>
          <Toggle
+            checked={isDark}
+            icons={false}
             id="theme-toggle"
             onChange={handleToggleTheme}
-            value={isDark}
-            icons={false}
-            checked={isDark}
          />
       </Block>
    );

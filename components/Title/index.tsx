@@ -13,8 +13,8 @@ import { TypeWriter } from "../TypeWriter";
 import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
-import ContactImg from "../../assets/contact.webp";
-import MainImg from "../../public/main.webp";
+import ContactImg from "../../assets/contact.jpg";
+import MainImg from "../../public/main.jpg";
 import { Card } from "../Card";
 
 const Title = ({ offset }) => {
@@ -45,7 +45,7 @@ const Title = ({ offset }) => {
                      />
                      <p>
                         I&apos;m a <strong>Front End Software Engineer</strong>{" "}
-                        based in St. Petersburg, Florida with three years of
+                        based in Lexington, KY with three years of
                         professional development experience architecting (and
                         occasionally designing) scalable JavaScript powered
                         applications. Currently, I’m committed to building

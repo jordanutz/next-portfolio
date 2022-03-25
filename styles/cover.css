@@ -10,7 +10,7 @@
 }
 
 .cover::before {
-   background: linear-gradient(170deg, #377abe 60%, #41aefb);
+   background: linear-gradient(132deg, #20b575 40%,  rgb(202 245 167));
    display: inline-block;
    content: "";
    position: absolute;
@@ -19,5 +19,5 @@
    right: 0;
    bottom: 0;
    z-index: 1;
-   opacity: 0.75;
+   opacity: 0.85;
 }

@@ -9,7 +9,7 @@
 }
 
 .contact__icon {
-   background: rgb(var(--primary));
+   background-color: #e9ffe4fd;
    position: absolute;
    right: 50%;
    transform: translateX(50%);
@@ -25,26 +25,26 @@
 }
 
 .contact__icon svg {
-   color: #fff;
+   color: rgb(var(--primary));
    font-size: 1.5rem;
 }
 
 .contact__header {
-   margin-bottom: 64px;
+   margin-bottom: 54px;
    text-align: center;
    font-family: "Mockhand";
-   color: #fff;
+   color: #fffdb6;
    font-size: 6rem;
    border-radius: 0.5rem;
    letter-spacing: -2px;
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
       -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
-   margin-top: -48px;
+   margin-top: -32px;
 }
 
 .contact .contact__card {
    background-color: #fdfbfbd8;
-   max-width: 400px;
+   max-width: 385px;
 }
 
 .contact__card > section {

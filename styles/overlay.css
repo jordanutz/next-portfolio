@@ -85,10 +85,10 @@
    .overlay__switch > .switch {
       padding: 8px;
    }
-
-   .overlay-tablet {
+   
+   .overlay.overlay--active .overlay-tablet {
       display: flex;
       justify-content: space-between;
       width: 100%;
-   }
+   } 
 }

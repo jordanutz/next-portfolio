@@ -15,7 +15,7 @@
 }
 
 .switch .switch__icon.switch__icon--sun {
-   font-size: 1.45rem;
+   font-size: 1.25rem;
 }
 
 /* Overwrites Default Styles to react-toggle */
@@ -24,11 +24,11 @@
 .switch
    .react-toggle--checked:hover:not(.react-toggle--disabled)
    .react-toggle-track {
-   background-color: rgba(var(--accent), 0.6);
+   background-color: rgb(var(--primary));
 }
 
 .switch .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-   background-color: #131320e6;
+   background-color: rgb(var(--primary));
 }
 
 .switch .react-toggle-track {
@@ -36,11 +36,25 @@
 }
 
 .switch .react-toggle:hover.react-toggle--checked .react-toggle-track {
-   background-color: rgba(var(--accent), 0.6);
+   background-color: rgb(var(--primary));
 }
 
 .switch .react-toggle--checked .react-toggle-thumb {
-   border-color: rgba(var(--primary), 0.8);
+   border-color: #202038c7;
+}
+
+.switch .react-toggle-thumb {
+   width: 17px;
+   height: 17px;
+}
+
+.switch .react-toggle-track {
+   width: 40px;
+   height: 20px;
+}
+
+.switch .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+   background-color: rgb(var(--primary));
 }
 
 @media screen and (max-width: 768px) {

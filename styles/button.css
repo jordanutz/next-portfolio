@@ -17,6 +17,10 @@
    color: rgb(var(--primary));
 }
 
+.button.button--primary:hover {
+   color: #fff !important;
+}
+
 .button.button--secondary {
    background: #fdfbfbd1;
    border: 1px solid rgba(255, 255, 255, 0.683);

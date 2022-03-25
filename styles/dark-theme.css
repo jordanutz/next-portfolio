@@ -12,7 +12,7 @@
 /* Navigation ------------------------------------- */
 
 .content.dark .navigation__nav {
-   background-color: rgba(var(--bg-card-dark), 0.85);
+   background-color: rgba(var(--bg-card-dark), 1);
 }
 
 .content.dark .navItem > button {
@@ -78,7 +78,7 @@
 /* Anchor ------------------------------------- */
 
 .content.dark .anchor {
-   color: rgb(var(--accent));
+   color: rgb(var(--primary));
 }
 
 .content.dark .anchor:hover {
@@ -99,12 +99,26 @@
 /* Cover ------------------------------------- */
 
 .content.dark .cover::before {
-   background: linear-gradient(170deg, #01162a 60%, #0295ff);
+   background: linear-gradient(170deg, rgb(var(--bg-card-dark)) 60%, rgb(var(--primary)));
    opacity: 0.85;
 }
 
 .content.dark .title .title__overlay {
-   background-color: rgba(var(--accent), 0.2);
+   background-color: rgba(var(--primary), 0.3)
+}
+
+/* Contact ------------------------------------- */
+
+.content.dark .contact__icon {
+   background-color: rgb(var(--primary));
+}
+
+.content.dark .contact__icon svg {
+   color: #fff;
+}
+
+.content.dark .contact__icon {
+   border: 3px solid rgba(var(--bg-card-dark), 0.9);
 }
 
 /* Switch ------------------------------------- */
@@ -143,5 +157,24 @@
 }
 
 .content.dark .tag {
-   color: rgb(var(--accent));
+   color: #d6ffd9;
+   background-color: rgba(var(--primary), .6);
+}
+
+/* Title ------------------------------------- */
+
+.content.dark .title .title__content h1, 
+.content.dark .contact__header {
+   color: rgb(var(--primary));
+}
+
+/* Project ------------------------------------- */
+
+.content.dark .project__project h3,
+.content.dark .project__description {
+   color: var(--font-dark);
+}
+
+.content.dark .project__overlay {
+   background-color: rgba(var(--bg-card-dark), .9);
 }

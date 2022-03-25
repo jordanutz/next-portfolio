@@ -22,7 +22,6 @@ const Index = () => {
    const pageContent = (
       <>
          <WithTitleWrapped offset={0} />
-         <Overlay />
          <About />
          <Skills />
          <Experience />
@@ -34,14 +33,6 @@ const Index = () => {
    return (
       <div>
          <Head>
-            <link rel="stylesheet" href="https://use.typekit.net/spe1skb.css" />
-            <link rel="preload" href="/Mockhand.ttf" as="font" crossOrigin="" />
-            <link
-               rel="preload"
-               href="/MuseoSans_500.otf"
-               as="font"
-               crossOrigin=""
-            />
             <title>Jordan Utz | Front End Software Engineer</title>
             <meta
                name="description"

@@ -1,7 +1,7 @@
 .block {
-   width: 74px;
-   height: 80px;
-   background: rgba(var(--bg-card), 0.82);
+   width: 64px;
+    height: 64px;
+   background: rgba(var(--bg-card), 1);
    border-radius: 0.5rem;
    display: flex;
    flex-direction: column;

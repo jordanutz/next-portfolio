@@ -13,7 +13,7 @@
 }
 
 .project__overlay {
-   background: #082940f2;
+   background: #f3f3f3e1;
    position: absolute;
    margin: auto;
    width: 0px;
@@ -42,7 +42,6 @@
 }
 
 .project__details {
-   color: #fff;
    text-align: left;
    position: absolute;
    margin: auto;
@@ -77,7 +76,7 @@
 
 .project__project h3,
 .project__description {
-   color: #fff;
+   color: var(--font-primary);
    font-size: 1.05rem;
 }
 
@@ -93,14 +92,10 @@
 }
 
 .project__social svg {
-   color: #fff;
    font-size: 24px;
    margin: 0 4px;
    transition: 0.3s ease;
-}
-
-.project__social svg:hover {
-   color: #8cd4ff;
+   color: rgb(var(--primary));
 }
 
 @media screen and (max-width: 575px) {

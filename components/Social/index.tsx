@@ -4,7 +4,7 @@ import {
    RiCodepenFill,
    RiGithubFill,
 } from "react-icons/ri";
-import { IoLogoApple } from "react-icons/Io";
+import { IoLogoApple } from "react-icons/io";
 
 export const Social = () => (
    <section className="social">

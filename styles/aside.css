@@ -44,7 +44,7 @@
 }
 
 .aside__card .card__container {
-   background-color: rgba(254, 254, 254, 0.7);
+   background-color: rgba(254, 254, 254, 0.85);
    border-bottom-left-radius: 0.5rem;
    border-bottom-right-radius: 0.5rem;
    visibility: hidden !important;

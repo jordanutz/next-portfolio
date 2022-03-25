@@ -1,5 +1,5 @@
 export const Footer = () => (
    <footer className="footer">
-      <p>Designed & Developed by Jordan Utz in St. Petersburg, FL 💙</p>
+      <p>Designed & Developed by Jordan Utz in Lexington, KY 🍃</p>
    </footer>
 );

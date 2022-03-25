@@ -2,12 +2,12 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin: auto auto auto 40px;
+   margin: auto auto auto 44px;
 }
 
 .navigation__nav {
-   width: 74px;
-   background: rgba(var(--bg-card), 0.82);
+   width: 64px;
+   background: rgba(var(--bg-card), 1);
    box-shadow: var(--box-shadow);
    z-index: 2;
    opacity: 9;
@@ -35,7 +35,7 @@
 }
 
 .navigation__nav > .navigation__list > li > button > svg {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
 }
 
 @media screen and (max-width: 768px) {

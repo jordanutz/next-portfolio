@@ -4,7 +4,7 @@ import useAppContext from "../../context/useContext";
 import { Card } from "../Card";
 import { Details } from "../Details";
 
-import MainImg from "../../public/main.webp";
+import MainImg from "../../public/main.jpg";
 
 export const Aside = () => {
    const { isTitleInView } = useAppContext();

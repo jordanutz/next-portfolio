@@ -10,7 +10,7 @@ import { Footer } from "../Footer";
 import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
 
-import ContactImg from "../../assets/contact.webp";
+import ContactImg from "../../assets/contact.jpg";
 import useAppContext from "../../context/useContext";
 
 export const Contact = ({ offset, id }) => {
@@ -43,7 +43,7 @@ export const Contact = ({ offset, id }) => {
                                  href="/resume.pdf"
                                  className="contact__link"
                               >
-                                 digital resume{" "}
+                                 resume{" "}
                               </Anchor>{" "}
                               and please keep me in mind if you have any
                               opportunities for a{" "}
