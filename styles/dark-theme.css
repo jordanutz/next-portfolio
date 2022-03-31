@@ -25,7 +25,7 @@
 
 .content.dark .nav-item--active > button,
 .content.dark .navItem > button:hover {
-   background-color: rgba(var(--primary), 0.3);
+   background-color: rgba(var(--primary), 0.5);
 }
 
 .content.dark .nav-item--active > button {
@@ -82,7 +82,7 @@
 }
 
 .content.dark .anchor:hover {
-   color: rgba(var(--accent), 0.8);
+   color: rgba(var(--primary), 0.8);
 }
 
 /* Carousel ------------------------------------- */
@@ -99,8 +99,8 @@
 /* Cover ------------------------------------- */
 
 .content.dark .cover::before {
-   background: linear-gradient(170deg, rgb(var(--bg-card-dark)) 60%, rgb(var(--primary)));
-   opacity: 0.85;
+   background: linear-gradient(170deg, rgb(var(--bg-card-dark)) 40%, rgb(var(--primary)));
+   opacity: 0.9;
 }
 
 .content.dark .title .title__overlay {
@@ -157,7 +157,7 @@
 }
 
 .content.dark .tag {
-   color: #d6ffd9;
+   color: rgb(var(--accent));
    background-color: rgba(var(--primary), .6);
 }
 

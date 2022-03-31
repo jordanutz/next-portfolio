@@ -24,12 +24,12 @@
 
 @media screen and (min-width: 769px) {
    .nav-item--active > button {
-      background-color: #e9ffe4fd;
+      background-color: rgba(var(--primary), .1);
       color: rgb(var(--primary));
    }
 
    .navItem > button:hover {
-      background-color: #e9ffe4fd;
+      background-color: rgba(var(--primary), .1);
       color: rgb(var(--primary));
       border-radius: 50%;
    }

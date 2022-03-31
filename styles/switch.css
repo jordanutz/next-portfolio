@@ -24,7 +24,7 @@
 .switch
    .react-toggle--checked:hover:not(.react-toggle--disabled)
    .react-toggle-track {
-   background-color: rgb(var(--primary));
+   background-color: rgba(var(--primary), .8);
 }
 
 .switch .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {

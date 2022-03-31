@@ -10,7 +10,7 @@
 }
 
 .cover::before {
-   background: linear-gradient(132deg, #20b575 40%,  rgb(202 245 167));
+   background: linear-gradient(132deg, #02A5DA 40%,  #564ccc);
    display: inline-block;
    content: "";
    position: absolute;

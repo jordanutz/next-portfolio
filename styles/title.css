@@ -63,7 +63,7 @@
 
 .title .title__content h1 {
    font-family: "Mockhand";
-   color: #fffdb6;
+   color: rgb(var(--accent));
    font-size: 7rem;
    border-radius: 0.5rem;
    text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
@@ -100,11 +100,11 @@
 }
 
 .title .title__social a {
-   color: #fffdb6;
+   color: rgb(var(--accent));
 }
 
 .title .title__social a:hover {
-   color: #fbffcf;
+   color: rgba(var(--accent), .7)
 }
 
 .title .title__chevron {

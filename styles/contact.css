@@ -9,7 +9,7 @@
 }
 
 .contact__icon {
-   background-color: #e9ffe4fd;
+   background-color: #c3ebf9;
    position: absolute;
    right: 50%;
    transform: translateX(50%);
@@ -33,7 +33,7 @@
    margin-bottom: 54px;
    text-align: center;
    font-family: "Mockhand";
-   color: #fffdb6;
+   color: rgb(var(--accent));
    font-size: 6rem;
    border-radius: 0.5rem;
    letter-spacing: -2px;
