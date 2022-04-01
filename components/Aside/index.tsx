@@ -13,6 +13,10 @@ export const Aside = () => {
    useEffect(() => {
       const currentVal = asideRef.current;
 
+      setTimeout(() => {
+         currentVal.classList.remove("preload");
+      }, 1000)
+
       if (currentVal && isTitleInView) {
          currentVal.classList.add("aside--hidden");
          currentVal.classList.remove("aside--display");
@@ -23,7 +27,7 @@ export const Aside = () => {
    }, [isTitleInView]);
 
    return (
-      <aside className="aside" ref={asideRef}>
+      <aside className="aside preload" ref={asideRef}>
          <Card image={MainImg.src} showArrow={false} className="aside__card">
             <Details />
          </Card>
