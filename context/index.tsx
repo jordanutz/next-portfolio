@@ -1,7 +1,20 @@
 import React, { createContext, useRef, useState } from "react";
 import { setClassName } from "../helpers/setClassName";
 
-export const AppContext = createContext({});
+export const AppContext = createContext({
+   activeCard: null,
+   contentRefs: null,
+   isActivated: null,
+   isDark: null,
+   parallax: null,
+   scroll: null,
+   setActiveCard: null,
+   setClassName: null,
+   setIsActivated: null,
+   setIsDark: null,
+   isTitleInView: null,
+   setIsTitleInView: null,
+});
 
 export const AppProvider = ({ children }) => {
    /* Controls whether user has selected dark or light theme */
