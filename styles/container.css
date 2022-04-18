@@ -24,17 +24,6 @@
    left: -62px;
 }
 
-.container::after {
-   content: "";
-   background-color: hsl(0deg 5% 89%);
-   position: absolute;
-   left: 0;
-   width: 2px;
-   height: 100vh;
-   z-index: 1;
-   left: -49px;
-}
-
 .container__step--animate {
    animation: pulse 2s infinite 0.5s;
 }
