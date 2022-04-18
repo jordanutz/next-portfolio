@@ -65,7 +65,7 @@
 
    .overlay__menu .block.block--activated + .navigation__nav {
       display: block;
-      height: 260px;
+      height: 200px;
       transition: height 0.2s ease 0.3s;
       overflow-y: visible;
    }

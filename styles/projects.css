@@ -71,7 +71,7 @@
 }
 
 .project__project h3 {
-   border-bottom: 2px solid #fff;
+   border-bottom: 2px solid rgb(var(--primary));
 }
 
 .project__project h3,

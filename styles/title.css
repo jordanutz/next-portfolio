@@ -38,18 +38,10 @@
 
 .title h2 {
    font-weight: 800;
-   color: rgba(255, 255, 255, 0.875);
    margin-bottom: 24px;
    font-family: museo-sans, sans-serif;
    font-size: 1.5rem;
    margin: 8px 0 16px 0;
-}
-
-.title .title__overlay {
-   background-color: #fffcd563;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
 .title .title__content {
@@ -61,28 +53,22 @@
    margin: 0 225px;
 }
 
-.title .title__content h1 {
-   font-family: "Mockhand";
-   color: rgb(var(--accent));
+.title .title__header {
+   color: rgb(var(--primary));
    font-size: 7rem;
-   border-radius: 0.5rem;
-   text-shadow: 3px 3px 0 #161616c7, -1px -1px 0 #161616c7, 1px -1px 0 #161616c7,
-      -1px 1px 0 #161616c7, 1px 1px 0 #161616c7;
    margin: 8px 0;
-   letter-spacing: -2px;
 }
 
 .title .title__content p {
    margin-bottom: 0;
-   color: #fff;
 }
 
 .title .title__content button {
    padding: 16px;
    background-color: rgba(255, 255, 255, 0.144);
-   border: 1px solid #fff;
+   border: 1px solid rgb(var(--primary));
    font-size: 0.75rem;
-   color: #fff;
+   color: rgb(var(--primary));
    margin: 24px 0;
    text-transform: uppercase;
 }
@@ -100,17 +86,17 @@
 }
 
 .title .title__social a {
-   color: rgb(var(--accent));
+   color: rgb(var(--primary));
 }
 
 .title .title__social a:hover {
-   color: rgba(var(--accent), .7)
+   color: rgba(var(--primary), .7)
 }
 
 .title .title__chevron {
    position: absolute;
    z-index: 4;
-   color: #fff;
+   color: rgb(var(--primary));
    font-size: 2.5rem;
    bottom: 1.5rem;
    animation: bounce 2s infinite;
@@ -141,9 +127,11 @@
    100% {
       transform: translate(50%, 0);
    }
+
    40% {
       transform: translate(50%, -10px);
    }
+
    60% {
       transform: translateY(50%, -5px);
    }
@@ -230,6 +218,7 @@
    .title {
       grid-template-columns: 300px auto;
    }
+
    .title .title__content {
       max-width: 475px;
       margin: 0 220px;

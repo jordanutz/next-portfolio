@@ -1,6 +1,6 @@
 .tag {
    width: fit-content;
-   background-color: #E4F8FF;
+   background-color: rgba(var(--primary), .1);
    display: flex;
    align-items: center;
    padding: 4px 8px;

@@ -6,7 +6,7 @@ import { isMobileOnly } from "react-device-detect";
 import { About } from "../components/About";
 import { Aside } from "../components/Aside";
 import { Experience } from "../components/Experience";
-import { NavigationContainer } from "../components/NavigationContainer";
+import { NavContainer } from "../components/NavContainer";
 import { Overlay } from "../components/Overlay";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
@@ -36,7 +36,7 @@ const Index = () => {
             <title>Jordan Utz | Front End Software Engineer</title>
             <meta
                name="description"
-               content="Jordan Utz is a Front End Software Engineer based in St. Petersburg, Florida with three years of professional development experience architecting scalable JavaScript applications."
+               content="Jordan Utz is a Front End Software Engineer based in St. Petersburg, FL with three years of professional development experience architecting scalable JavaScript applications."
             />
             <meta name="siteUrl" content="https://jordanutz.dev" />
          </Head>
@@ -58,7 +58,7 @@ const Index = () => {
                      className="parallax-layer__desktop"
                      sticky={{ start: 0, end: 5 }}
                   >
-                     <NavigationContainer />
+                     <NavContainer />
                   </ParallaxLayer>
                   <ParallaxLayer
                      className="parallax-layer__aside"

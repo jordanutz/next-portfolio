@@ -20,16 +20,16 @@
 }
 
 .content.dark .switch .switch__icon {
-   color: var(--font-dark);
+   color: var(--secondary);
 }
 
 .content.dark .nav-item--active > button,
 .content.dark .navItem > button:hover {
-   background-color: rgba(var(--primary), 0.5);
+   background-color: rgba(var(--primary), .6);
 }
 
 .content.dark .nav-item--active > button {
-   color: rgb(var(--accent));
+   color: rgb(var(--secondary));
 }
 
 .content.dark .navItem > button:hover {
@@ -82,7 +82,7 @@
 }
 
 .content.dark .anchor:hover {
-   color: rgba(var(--primary), 0.8);
+   color: rgba(var(--primary), .6);
 }
 
 /* Carousel ------------------------------------- */
@@ -96,21 +96,12 @@
    background-color: #2c363e45;
 }
 
-/* Cover ------------------------------------- */
 
-.content.dark .cover::before {
-   background: linear-gradient(170deg, rgb(var(--bg-card-dark)) 40%, rgb(var(--primary)));
-   opacity: 0.9;
-}
-
-.content.dark .title .title__overlay {
-   background-color: rgba(var(--primary), 0.3)
-}
 
 /* Contact ------------------------------------- */
 
 .content.dark .contact__icon {
-   background-color: rgb(var(--primary));
+   background-color: rgba(var(--primary), .6);
 }
 
 .content.dark .contact__icon svg {
@@ -118,13 +109,13 @@
 }
 
 .content.dark .contact__icon {
-   border: 3px solid rgba(var(--bg-card-dark), 0.9);
+   border: 3px solid rgba(var(--bg-card-dark), 0.6);
 }
 
 /* Switch ------------------------------------- */
 
 .content.dark .switch {
-   background-color: rgba(var(--bg-card-dark), 0.85);
+   background-color: rgba(var(--bg-card-dark), 0.6);
    color: var(--font-dark);
 }
 
@@ -149,7 +140,7 @@
 }
 
 .content.dark .footer {
-   background-color: rgb(var(--bg-card-dark), 0.85);
+   background-color: rgb(var(--primary), 0.6);
 }
 
 .content.dark .footer p {
@@ -157,7 +148,7 @@
 }
 
 .content.dark .tag {
-   color: rgb(var(--accent));
+   color: rgb(var(--secondary));
    background-color: rgba(var(--primary), .6);
 }
 
@@ -166,6 +157,15 @@
 .content.dark .title .title__content h1, 
 .content.dark .contact__header {
    color: rgb(var(--primary));
+}
+
+.content.dark .title .title__content button {
+   background-color: transparent;
+}
+
+.content.dark .title .title__content,
+.content.dark .title h2 {
+   color: #fff;
 }
 
 /* Project ------------------------------------- */

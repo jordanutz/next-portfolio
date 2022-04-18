@@ -10,7 +10,7 @@
    padding: 12px 8px;
    border-radius: 4px;
    display: flex;
-   background-color: rgba(var(--primary), .1);
+   background-color: rgba(193, 201, 235, .25);
    border-radius: 8px;
 }
 
@@ -18,7 +18,7 @@
    border: inherit;
    cursor: pointer;
    margin: 0 16px;
-   background-color: rgba(var(--primary), .1);
+   background-color: rgba(193, 201, 235, .25);
    box-shadow: var(--box-shadow);
    display: flex;
    align-items: center;

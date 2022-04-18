@@ -39,3 +39,16 @@
    font-size: 1rem;
    font-weight: 600;
 }
+
+.contact .contact__header,
+.title .title__header {
+   font-family: "Mockhand";
+   color: rgb(var(--primary));
+   border-radius: 0.5rem;
+   text-shadow: 3px 3px 0 #161616c7,
+   -1px -1px 0 #161616c7,
+   1px -1px 0 #161616c7,
+   -1px 1px 0 #161616c7,
+   1px 1px 0 #161616c7;
+   letter-spacing: -2px;
+}

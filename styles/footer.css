@@ -4,7 +4,7 @@
    right: 0;
    left: 0;
    z-index: 8;
-   background: rgba(var(--bg-card), 0.82);
+   background-color: rgb(var(--secondary));
    padding: 8px;
    display: flex;
    justify-content: center;
@@ -14,9 +14,7 @@
 .footer p {
    font-size: 0.8rem;
    text-align: center;
-   color: #fff;
    margin: 0;
    font-weight: 500;
-   color: var(--font-primary);
    letter-spacing: -0.5px;
 }

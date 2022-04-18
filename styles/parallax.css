@@ -9,6 +9,50 @@
    z-index: 3;
 }
 
+.dark.content .parallax-wrapper:nth-child(2) .container::before {
+   content: "";
+   background: linear-gradient(to bottom, transparent, #2b313e 50%, #2b313e85);
+   position: absolute;
+   top: -40px;
+   width: 2px;
+   height: 90px;
+   z-index: 9;
+   left: -49px;
+}
+
+.content .parallax-wrapper:nth-child(2) .container::before {
+   content: "";
+   background: linear-gradient(to bottom, transparent, hsl(0deg 5% 95%) 50%, hsl(0deg 5% 89%));
+   position: absolute;
+   top: -40px;
+   width: 2px;
+   height: 90px;
+   z-index: 9;
+   left: -49px;
+}
+
+.dark.content .parallax-wrapper:nth-child(5) .container::before {
+   content: "";
+   background: linear-gradient(to top, #2b313e, #2b313e36 95%, transparent);
+   position: absolute;
+   bottom: 0px;
+   width: 2px;
+   height: 120px;
+   z-index: 9;
+   left: -49px;
+}
+
+.content .parallax-wrapper:nth-child(5) .container::before {
+   content: "";
+   background: linear-gradient(to top, hsl(0deg 5% 95%), hsl(0deg 5% 89%) 95%, transparent);
+   position: absolute;
+   bottom: 0px;
+   width: 2px;
+   height: 120px;
+   z-index: 9;
+   left: -49px;
+}
+
 @media screen and (max-width: 768px) {
    .parallax-layer__aside,
    .parallax-layer__desktop {
