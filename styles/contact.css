@@ -30,15 +30,14 @@
 }
 
 .contact .contact__header {
-   margin-bottom: 54px;
    text-align: center;
    font-size: 6rem;
-   margin-top: -32px;
+   margin: 24px 0;
 }
 
 .contact .contact__card {
    background-color: #fdfbfbd8;
-   max-width: 385px;
+   max-width: 425px;
 }
 
 .contact__card > section {

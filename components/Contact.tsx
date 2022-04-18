@@ -26,15 +26,14 @@ export const Contact = ({ offset, id }) => {
             return (
                <Cover className="contact__cover">
                   <section className="contact" ref={ref} id={id}>
-                     <PageHeader className="contact__header" level={2}>Contact</PageHeader>
                      <Card
                         className="contact__card"
                         showArrow={false}
-                        title="Let's Connect"
                      >
                         <div className="contact__icon">
                            <AiOutlineMail />
                         </div>
+                                             <PageHeader className="contact__header" level={2}>Contact</PageHeader>
                         <div className="contact__overlay">
                            <p>
                               I&apos;m not seeking any opportunities at this
