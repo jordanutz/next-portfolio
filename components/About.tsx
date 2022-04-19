@@ -18,8 +18,7 @@ export const About = () => (
             <p>
                These days, I have the privilege of contributing solutions as a
                developer on the AMP Hydra team at{" "}
-               <Anchor href="https://kroger.com/"> Kroger</Anchor> - the largest
-               grocery retailer in the country, where I spend my day building
+               <Anchor href="https://kroger.com/"> Kroger</Anchor>, where I spend my day building
                performant component assets in React while leveling up my
                JavaScript skills.
             </p>

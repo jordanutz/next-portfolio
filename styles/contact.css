@@ -32,12 +32,12 @@
 .contact .contact__header {
    text-align: center;
    font-size: 6rem;
-   margin: 24px 0;
+   margin: 16px 0;
 }
 
 .contact .contact__card {
-   background-color: #fdfbfbd8;
-   max-width: 425px;
+   background-color: rgb(var(--bg-card));
+   max-width: 405px;
 }
 
 .contact__card > section {

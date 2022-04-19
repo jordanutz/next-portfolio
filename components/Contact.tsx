@@ -51,7 +51,7 @@ export const Contact = ({ offset, id }) => {
                            </p>
                            <Anchor href="mailto:jordanutz@outlook.com">
                               <Button type="primary" icon={<SiMinutemailer />}>
-                                 Drop a Line
+                                 Let&apos;s Connect!
                               </Button>
                            </Anchor>
                         </div>
