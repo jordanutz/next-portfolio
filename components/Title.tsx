@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Image from "next/image";
 import useAppContext from "../context/useContext";
 import WithParallaxWrapper from "../hocs/WithParallaxWrapper";
 
@@ -14,6 +15,7 @@ import { MdArrowDropDown } from "react-icons/md";
 import { BsFillCursorFill } from "react-icons/bs";
 
 import MainImg from "../public/main.webp";
+import ResponsiveMain from "../public/main-responsive.webp";
 import { Card } from "./Card";
 import { PageHeader } from "./PageHeader";
 
@@ -31,9 +33,18 @@ const Title = ({ offset }) => {
          {({ inView, ref }) => {
             return (
                <Cover className="title">
-                  <section className="title__overlay" ref={ref} />
+                  <div className="title__overlay" ref={ref} />
                   <Card image={MainImg.src} showArrow={false} className="aside__card" />
-                  <section className="title__content" ref={titleRef}>
+                  <div className="title__content" ref={titleRef}>
+                     <div className="title__img-container">
+                       <Image
+                        src={ResponsiveMain.src}
+                        className="title__image"
+                        alt=""
+                        role="presentation"
+                        layout="fill"
+                     />
+                     </div>
                      <PageHeader className="title__header" level={1}>Jordan Utz</PageHeader>
                      <TypeWriter
                         words={[
@@ -48,7 +59,7 @@ const Title = ({ offset }) => {
                         based in St. Petersburg, Florida with three years of
                         professional development experience architecting (and
                         occasionally designing) scalable JavaScript powered
-                        applications. Currently, I’m committed to building
+                        applications. Currently, I&apos;m committed to building
                         accessible, user-focused experiences at Kroger.
                      </p>
                      <Anchor href="/resume.pdf">
@@ -56,7 +67,7 @@ const Title = ({ offset }) => {
                            Download My Resume
                         </Button>
                      </Anchor>
-                  </section>
+                  </div>
                   <MdArrowDropDown
                      aria-label="Scroll Down"
                      className="title__chevron"
@@ -66,9 +77,9 @@ const Title = ({ offset }) => {
                      data-sal-delay="3000"
                      onClick={() => scroll(1, "about")}
                   />
-                  <section className="title__social">
+                  <div className="title__social">
                      <Social />
-                  </section>
+                  </div>
                </Cover>
             );
          }}

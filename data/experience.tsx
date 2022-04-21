@@ -5,9 +5,9 @@ export const experienceData = [
       role: "Front End Software Engineer",
       date: "6/21 - Current",
       responsibilities: [
-         "Developed and supported multi-banner CMS powered React assets supplemented with unit tests written with Enzyme.",
-         "Participated in the discovery and implementation of new CMS powered assets and components.",
-         "Supported feature enhancements of existing code, projects, and the resolution of technical debt.",
+         "Developed multi-banner CMS powered assets written in React and TypeScript, supplemented with unit tests.",
+         "Supported feature enhancements of existing CMS powered assets and components, including the resolution of technical debt.",
+         "Participated in Scrum ceremonies and discoveries toward the implementation of new assets and components. ",
       ],
    },
    {
