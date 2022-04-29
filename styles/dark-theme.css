@@ -101,7 +101,7 @@
 /* Contact ------------------------------------- */
 
 .content.dark .contact__icon {
-   background-color: rgba(var(--primary), .6);
+   background-color: rgba(var(--primary), .9);
 }
 
 .content.dark .contact__icon svg {
