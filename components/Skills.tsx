@@ -9,9 +9,9 @@ export const Skills = () => (
       <Card className="skills__card" title="Skills">
          <p className="skills__paragraph">
             My technical skillset is grounded in all areas existing within the
-            domain of the browser. I take immense enjoyment in leveraging React
+            domain of the browser. I take enjoyment in leveraging React
             to write lean, reusable components and scalable JavaScript code that
-            serves the purpose of solving complex user stories and delivering exceptional users interfaces
+            serves the purpose of solving complex user stories while delivering exceptional users interfaces
             that are semantically structured, translate seamlessly across
             multiple devices and browsers, and are accessible to all users.
          </p>

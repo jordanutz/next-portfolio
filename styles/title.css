@@ -54,7 +54,7 @@
 }
 
 .title .title__header {
-   color: rgb(var(--primary));
+   color: rgba(var(--primary));
    font-size: 7rem;
    margin: 8px 0;
 }
