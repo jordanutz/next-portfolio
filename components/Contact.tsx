@@ -28,7 +28,7 @@ export const Contact = ({ offset, id }) => {
           <Cover className="contact__cover">
             <section className="contact" ref={ref} id={id}>
               <Card className="contact__card" showArrow={false}>
-              <div className="contact__overlay" />
+              <div className="contact__overlay" style={{ backgroundImage: `url(${ContactImg})` }} />
                 <div className="contact__icon">
                   <AiOutlineMail />
                 </div>
