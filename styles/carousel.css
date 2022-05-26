@@ -10,7 +10,7 @@
    padding: 12px 8px;
    border-radius: 4px;
    display: flex;
-   background-color: rgba(193, 201, 235, .25);
+   background-color: rgb(193 201 235 / 8%);
    border-radius: 8px;
 }
 
@@ -18,7 +18,7 @@
    border: inherit;
    cursor: pointer;
    margin: 0 16px;
-   background-color: rgba(193, 201, 235, .25);
+   background-color: rgb(193 201 235 / 8%);
    box-shadow: var(--box-shadow);
    display: flex;
    align-items: center;
@@ -28,12 +28,8 @@
    transition: 0.3s ease;
 }
 
-.carousel__arrow:hover {
-   background-color: rgba(var(--primary), .2);
-}
-
 .carousel__icon {
-   color: rgb(var(--primary));
+   color: rgb(51 51 51 / 94%);
 }
 
 .carousel__button {
@@ -49,6 +45,18 @@
    background-size: cover;
 }
 
+.carousel__button.carousel__button--simple {
+   min-width: 8px;
+   max-width: 8px;
+   height: 12px;
+   margin: 0 4px;
+   border-radius: 50%;
+}
+
+.carousel__button.carousel__button--simple.carousel__image--active {
+   background: rgb(51 51 51 / 94%) !important;
+}
+
 .carousel__button::before {
    background: rgb(51 51 51 / 94%);
    display: inline-block;
@@ -60,6 +68,10 @@
    bottom: 0;
    z-index: 1;
    opacity: 0.7;
+}
+
+.carousel__button.carousel__button--simple::before {
+   background: rgb(52 172 224 / 0%);
 }
 
 .carousel__button:hover::before,

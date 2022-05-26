@@ -1,14 +1,17 @@
 .tag {
    width: fit-content;
-   background-color: rgba(var(--primary), .1);
+   background-color: rgba(var(--primary), .2);
    display: flex;
    align-items: center;
    padding: 4px 8px;
    font-weight: 800;
    font-size: 0.8rem;
    border-radius: 4px;
-   color: rgb(var(--primary));
+   color: rgb(var(--secondary));
    box-shadow: var(--box-shadow);
+   min-height: 24px;
+   max-height: 24px;
+   align-self: center;
 }
 
 .tag > span {
