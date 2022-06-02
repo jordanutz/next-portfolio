@@ -57,7 +57,7 @@
 }
 
 .contact__overlay::before {
-   background: linear-gradient(132deg, #cecece 40%,  #d7d7d7);
+   background: linear-gradient(132deg, #0276c9 40%,  #d7d7d7);
    display: inline-block;
    content: "";
    position: absolute;
@@ -66,9 +66,8 @@
    right: 0;
    bottom: 0;
    z-index: 2;
-   opacity: 0.3;
+   opacity: 0.05;
    border-top-right-radius: 0.5rem;
-   border-top-left-radius: 0.5rem;
 }
 
 .contact__card > section {
@@ -89,10 +88,9 @@
 }
 
 .contact__details {
-   padding: 32px 24px;
+   padding: 32px 24px 32px 48px;
    display: flex;
    flex-direction: column;
-   align-items: ;
    justify-content: center;
 }
 
@@ -119,7 +117,7 @@
 .contact .card__content {
    padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
     grid-gap: 24px;
     min-height: 450px;

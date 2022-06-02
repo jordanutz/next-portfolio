@@ -5,6 +5,7 @@ import { Card } from "./Card";
 import { Tag } from "./Tag";
 import { skills } from "../data/skills";
 import { Carousel } from "./Carousel";
+import ReactTooltip from "react-tooltip";
 
 export const Skills = () => {
   const [active, setActive] = useState(0);
@@ -32,7 +33,14 @@ export const Skills = () => {
                     {skill.icon}
                     <div className="skills__tags">
                       {skill.technologies.map((skills) => (
-                        <Tag key={skills.id} {...skills} />
+                        <>
+                          <a data-tip data-for={skills.title}>
+                            <Tag key={skills.id} {...skills} />
+                          </a>
+                          <ReactTooltip id={skills.title}>
+                            {skills.title}
+                          </ReactTooltip>
+                        </>
                       ))}
                     </div>
                   </div>

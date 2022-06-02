@@ -56,16 +56,15 @@ const Title = ({ offset }) => {
                   "MERN Full Stack Software Engineer.",
                   "Kentucky Wildcat.",
                   "Tech Minimalist.",
-                  "Nintendo Gamer",
                 ]}
                 level={2}
               />
               <p>
-                <strong>Full Stack Software Engineer</strong> specializing in
-                MERN development with three years of professional development
-                experience architecting (and occasionally designing) scalable
-                JavaScript powered applications. Currently, I&apos;m committed
-                to building accessible, user-focused experiences at Kroger.
+                <strong>Full Stack Software Engineer</strong> with three years
+                of professional development experience architecting (and
+                occasionally designing) scalable JavaScript powered
+                applications. Currently, I&apos;m committed to building
+                accessible, user-focused experiences at Kroger.
               </p>
               <Anchor href="/resume.pdf">
                 <Button type="primary" icon={<BsFillCursorFill />}>

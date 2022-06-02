@@ -5,7 +5,7 @@ export const experienceData = [
       role: "Front End Software Engineer",
       date: "6/21 - Current",
       responsibilities: [
-         "Developed multi-banner CMS powered assets written in React and TypeScript, supplemented with unit tests.",
+         "Developed multi-banner CMS powered assets written in React and TypeScript.",
          "Supported feature enhancements of existing CMS powered assets and components, including the resolution of technical debt.",
          "Participated in Scrum ceremonies and discoveries toward the implementation of new assets and components. ",
       ],
@@ -38,8 +38,8 @@ export const experienceData = [
       role: "Full Stack Web Development",
       date: "1/19 - 4/19",
       responsibilities: [
-         "Successfully completed an immersive three-month web development bootcamp with a full-stack cirriculum.",
-         "Program emphasis on React and Node.js driven by a hybrid model approach to learning through combination of lecture and project building.",
+         "Completed an immersive, full-stack web development bootcamp.",
+         "Program emphasis on React and Node.js driven by a hybrid model approach to learning through a combination of lecture and project building.",
          "Acquired a comprehensive understanding on leveraging Github to track and merge changes through development phase of projects. ",
       ],
    },

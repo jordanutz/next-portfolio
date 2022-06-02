@@ -9,6 +9,7 @@ import { PageHeader } from "./PageHeader";
 
 import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
+import ContactImg from "../public/contact.webp";
 
 import useAppContext from "../context/useContext";
 
@@ -49,7 +50,7 @@ export const Contact = ({ offset, id }) => {
                 <div className="contact__wrapper">
                   <div
                     className="contact__overlay"
-                    style={{ backgroundImage: `url(${""})` }}
+                    style={{ backgroundImage: `url(${ContactImg.src})` }}
                   />
                 </div>
               </Card>
