@@ -66,8 +66,7 @@ export const skills = [
     skills: [
       "Strong foundational knowledge of Node.js single-threaded architecture.",
       "Experience designing and developing scalable REST APIs served by Express.",
-      "MongoDB",
-      "Mongoose",
+      "Knowledge of data querying and performing essential CRUD operations from a database initialized using MongoDB and Mongoose.",
       "Technical comprehension of the mechanism that drives Client-Server Model.",
       "Employment of Postman to effectively build, modify, and test APIs.",
     ],

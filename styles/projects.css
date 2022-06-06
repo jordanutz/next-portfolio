@@ -1,6 +1,6 @@
 .project__container {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
    grid-gap: 12px;
 }
 
@@ -8,7 +8,7 @@
    position: relative;
    margin: auto;
    overflow: hidden;
-   height: 175px;
+   height: 225px;
    width: 100%;
 }
 
@@ -67,7 +67,7 @@
    transform: scale(1);
    -webkit-transition: transform 0.5s ease, opacity 1.3s ease;
    transition: transform 0.5s ease, opacity 1.3s ease;
-   padding: 0 16px;
+   padding: 0 1.5rem;
 }
 
 .project__project h3 {
