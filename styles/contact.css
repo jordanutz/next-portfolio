@@ -9,7 +9,7 @@
 }
 
 .contact__icon {
-   background-color: rgb(var(--primary));
+   background-color: #d6ecff;
    position: absolute;
    right: 50%;
    transform: translateX(50%);
@@ -26,7 +26,7 @@
 }
 
 .contact__icon svg {
-   color: rgb(var(--primary));
+   color: rgb(var(--secondary));
    font-size: 1.5rem;
 }
 
@@ -37,11 +37,6 @@
    z-index: 2;
    color: rgba(var(--primary)) !important;
    margin-bottom: 1.5rem;
-}
-
-.contact .contact__card {
-   background-color: rgb(var(--bg-card));
-   max-width: 800px;
 }
 
 .contact__overlay {
@@ -70,10 +65,14 @@
    border-top-right-radius: 0.5rem;
 }
 
-.contact__card > section {
+.contact  {
    position: relative;
    display: flex;
    align-items: center;
+}
+
+.contact .card.card--arrow .card__content {
+   padding: 0;
 }
 
 .contact__card p {
@@ -81,6 +80,7 @@
    z-index: 3;
    padding-bottom: 24px;
    text-align: center;
+   font-size: .8rem;
 }
 
 .contact__card h4 > span {
@@ -92,20 +92,25 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
+   text-align: center;
+}
+
+.contact .card__container .card__content {
+   padding: 0;
 }
 
 .contact__wrapper {
    position: relative;
 }
 
-.contact__card button {
+.contact button {
    width: 100%;
    padding-right: 24px;
    padding-left: 24px;
    font-size: 0.75rem;
 }
 
-.contact__card button svg {
+.contact button svg {
    font-size: 1rem;
 }
 
@@ -123,14 +128,14 @@
     min-height: 450px;
 }
 
+.contact .card__content p {
+   margin-bottom: 1.5rem;
+   font-size: .8rem;
+}
+
 @media screen and (max-width: 575px) {
    .contact {
-      margin: 0 24px;
-   }
-
-   .contact .contact__card {
       max-width: 100%;
-      margin-bottom: 54px;
    }
 
    .contact .contact__header {
@@ -139,5 +144,20 @@
 
    .contact .card__title {
       font-size: 1.25rem;
+   }
+
+   .contact .card__content {
+      grid-template-columns: 1fr;
+      min-height: 400px;
+   }
+
+   .contact .contact__details {
+      padding: 32px;
+   }
+}
+
+@media (min-width: 576px) {
+   .contact__icon {
+      display: none;
    }
 }

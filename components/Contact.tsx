@@ -1,5 +1,4 @@
-import WithParallaxWrapper from "../hocs/WithParallaxWrapper";
-import { InView } from "react-intersection-observer";
+import WithParallaxWrapped from "./Container";
 
 import { Anchor } from "./Anchor";
 import { Button } from "./Button";
@@ -17,51 +16,39 @@ export const Contact = ({ offset, id }) => {
   const { setActiveCard, contentRefs } = useAppContext();
 
   return (
-    <InView
-      threshold={0.25}
-      onChange={(inView) => inView && setActiveCard(offset)}
-      ref={contentRefs[id]}
-    >
-      {({ inView, ref }) => {
-        return (
-          <Cover className="contact__cover">
-            <section className="contact" ref={ref} id={id}>
-              <Card className="contact__card" showArrow={false}>
-                <div className="contact__details">
-                  <PageHeader className="contact__header" level={2}>
-                    Contact
-                  </PageHeader>
-                  <p>
-                    I&apos;m not seeking any opportunities at this time, but
-                    feel free to take a copy of my{" "}
-                    <Anchor href="/resume.pdf" className="contact__link">
-                      resume{" "}
-                    </Anchor>{" "}
-                    and please keep me in mind if you have any opportunities for
-                    a <span>Full Stack Software Engineer</span> open in the
-                    future.
-                  </p>
-                  <Anchor href="mailto:jordanutz@outlook.com">
-                    <Button type="primary" icon={<SiMinutemailer />}>
-                      Let&apos;s Connect!
-                    </Button>
-                  </Anchor>
-                </div>
-                <div className="contact__wrapper">
-                  <div
-                    className="contact__overlay"
-                    style={{ backgroundImage: `url(${ContactImg.src})` }}
-                  />
-                </div>
-              </Card>
-            </section>
-          </Cover>
-        );
-      }}
-    </InView>
+    <WithParallaxWrapped id="contact" offset={5}>
+      <Card className="contact">
+        <div className="contact__details">
+          <div className="contact__icon">
+            <AiOutlineMail />
+          </div>
+          <PageHeader className="contact__header" level={2}>
+            Contact
+          </PageHeader>
+          <p>
+            I&apos;m not seeking any opportunities at this time, but feel free
+            to take a copy of my{" "}
+            <Anchor href="/resume.pdf" className="contact__link">
+              resume{" "}
+            </Anchor>{" "}
+            and please keep me in mind if you have any opportunities for a{" "}
+            <span>Full Stack Software Engineer</span> open in the future.
+          </p>
+          <Anchor href="mailto:jordanutz@outlook.com">
+            <Button type="primary" icon={<SiMinutemailer />}>
+              Let&apos;s Connect!
+            </Button>
+          </Anchor>
+        </div>
+        <div className="contact__wrapper">
+          <div
+            className="contact__overlay"
+            style={{ backgroundImage: `url(${ContactImg.src})` }}
+          />
+        </div>
+      </Card>
+    </WithParallaxWrapped>
   );
 };
 
-const WithContactWrapped = WithParallaxWrapper(Contact);
-
-export default WithContactWrapped;
+export default Contact;

@@ -170,7 +170,11 @@
    }
 
    .card.card--arrow .card__content {
-      padding: 16px;
+      padding: 32px;
+   }
+
+   .contact .contact__wrapper {
+      display: none;
    }
 
    .card--arrow::before {

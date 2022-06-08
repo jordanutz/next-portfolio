@@ -87,7 +87,7 @@
 
 .title__image {
    object-fit: cover;
-   border-radius: 50%;
+   border-radius: 5%;
    object-position: top;
 }
 
@@ -120,8 +120,8 @@
 }
 
 .title .title__img-container {
-   width: 225px;
-   height: 225px;
+   width: 250px;
+   height: 250px;
    position: relative; 
    margin: 36px auto;
 }

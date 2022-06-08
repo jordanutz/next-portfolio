@@ -43,5 +43,6 @@
 
    .experience__details > .tag {
       margin-top: 8px;
+      align-self: flex-start;
    }
 }

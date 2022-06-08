@@ -42,11 +42,6 @@
    margin-top: 16px;
 }
 
-@media screen and (max-width: 574px) {
-   .skills__content {
-      grid-template-columns: repeat(2, 1fr);
-   }
-}
  #skills .card__title::after {
    flex-grow: .74;
  }
@@ -102,4 +97,18 @@
 
  .skills__container.skills__container--workflow .skills__content {
     background-color: #e83f6f3a;
+ }
+
+ @media (max-width: 991px) {
+    .skills__content {
+       display: none;
+    }
+
+    #skills .carousel {
+       margin-right: 0;
+    }
+
+    #skills .card__title::after {
+      flex-grow: 1;
+    }
  }

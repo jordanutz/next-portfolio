@@ -10,8 +10,8 @@ import { NavContainer } from "../components/NavContainer";
 import { Overlay } from "../components/Overlay";
 import { Projects } from "../components/Projects";
 import { Skills } from "../components/Skills";
+import { Contact } from "../components/Contact";
 
-import WithContactWrapped from "../components/Contact";
 import WithTitleWrapped from "../components/Title";
 
 import useAppContext from "../context/useContext";
@@ -26,7 +26,7 @@ const Index = () => {
       <Skills />
       <Experience />
       <Projects />
-      <WithContactWrapped offset={5} id="contact" />
+      <Contact />
     </>
   );
 
@@ -56,13 +56,13 @@ const Index = () => {
             </ParallaxLayer>
             <ParallaxLayer
               className="parallax-layer__desktop"
-              sticky={{ start: 0, end: 5 }}
+              sticky={{ start: 0, end: 6 }}
             >
               <NavContainer />
             </ParallaxLayer>
             <ParallaxLayer
               className="parallax-layer__aside"
-              sticky={{ start: 0, end: 4 }}
+              sticky={{ start: 0, end: 6 }}
             >
               <Aside />
             </ParallaxLayer>
