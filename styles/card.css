@@ -39,24 +39,6 @@
    margin-bottom: 8px;
 }
 
-.card--bulleted li {
-   list-style-type: none !important;
-   position: relative;
-   margin-bottom: 8px;
-   padding-left: 24px;
-}
-
-.card--bulleted li::before {
-   content: "";
-   font-size: 19px;
-   position: absolute;
-   left: -4px;
-   top: 6px;
-   width: 8px;
-   height: 8px;
-   background-color: hsl(0, 0%, 25%);
-}
-
 .card--active h1,
 .card--active h2 {
    color: rgb(29, 29, 44);

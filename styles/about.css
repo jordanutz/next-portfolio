@@ -10,3 +10,7 @@
    position: relative;
    z-index: 3;
 }
+
+.about__interests ul {
+   margin-left: 24px;
+}

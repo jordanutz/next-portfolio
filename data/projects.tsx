@@ -39,7 +39,7 @@ export const data = [
     year: "2022",
     image: OpenGraphImg,
     description:
-      "Application that dynamically generates Open Graph keys using information derived from custom meta keys.",
+      "Application that dynamically generates Open Graph tags using information derived from custom meta keys.",
     github: "https://github.com/jordanutz/open-graph-protocol",
     codepen: null,
   },
