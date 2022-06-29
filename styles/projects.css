@@ -98,6 +98,12 @@
    color: rgb(var(--secondary));
 }
 
+.project__title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
 @media screen and (max-width: 575px) {
    .project__container {
       grid-template-columns: 1fr;

@@ -5,7 +5,7 @@ import { Card } from "./Card";
 import { Anchor } from "./Anchor";
 import { data } from "../data/projects";
 
-import { RiCodepenFill, RiGithubFill } from "react-icons/ri";
+import { RiGithubFill } from "react-icons/ri";
 
 export const Projects = () => (
   <WithParallaxWrapped id="project" offset={4}>
@@ -21,21 +21,15 @@ export const Projects = () => (
               layout="fill"
             />
             <div className="project__details">
-              <h3 className="project__title">{project.title}</h3>
-              <p className="project__description">{project.description}</p>
-              <div className="project__social">
-                <Anchor href={project.github} label="View project on Github">
-                  <RiGithubFill />
-                </Anchor>
-                {project.codepen && (
-                  <Anchor
-                    href={project.codepen}
-                    label="View project on Codepen"
-                  >
-                    <RiCodepenFill />
+              <h3 className="project__title">
+                {project.title}
+                <div className="project__social">
+                  <Anchor href={project.github} label="View project on Github">
+                    <RiGithubFill />
                   </Anchor>
-                )}
-              </div>
+                </div>
+              </h3>
+              <p className="project__description">{project.description}</p>
             </div>
           </div>
         ))}

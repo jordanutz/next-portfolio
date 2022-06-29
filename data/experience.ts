@@ -5,10 +5,10 @@ export const experienceData = [
       role: "Front End Software Engineer",
       date: "6/21 - Current",
       responsibilities: [
-         "Developed multi-banner CMS powered assets written in React and TypeScript.",
-         "Supported feature enhancements of existing CMS powered assets and components, including the resolution of technical debt.",
+         "Developed multi-banner CMS powered assets written in React and TypeScript with testing accounted for using React Test Library. ",
+         "Supported feature enhancements, including the resolution of technical debt, for existing assets and improvements to search engine optimization for page and article builders.",
          "Participated in Scrum ceremonies and discoveries toward the implementation of new assets and components. ",
-      ],
+      ]
    },
    {
       id: 2,
@@ -16,7 +16,7 @@ export const experienceData = [
       role: "Front End Developer",
       date: "5/20 - 6/21",
       responsibilities: [
-         "Collaborated closely with a team of designers in implementing new user interfaces and features for Internal Projects - prototyped in Figma and executed with performant Ant Design components within React.",
+         "Collaborated closely with a team of designers in implementing new user interfaces and reusable components for internal projects prototyped in Figma and architected with components from the Ant Design library.",
          "Improved Webpack performance for speed and efficiency in Admin Portal, reducing build times in half for running and deploying projects.",
          "Maintained accessibility of storefront platform so that ADA compliance is being achieved.",
       ],

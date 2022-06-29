@@ -12,7 +12,6 @@ export const data = [
       "Intuitive trivia game that tests players on their knowledge of video games.",
     image: QuizImg,
     github: "https://github.com/jordanutz/quiz-time",
-    codepen: "https://codepen.io/jordanutz/pen/mdOPWpE",
   },
   {
     id: 2,
@@ -22,7 +21,6 @@ export const data = [
     description:
       "React powered calculator with a stylish and accessible interface.",
     github: "https://github.com/jordanutz/react-calculator",
-    codepen: "https://codepen.io/jordanutz/pen/vYyZrwb",
   },
   {
     id: 3,
@@ -31,7 +29,6 @@ export const data = [
     image: WeatherImg,
     description: "Application that generates the three day weather forecast.",
     github: "https://github.com/jordanutz/weatherfi-2.0",
-    codepen: "https://codepen.io/jordanutz/pen/RwozxwG",
   },
   {
     id: 4,
@@ -41,6 +38,5 @@ export const data = [
     description:
       "Application that dynamically generates Open Graph tags using information derived from custom meta keys.",
     github: "https://github.com/jordanutz/open-graph-protocol",
-    codepen: null,
   },
 ];

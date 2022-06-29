@@ -6,57 +6,54 @@ import { PageHeader } from "./PageHeader";
 import { CardProps } from "../types/card";
 
 export const Card: FC<CardProps> = ({
-   className = "",
-   children,
-   image,
-   showArrow = true,
-   title,
+  className = "",
+  children,
+  image,
+  showArrow = true,
+  title,
 }) => {
-   const [ref, inView] = useInView({
-      triggerOnce: true,
-      threshold: 0.5,
-   });
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
-   const modifiers = {
-      arrow: "card--arrow",
-      animate: "card--animate-in",
-   };
+  const modifiers = {
+    arrow: "card--arrow",
+    animate: "card--animate-in",
+  };
 
-   const cardArrow = showArrow ? modifiers.arrow : "";
-   const cardAnimation = inView ? modifiers.animate : "";
-   const cardClass = `card ${className} ${cardArrow}`;
-   const cardImage = image && (
-      <Image
-         src={image}
-         className="card__image"
-         alt=""
-         role="presentation"
-         layout="fill"
-         priority={true}
-      />
-   );
-   const cardTitle = title && (
-      <PageHeader className="card__title" level={3}>
-         {title}
-      </PageHeader>
-   );
+  const cardArrow = showArrow ? modifiers.arrow : "";
+  const cardAnimation = inView ? modifiers.animate : "";
+  const cardClass = `card ${className} ${cardArrow}`;
+  const cardImage = image && (
+    <Image
+      src={image}
+      className="card__image"
+      alt=""
+      role="presentation"
+      layout="fill"
+      priority={true}
+    />
+  );
+  const cardTitle = title && (
+    <PageHeader className="card__title" level={3}>
+      {title}
+    </PageHeader>
+  );
 
-   const cardContent = children && (
-      <div className="card__container">
-         <div className="card__content">
-            {cardTitle}
-            {children}
-         </div>
+  const cardContent = children && (
+    <div className="card__container">
+      <div className="card__content">
+        {cardTitle}
+        {children}
       </div>
-   );
+    </div>
+  );
 
-   return (
-      <section
-         className={`${cardClass} ${className} ${cardAnimation}`}
-         ref={ref}
-      >
-         {cardImage}
-         {cardContent}
-      </section>
-   );
+  return (
+    <section className={`${cardClass} ${className} ${cardAnimation}`} ref={ref}>
+      {cardImage}
+      {cardContent}
+    </section>
+  );
 };
