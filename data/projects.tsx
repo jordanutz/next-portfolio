@@ -37,6 +37,6 @@ export const data = [
     image: OpenGraphImg,
     description:
       "Application that dynamically generates Open Graph tags using information derived from custom meta keys.",
-    github: "https://github.com/jordanutz/open-graph-protocol",
+    github: "https://github.com/jordanutz/open-graph-tag-generaor",
   },
 ];
