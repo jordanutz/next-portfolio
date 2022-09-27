@@ -18,7 +18,7 @@ export const About = () => {
           DevMountain
         </Anchor>
         . I&apos;m natually invested in the types of problems I encounter daily
-        and the experience points each one provides.
+        and the experience points each one unlocks.
       </p>
     </Container>
   );
