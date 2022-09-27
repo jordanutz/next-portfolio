@@ -21,7 +21,7 @@ export const Typewriter: FC<TypewriterProps> = ({ words, ...rest }) => {
     }, calculateBlinkSpeed());
 
     return () => clearTimeout(handleBlink);
-  }, [blink]);
+  }, [blink, calculateBlinkSpeed]);
 
   useEffect(() => {
     if (currentWord === typed && !isDeleting) {
@@ -45,7 +45,7 @@ export const Typewriter: FC<TypewriterProps> = ({ words, ...rest }) => {
     }, speed);
 
     return () => clearTimeout(setType);
-  }, [typed.length, isDeleting, currentIndex]);
+  }, [typed, isDeleting, currentIndex, speed, currentWord, words.length]);
 
   return (
     <section className="typewriter">

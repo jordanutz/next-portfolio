@@ -22,11 +22,11 @@ export const Experience = () => {
       >
         <PageHeader className="experience__title">Experience</PageHeader>
         <p className="experience__text">
-          Since launching my journey three years ago, I've had the opportunity
-          to develop products for a marketing firm and architect applications
-          for a restaurant supplier. These days, I contribute software solutions
-          driving the user experience for customers as a Senior Software
-          Engineer at{" "}
+          Since launching my journey three years ago, I&apos;ve had the
+          opportunity to develop products for a marketing firm and architect
+          applications for a restaurant supplier. These days, I contribute
+          software solutions driving the user experience for customers as a
+          Senior Software Engineer at{" "}
           <Anchor className="experience__link" href="https://kroger.com/">
             {" "}
             Kroger
