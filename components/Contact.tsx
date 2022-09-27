@@ -1,47 +1,29 @@
-import WithParallaxWrapped from "./Container";
-
-import { Anchor } from "./Anchor";
-import { Button } from "./Button";
-import { Card } from "./Card";
-import { PageHeader } from "./PageHeader";
-
-import { AiOutlineMail } from "react-icons/ai";
 import { SiMinutemailer } from "react-icons/si";
-import ContactImg from "../public/contact.webp";
+import { Anchor, Button, PageHeader } from "./";
 
 export const Contact = () => (
-  <WithParallaxWrapped id="contact" offset={5}>
-    <Card className="contact">
-      <div className="contact__details">
-        <div className="contact__icon">
-          <AiOutlineMail />
-        </div>
-        <PageHeader className="contact__header" level={2}>
-          Contact
-        </PageHeader>
-        <p>
-          I&apos;m not seeking any opportunities at this time, but feel free to
-          take a copy of my{" "}
-          <Anchor href="/resume.pdf" className="contact__link">
-            resume{" "}
-          </Anchor>{" "}
-          and please keep me in mind if you have any opportunities for a{" "}
-          <span>Full Stack Software Engineer</span> open in the future.
-        </p>
-        <Anchor href="mailto:jordanutz@outlook.com">
-          <Button type="primary" icon={<SiMinutemailer />}>
-            Let&apos;s Connect!
-          </Button>
-        </Anchor>
-      </div>
-      <div className="contact__wrapper">
-        <div
-          className="contact__overlay"
-          style={{ backgroundImage: `url(${ContactImg.src})` }}
-        />
-      </div>
-    </Card>
-  </WithParallaxWrapped>
+  <section className="contact">
+    <div className="contact__container">
+      <PageHeader level={2} className="contact__header">
+        Contact
+      </PageHeader>
+      <p className="contact__text">
+        I&apos;m not seeking any new roles at this time, but take a copy of my{" "}
+        <Anchor href="/resume.pdf" className="contact__link">
+          resume{" "}
+        </Anchor>{" "}
+        and keep me in mind if you have any opportunities for a{" "}
+        <strong>Full Stack Engineer</strong> in the future.
+      </p>
+      <Anchor href="mailto:jordanutz@outlook.com">
+        <Button
+          className="contact__button"
+          type="secondary"
+          icon={<SiMinutemailer />}
+        >
+          Let&apos;s Connect!
+        </Button>
+      </Anchor>
+    </div>
+  </section>
 );
-
-export default Contact;

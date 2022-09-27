@@ -1,6 +1,5 @@
 .pageheader {
-   margin-bottom: 4px;
-   letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
 }
 
 .pageheader--1,
@@ -9,46 +8,43 @@
 .pageheader--4,
 .pageheader--5,
 .pageheader--6 {
-   font-weight: 700;
-   color: var(--font-primary);
+  font-weight: 700;
+  color: var(--font);
 }
 
 .pageheader--1 {
-   font-size: 3rem;
+  font-size: 6rem;
+  font-family: "Mockhand";
+  text-shadow: 2px 2px 0 #4b4b4bc7, -1px -1px 0 #4b4b4bc7, 1px -1px 0 #4b4b4bc7,
+    -1px 1px 0 #4b4b4bc7, 1px 1px 0 #4b4b4bc7;
+  color: var(--secondary);
 }
 
 .pageheader--2 {
-   font-size: 2.25rem;
-   font-weight: 800;
-   letter-spacing: -1.5px;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
 }
 
 .pageheader--3 {
-   font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .pageheader--4 {
-   font-size: 1.75rem;
+  font-size: 1.2rem;
 }
 
 .pageheader--5 {
-   font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .pageheader--6 {
-   font-size: 1rem;
-   font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.contact .contact__header,
-.title .title__header {
-   font-family: "Mockhand";
-   color: rgb(var(--primary));
-   border-radius: 0.5rem;
-   text-shadow: 3px 3px 0 #161616c7,
-   -1px -1px 0 #161616c7,
-   1px -1px 0 #161616c7,
-   -1px 1px 0 #161616c7,
-   1px 1px 0 #161616c7;
-   letter-spacing: -2px;
+@media (min-width: 992px) {
+  .pageheader--1 {
+    font-size: 7rem;
+  }
 }

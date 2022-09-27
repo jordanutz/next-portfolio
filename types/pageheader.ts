@@ -1,4 +1,4 @@
 export interface PageHeaderProps {
-   className?: string;
-   level: number;
+  className?: string;
+  level?: number;
 }

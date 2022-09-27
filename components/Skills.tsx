@@ -1,67 +1,24 @@
-import { useState } from "react";
-import WithParallaxWrapped from "./Container";
+import { PageHeader } from "./";
+import { skills } from "../data";
 
-import { Card } from "./Card";
-import { Tag } from "./Tag";
-import { skills } from "../data/skills";
-import { Carousel } from "./Carousel";
-import ReactTooltip from "react-tooltip";
-
-export const Skills = () => {
-  const [active, setActive] = useState(0);
-  const indicators = [
-    { id: 0, label: "Front End Development", image: "" },
-    { id: 1, label: "Back End Development", image: "" },
-    { id: 2, label: "Workflow", image: "" },
-  ];
-  const modifiers = [
-    "skills__container--front",
-    "skills__container--back",
-    "skills__container--workflow",
-  ];
-
-  return (
-    <WithParallaxWrapped id="skills" offset={2}>
-      <Card className="skills__card" title="Skills">
-        {skills.map((skill) => {
-          return (
-            skill.id === active && (
-              <>
-                <h4>{skill.title}</h4>
-                <div className={`skills__container ${modifiers[active]}`}>
-                  <div className="skills__content">
-                    {skill.icon}
-                    <div className="skills__tags">
-                      {skill.technologies.map((skills) => (
-                        <>
-                          <a data-tip data-for={skills.title}>
-                            <Tag key={skills.id} {...skills} />
-                          </a>
-                          <ReactTooltip id={skills.title}>
-                            {skills.title}
-                          </ReactTooltip>
-                        </>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <ul>
-                      {skill.skills.map((skill, index) => (
-                        <li key={index}>{skill}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </>
-            )
-          );
-        })}
-        <Carousel
-          indicators={indicators}
-          active={active}
-          setActive={setActive}
-        />
-      </Card>
-    </WithParallaxWrapped>
-  );
-};
+export const Skills = () => (
+  <section className="skills">
+    {skills.map((skill) => (
+      <div className="skills__content" key={skill.id}>
+        {skill.icon}
+        <PageHeader level={3} className="skills__title">
+          {skill.title}
+        </PageHeader>
+        <p className="skills__description">{skill.description}</p>
+        <ul>
+          <h4 className="skills__subheader">Tools</h4>
+          {skill.technologies.map((skill, index) => (
+            <li key={index} className="skills__list-item">
+              {skill.title}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+);

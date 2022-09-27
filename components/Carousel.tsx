@@ -1,6 +1,6 @@
-import { handleCarouselControls } from "../helpers/handleCarouselControls";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import { CarouselProps } from "../types/carousel";
+import { handleCarouselControls } from "../helpers/handleCarouselControls";
+import { CarouselProps } from "../types";
 
 export const Carousel = ({ indicators, active, setActive }: CarouselProps) => {
   const modifiers = {
@@ -12,7 +12,7 @@ export const Carousel = ({ indicators, active, setActive }: CarouselProps) => {
       <button
         aria-label="previous"
         className="carousel__arrow"
-        onClick={(event) =>
+        onClick={() =>
           handleCarouselControls("decrement", indicators, active, setActive)
         }
       >
@@ -34,7 +34,7 @@ export const Carousel = ({ indicators, active, setActive }: CarouselProps) => {
       <button
         aria-label="next"
         className="carousel__arrow"
-        onClick={(event) =>
+        onClick={() =>
           handleCarouselControls("increment", indicators, active, setActive)
         }
       >

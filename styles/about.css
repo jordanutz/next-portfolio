@@ -1,16 +1,18 @@
-.about__interests {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   position: relative;
-   z-index: 3;
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.about__details {
-   padding-bottom: 8px;
-   position: relative;
-   z-index: 3;
+.about .about__title {
+  color: var(--secondary);
 }
 
-.about__interests ul {
-   margin-left: 24px;
+.about__text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about .about__link {
+  color: var(--secondary);
 }

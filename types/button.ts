@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 
 export interface ButtonProps {
-   icon?: ReactNode;
-   onClick?: () => void;
-   type?: string;
+  className?: string;
+  icon?: ReactNode;
+  onClick?: () => void;
+  type?: string;
 }

@@ -1,88 +1,75 @@
 .carousel {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel__widget {
-   box-shadow: var(--box-shadow);
-   padding: 12px 8px;
-   border-radius: 4px;
-   display: flex;
-   background-color: rgb(193 201 235 / 8%);
-   border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 12px 8px;
+  display: flex;
+  border-radius: var(--border-radius);
 }
 
 .carousel__arrow {
-   border: inherit;
-   cursor: pointer;
-   margin: 0 16px;
-   background-color: rgb(193 201 235 / 8%);
-   box-shadow: var(--box-shadow);
-   display: flex;
-   align-items: center;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   transition: 0.3s ease;
+  border: inherit;
+  cursor: pointer;
+  margin: 0 16px;
+  background-color: rgb(193 201 235 / 8%);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: 0.3s ease;
 }
 
 .carousel__icon {
-   color: rgb(51 51 51 / 94%);
+  color: rgb(51 51 51 / 94%);
 }
 
 .carousel__button {
-   position: relative;
-   min-width: 50px;
-   border-radius: 4px;
-   height: 50px;
-   margin: 0 8px;
-   overflow: hidden;
-   box-shadow: var(--box-shadow);
-   cursor: pointer;
-   border: inherit;
-   background-size: cover;
+  position: relative;
+  min-width: 50px;
+  border-radius: var(--border-radius);
+  height: 50px;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  border: inherit;
+  background-size: cover;
 }
 
 .carousel__button.carousel__button--simple {
-   min-width: 8px;
-   max-width: 8px;
-   height: 12px;
-   margin: 0 4px;
-   border-radius: 50%;
+  min-width: 0.5rem;
+  max-width: 0.5rem;
+  height: 12px;
+  margin: 0 0.25rem;
+  border-radius: 50%;
 }
 
 .carousel__button.carousel__button--simple.carousel__image--active {
-   background: rgb(51 51 51 / 94%) !important;
+  background: rgb(51 51 51 / 94%) !important;
 }
 
 .carousel__button::before {
-   background: rgb(51 51 51 / 94%);
-   display: inline-block;
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   z-index: 1;
-   opacity: 0.7;
-}
-
-.carousel__button.carousel__button--simple::before {
-   background: rgb(52 172 224 / 0%);
+  background: rgb(51 51 51 / 94%);
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.7;
 }
 
 .carousel__button:hover::before,
 .carousel__image--active::before {
-   background-color: transparent !important;
-   background: none !important;
-   transition: 0.3s ease;
-}
-
-@media screen and (max-width: 574px) {
-   .carousel__arrow {
-      display: none;
-   }
+  background-color: transparent !important;
+  background: none !important;
+  transition: 0.3s ease;
 }

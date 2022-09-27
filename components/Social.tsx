@@ -1,10 +1,10 @@
-import { Anchor } from "./Anchor";
 import {
   RiLinkedinFill,
   RiInstagramFill,
   RiGithubFill,
   RiSpotifyFill,
 } from "react-icons/ri";
+import { Anchor } from "./";
 
 export const Social = () => (
   <section className="social">

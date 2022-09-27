@@ -1,9 +1,0 @@
-@media screen and (max-width: 768px) {
-   .menu__layer {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      z-index: 9;
-      width: 100%;
-   }
-}

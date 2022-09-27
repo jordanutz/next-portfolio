@@ -1,18 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
-import WithParallaxWrapped from "./Container";
-
-import { Carousel } from "./Carousel";
-import { Card } from "./Card";
-import { Tag } from "./Tag";
-import { experienceData } from "../data/experience";
-
+import { useState } from "react";
 import { AiTwotoneCalendar } from "react-icons/ai";
-
-import elink from "../assets/elink.webp";
-import webstaurant from "../assets/webstaurant.webp";
-import kroger from "../assets/kroger.webp";
-import devmountain from "../assets/devmountain.webp";
+import { Anchor, Carousel, Container, PageHeader, Tag } from "./";
+import { kroger, webstaurant, elink, devmountain } from "../assets";
+import { experience } from "../data/";
 
 export const Experience = () => {
   const indicators = [
@@ -24,39 +14,54 @@ export const Experience = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <WithParallaxWrapped id="experience" offset={3}>
-      <Card title="Experience" className="card--bulleted">
-        <div className="experience__grid">
-          {experienceData.map(
-            (experience, index) =>
-              active === index && (
-                <div className="experience__section" key={experience.id}>
-                  <div className="experience__details">
-                    <h4>
-                      {`${experience.role} | `}
-                      <span>{`${experience.company}`}</span>
-                    </h4>
-                    <Tag icon={<AiTwotoneCalendar />} title={experience.date} />
-                  </div>
-                  <ul className="experience__list">
-                    {experience.responsibilities.map(
-                      (responsibility, index) => (
-                        <li className="experience__item" key={index}>
-                          {responsibility}
-                        </li>
-                      )
-                    )}
-                  </ul>
+    <section className="experience">
+      <Container
+        element="div"
+        isStretched={true}
+        className="experience__container"
+      >
+        <PageHeader className="experience__title">Experience</PageHeader>
+        <p className="experience__text">
+          Since launching my journey three years ago, I've had the opportunity
+          to develop products for a marketing firm and architect applications
+          for a restaurant supplier. These days, I contribute software solutions
+          driving the user experience for customers as a Senior Software
+          Engineer at{" "}
+          <Anchor className="experience__link" href="https://kroger.com/">
+            {" "}
+            Kroger
+          </Anchor>
+          .
+        </p>
+      </Container>
+      <div className="experience__content">
+        {experience.map(
+          (data, index) =>
+            active === index && (
+              <div className="experience__section" key={data.id}>
+                <div className="experience__details">
+                  <PageHeader level={3}>
+                    {`${data.role} | `}
+                    <span>{`${data.company}`}</span>
+                  </PageHeader>
+                  <Tag icon={<AiTwotoneCalendar />} title={data.date} />
                 </div>
-              )
-          )}
-          <Carousel
-            indicators={indicators}
-            active={active}
-            setActive={setActive}
-          />
-        </div>
-      </Card>
-    </WithParallaxWrapped>
+                <ul className="experience__list">
+                  {data.responsibilities.map((responsibility, index) => (
+                    <li className="experience__item" key={index}>
+                      {responsibility}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+        )}
+        <Carousel
+          indicators={indicators}
+          active={active}
+          setActive={setActive}
+        />
+      </div>
+    </section>
   );
 };

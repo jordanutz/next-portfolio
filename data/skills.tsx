@@ -1,106 +1,49 @@
-import { ImAccessibility } from "react-icons/im";
-import { DiPhonegap } from "react-icons/di";
-import { Gi3DGlasses } from "react-icons/gi";
-import {
-  SiRedux,
-  SiWebpack,
-  SiSass,
-  SiHtml5,
-  SiCss3,
-  SiTypescript,
-  SiReact,
-  SiNextdotjs,
-  SiTailwindcss,
-  SiJavascript,
-  SiNodedotjs,
-  SiNodemon,
-  SiPostman,
-  SiMongodb,
-  SiExpress,
-  SiGit,
-  SiVisualstudio,
-  SiFigma,
-  SiNpm,
-  SiTrello,
-  SiMoleculer,
-  SiJirasoftware,
-  SiGithub,
-  SiGooglechrome,
-} from "react-icons/si";
-import { IoIosLaptop } from "react-icons/io";
-import { IoServerOutline } from "react-icons/io5";
-import { RiDonutChartFill } from "react-icons/ri";
+import { Gi3DGlasses, GiPaintBrush } from "react-icons/gi";
+import { DiDatabase } from "react-icons/di";
 
-export const skills = [
+export const data = [
   {
     id: 0,
     title: "Front-End Development",
-    icon: <IoIosLaptop />,
-    skills: [
-      "Proficiency using markup and web languages - HTML, CSS, and JavaScript.",
-      "Advanced knowledge of modern React application tools & infrastructure.",
-      "Adherence to the processes that drive a Test-Driven Development workflow.",
-      "Experience testing an application's support for modern browsers.",
-      "Application of best practices to meet Accessibility standards.",
-      "Knowledge of the key components that impact Search Engine Optimization.",
-    ],
+    icon: <GiPaintBrush />,
+    description:
+      "I embrace modern languages and frameworks to deliver exceptional user interfaces that are responsive and cross-compatible.",
     technologies: [
-      { id: 1, title: "HTML5", icon: <SiHtml5 /> },
-      { id: 2, title: "CSS3", icon: <SiCss3 /> },
-      { id: 3, title: "JavaScript", icon: <SiJavascript /> },
-      { id: 4, title: "React", icon: <SiReact /> },
-      { id: 5, title: "Redux", icon: <SiRedux /> },
-      { id: 6, title: "TypeScript", icon: <SiTypescript /> },
-      { id: 7, title: "Webpack", icon: <SiWebpack /> },
-      { id: 8, title: "NextJS", icon: <SiNextdotjs /> },
-      { id: 9, title: "Sass", icon: <SiSass /> },
-      { id: 10, title: "Tailwind", icon: <SiTailwindcss /> },
-      { id: 11, title: "Responsive Web Design", icon: <DiPhonegap /> },
-      { id: 12, title: "A11y", icon: <ImAccessibility /> },
+      { id: 1, title: "HTML5" },
+      { id: 2, title: "CSS3" },
+      { id: 3, title: "JavaScript" },
+      { id: 4, title: "React" },
+      { id: 5, title: "Redux" },
+      { id: 6, title: "TypeScript" },
     ],
   },
   {
     id: 1,
     title: "Back-End Development",
-    icon: <IoServerOutline />,
-    skills: [
-      "Strong foundational knowledge of Node.js single-threaded architecture.",
-      "Experience designing and developing scalable REST APIs served by Express.",
-      "Knowledge of data querying and performing essential CRUD operations from a database initialized using MongoDB and Mongoose.",
-      "Technical comprehension of the mechanism that drives Client-Server Model.",
-      "Employment of Postman to effectively build, modify, and test APIs.",
-    ],
+    icon: <DiDatabase />,
+    description:
+      "I am passionate about writing clean, efficient server-side solutions, and developing/testing API's designed to scale.",
     technologies: [
-      { id: 1, title: "Node.js", icon: <SiNodedotjs /> },
-      { id: 2, title: "MongoDB", icon: <SiMongodb /> },
-      { id: 3, title: "Express", icon: <SiExpress /> },
-      { id: 4, title: "Nodemon", icon: <SiNodemon /> },
-      { id: 5, title: "Postman", icon: <SiPostman /> },
-      { id: 6, title: "Mongoose", icon: <SiMoleculer /> },
+      { id: 1, title: "Node.js" },
+      { id: 2, title: "MongoDB" },
+      { id: 3, title: "Express" },
+      { id: 4, title: "Nodemon" },
+      { id: 5, title: "Mongoose" },
     ],
   },
   {
     id: 2,
     title: "Workflow",
     icon: <Gi3DGlasses />,
-    skills: [
-      "Extensive experience using Git for source code management in production.",
-      "Contributions to team collaboration powered by the principles of Agile.",
-      "Familiarity with Jira to track software issues and manage projects.",
-      "Configuration of Visual Studio Code for optimal workflow.",
-      "Reliance on Chrome DevTools for debugging and performing audits.",
-      "Application of Figma to translate prototypes into a functional interface.",
-    ],
+    description:
+      "I rely on a versatile arsenal of management tools and browser extensions to boost my precision and productivity.",
     technologies: [
-      { id: 1, title: "Git", icon: <SiGit /> },
-      { id: 2, title: "Agile Development", icon: <RiDonutChartFill /> },
-      { id: 3, title: "Visual Studio Code", icon: <SiVisualstudio /> },
-      { id: 4, title: "Jira", icon: <SiJirasoftware /> },
-      { id: 5, title: "Github", icon: <SiGithub /> },
-      { id: 6, title: "Node Package Manager", icon: <SiNpm /> },
-      { id: 7, title: "Chrome DevTools", icon: <SiGooglechrome /> },
-      { id: 8, title: "Trello", icon: <SiTrello /> },
-      { id: 9, title: "Figma", icon: <SiFigma /> },
+      { id: 1, title: "Git" },
+      { id: 2, title: "Agile" },
+      { id: 3, title: "Visual Studio Code" },
+      { id: 4, title: "Github" },
+      { id: 5, title: "Chrome DevTools" },
+      { id: 6, title: "Postman" },
     ],
   },
 ];

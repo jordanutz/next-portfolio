@@ -1,14 +1,14 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { FC, useState, useEffect } from "react";
-import { PageHeader } from "./PageHeader";
-import { TypeWriterProps } from "../types/typewriter";
+import { FC, useState, useEffect, useReducer } from "react";
+import { PageHeader } from "./";
+import { initialState, reducer } from "../state";
+import { TypewriterProps } from "../types";
 
-export const TypeWriter: FC<TypeWriterProps> = ({ words, ...rest }) => {
-  const [typed, setTyped] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [speed, setSpeed] = useState(100);
+export const Typewriter: FC<TypewriterProps> = ({ words, ...rest }) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
   const [blink, setBlink] = useState(false);
+
+  const { typed, currentIndex, isDeleting, speed } = state;
+
   const currentWord = words[currentIndex];
 
   const calculateBlinkSpeed = () => {
@@ -24,37 +24,24 @@ export const TypeWriter: FC<TypeWriterProps> = ({ words, ...rest }) => {
   }, [blink]);
 
   useEffect(() => {
-    /* Executes when the current word is finished typing out. 
-      At this point, we need to begin removing each character. */
     if (currentWord === typed && !isDeleting) {
-      setIsDeleting(true);
-      setSpeed(3000);
+      dispatch({ type: "REMOVE_CHARACTER" });
       return;
     }
 
-    /* Executes only when each character has been removed and we're ready to shift to the next word. */
     if (!typed && isDeleting) {
-      setIsDeleting(false);
-      setSpeed(600);
+      dispatch({ type: "SETUP" });
 
-      /* Tests whether or not our current word is the last word in our array of words. 
-         If so, reset to initial. Otherwise, increment the currentIndex. */
       if (currentIndex === words.length - 1) {
-        setCurrentIndex(0);
+        dispatch({ type: "RESET_LIST" });
         return;
       }
 
-      setCurrentIndex((prevState) => prevState + 1);
+      dispatch({ type: "NEXT_WORD" });
     }
 
     const setType = setTimeout(() => {
-      if (isDeleting) {
-        setSpeed(75);
-        setTyped(currentWord.substring(0, typed.length - 1));
-      } else {
-        setSpeed(125);
-        setTyped(currentWord.substring(0, typed.length + 1));
-      }
+      dispatch({ type: "CONSTRUCT_WORD", payload: { currentWord } });
     }, speed);
 
     return () => clearTimeout(setType);

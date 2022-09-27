@@ -1,7 +1,13 @@
 import { FC } from "react";
-import { ButtonProps } from "../types/button";
+import { ButtonProps } from "../types";
 
-export const Button: FC<ButtonProps> = ({ children, icon, type, ...rest }) => {
+export const Button: FC<ButtonProps> = ({
+  children,
+  className,
+  icon,
+  type,
+  ...rest
+}) => {
   const modifiers = {
     primary: "button--primary",
     secondary: "button--secondary",
@@ -10,7 +16,7 @@ export const Button: FC<ButtonProps> = ({ children, icon, type, ...rest }) => {
 
   return (
     <button
-      className={`button ${type ? modifiers[type] : ""}`}
+      className={`button ${className} ${type ? modifiers[type] : ""}`}
       type="button"
       {...rest}
     >

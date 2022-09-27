@@ -1,29 +1,30 @@
-import { FC } from "react";
-import { InView } from "react-intersection-observer";
-import { ContainerProps } from "../types/container";
+import { createElement, ReactNode, forwardRef } from "react";
 
-import useAppContext from "../context/useContext";
-import WithParallaxWrapper from "../hocs/WithParallaxWrapper";
+interface ContainerProps {
+  className?: string;
+  children: ReactNode;
+  element?: string;
+  isStretched?: boolean;
+}
 
-const Container: FC<ContainerProps> = ({ id, children, offset }) => {
-  const { setActiveCard, contentRefs } = useAppContext();
+export const Container = forwardRef<HTMLDivElement, ContainerProps>(
+  (props, ref) => {
+    const {
+      children,
+      className = "",
+      element = "section",
+      isStretched = false,
+    } = props;
 
-  return (
-    <InView
-      threshold={0.5}
-      onChange={(inView) => inView && setActiveCard(offset)}
-      ref={contentRefs[id]}
-    >
-      {({ ref }) => {
-        return (
-          <section className="container" id={id} ref={ref}>
-            <div className="container__step container__step--animate" />
-            {children}
-          </section>
-        );
-      }}
-    </InView>
-  );
-};
+    const isStretchedClass = isStretched ? "container--stretched" : "";
 
-export default WithParallaxWrapper(Container);
+    return createElement(
+      element,
+      {
+        className: `container ${className} ${isStretchedClass}`.trim(),
+        ref,
+      },
+      children
+    );
+  }
+);

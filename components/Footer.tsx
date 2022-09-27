@@ -1,5 +1,7 @@
+import { Social } from "./";
+
 export const Footer = () => (
   <footer className="footer">
-    <p>Designed & Developed by Jordan Utz in St. Petersburg, FL ✈️ </p>
+    <Social />
   </footer>
 );

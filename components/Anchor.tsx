@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { AnchorProps } from "../types/anchor";
+import { AnchorProps } from "../types";
 
 export const Anchor: FC<AnchorProps> = ({
   children,

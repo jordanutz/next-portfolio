@@ -1,4 +1,5 @@
-export interface TypeWriterProps {
-   words: string[];
-   level: number;
+export interface TypewriterProps {
+  className: string;
+  words: string[];
+  level: number;
 }

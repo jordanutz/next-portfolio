@@ -1,6 +1,4 @@
-import { Anchor } from "./Anchor";
-import { PageHeader } from "./PageHeader";
-import { Social } from "./Social";
+import { Anchor, PageHeader, Social } from "./";
 
 export const Details = () => (
   <>

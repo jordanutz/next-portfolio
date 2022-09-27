@@ -1,8 +1,9 @@
 .social {
-   padding: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .social svg {
-   margin: 0 .4rem;
-   font-size: 1.5rem;
+  font-size: 1.75rem;
 }
