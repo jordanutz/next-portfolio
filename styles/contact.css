@@ -12,6 +12,7 @@
 
 .contact__container {
   max-width: 1100px;
+  width: auto;
   background-color: #1d153af2;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -43,10 +44,21 @@
   margin: 0 auto;
 }
 
+.contact a {
+  align-self: center;
+}
+
 @media (min-width: 767px) {
   .contact__container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1101px) {
+  .contact__container {
+    width: 1100px;
   }
 }

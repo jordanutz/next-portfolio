@@ -13,7 +13,7 @@
 }
 
 .pageheader--1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: "Mockhand";
   text-shadow: 2px 2px 0 #4b4b4bc7, -1px -1px 0 #4b4b4bc7, 1px -1px 0 #4b4b4bc7,
     -1px 1px 0 #4b4b4bc7, 1px 1px 0 #4b4b4bc7;
@@ -21,7 +21,7 @@
 }
 
 .pageheader--2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: -1.5px;
 }
@@ -46,5 +46,9 @@
 @media (min-width: 992px) {
   .pageheader--1 {
     font-size: 7rem;
+  }
+
+  .pageheader--2 {
+    font-size: 2.25rem;
   }
 }

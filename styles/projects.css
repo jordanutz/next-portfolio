@@ -131,3 +131,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media (min-width: 1101px) {
+  .projects {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

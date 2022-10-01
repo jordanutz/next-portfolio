@@ -10,8 +10,8 @@ export const Skills = () => (
           {skill.title}
         </PageHeader>
         <p className="skills__description">{skill.description}</p>
+        <h4 className="skills__subheader">Tools</h4>
         <ul>
-          <h4 className="skills__subheader">Tools</h4>
           {skill.technologies.map((skill, index) => (
             <li key={index} className="skills__list-item">
               {skill.title}
