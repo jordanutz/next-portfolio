@@ -12,8 +12,8 @@
 
 .contact__container {
   max-width: 1100px;
+  background-color: #fff;
   width: auto;
-  background-color: #1d153af2;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   padding: 2rem 1.5rem;
@@ -23,15 +23,6 @@
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.contact__header,
-.contact__container {
-  color: #fff !important;
-}
-
-.contact__link {
-  color: var(--secondary);
 }
 
 .contact__text {

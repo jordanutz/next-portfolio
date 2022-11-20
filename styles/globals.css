@@ -1,23 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
 :root {
   --bg-primary: rgb(247, 247, 247);
   --primary: #ebebeb;
-  --secondary: rgb(122, 86, 255);
-  --accent: rgb(244 241 255);
+  --secondary: rgb(3 102 242);
+  --accent: rgb(217 250 255);
   --font: rgb(40, 43, 62);
   --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
   --border-radius: 0.5rem;
-}
-
-@font-face {
-  font-family: "Mockhand";
-  src: url("/Mockhand.ttf");
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Museo Sans";
-  src: url("/MuseoSans_500.otf");
-  font-style: normal;
-  font-display: swap;
 }

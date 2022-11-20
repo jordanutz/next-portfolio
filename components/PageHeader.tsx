@@ -4,6 +4,7 @@ import { PageHeaderProps } from "../types";
 export const PageHeader: FC<PageHeaderProps> = ({
   children,
   className = "",
+  label,
   level = 2,
 }) => {
   const tag = `h${level}`;
@@ -12,6 +13,7 @@ export const PageHeader: FC<PageHeaderProps> = ({
     tag,
     {
       className: `pageheader pageheader--${level} ${className}`,
+      "aria-label": label,
     },
     children
   );

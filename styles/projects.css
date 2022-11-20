@@ -15,7 +15,7 @@
 }
 
 .projects__overlay {
-  background: #1d153af2;
+  background: rgba(20, 25, 54, 0.9);
   position: absolute;
   margin: auto;
   width: 0px;

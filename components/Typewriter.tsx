@@ -49,7 +49,7 @@ export const Typewriter: FC<TypewriterProps> = ({ words, ...rest }) => {
 
   return (
     <section className="typewriter">
-      <PageHeader {...rest}>
+      <PageHeader label={currentWord} {...rest}>
         {typed}
         {blink ? <span>|</span> : ""}
       </PageHeader>

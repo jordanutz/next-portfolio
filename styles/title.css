@@ -31,6 +31,7 @@
   font-family: museo-sans, sans-serif;
   font-size: 1.5rem;
   min-height: 1.5rem;
+  letter-spacing: -0.1rem;
 }
 
 .title__social {
@@ -41,7 +42,7 @@
   z-index: 1;
   display: flex;
   justify-content: flex-end;
-  background: var(--secondary);
+  background: -webkit-linear-gradient(110deg, #1234dc 45%, #28b8f8);
 }
 
 .title__social a {

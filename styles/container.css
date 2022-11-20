@@ -6,8 +6,10 @@
 }
 
 .container--stretched {
-  background-color: var(--primary);
   padding: 5rem 1rem 10rem 1rem;
   width: 100%;
   max-width: unset;
+  background-color: #f1f1f1;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
 }

@@ -19,7 +19,7 @@ export const Contact = () => (
         <Button
           className="contact__button"
           type="secondary"
-          icon={<SiMinutemailer />}
+          icon={<SiMinutemailer aria-hidden="true" />}
         >
           Let&apos;s Connect!
         </Button>

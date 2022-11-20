@@ -22,7 +22,10 @@ export const Projects = () => (
             <PageHeader level={3}>{project.title}</PageHeader>
             <p className="projects__description">{project.description}</p>
             <div className="projects__social">
-              <Anchor href={project.github} label="View project on Github">
+              <Anchor
+                href={project.github}
+                label={`View ${project.title} on Github`}
+              >
                 <RiGithubFill />
               </Anchor>
             </div>
